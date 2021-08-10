@@ -21,7 +21,7 @@ class Header extends React.Component {
       window.addEventListener('scroll', this.handleScroll);
       window.addEventListener("resize", this.handleResize);
       this.handleResize();
-      if(window.location.pathname==="/")
+      if(window.location.pathname==="/home")
          this.setState({active: "home"});
       else if (window.location.pathname==="/services");
          this.setState({active: "services"});
@@ -72,7 +72,7 @@ class Header extends React.Component {
                      <label className="logo-label">Troibits</label>
                   </div>
                   <div className="menu menuA">
-                     <NavLink id = "home"className= {`menuA-item ${this.state.active === "home" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/">
+                     <NavLink id = "home"className= {`menuA-item ${this.state.active === "home" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/home">
                            Home
                            <div id = "home" className={`circle ${this.state.active === "home" ? "" : " d-none"}`}></div>
                      </NavLink>
@@ -81,16 +81,12 @@ class Header extends React.Component {
                            <div id = "services" className={`circle ${this.state.active === "services" ? "" : " d-none"}`}></div>
                      </NavLink>
                      <NavLink id = "about" className= {`menuA-item ${this.state.active === "about" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/about">
-                           About
+                           Company
                            <div id = "about" className={`circle ${this.state.active === "about" ? "" : " d-none"}`}></div>
                      </NavLink>
-                     <NavLink id = "portfolio" className= {`menuA-item ${this.state.active === "portfolio" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/portfolio">
-                           Portfolio
+                     <NavLink id = "portfolio" className= {`menuA-item ${this.state.active === "work" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/work">
+                           Work
                            <div id = "portfolio" className={`circle ${this.state.active === "portfolio" ? "" : " d-none"}`}></div>
-                     </NavLink>
-                     <NavLink id = "blog" className= {`menuA-item ${this.state.active === "blog" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/blog">
-                           Blog
-                           <div id = "blog" className={`circle ${this.state.active === "blog" ? "" : " d-none"}`}></div>
                      </NavLink>
                      <NavLink id = "contact" className= {`menuA-item ${this.state.active === "contact" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/contact">
                            Contact
