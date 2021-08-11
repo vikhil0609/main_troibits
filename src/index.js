@@ -8,6 +8,7 @@ import Services from './pages/services'
 import Header from './components/Header'
 import Contact from "./components/ContactPart/contact";
 import Work from "./components/workpart/work";
+import Company from "./components/company/company";
 import './index.css'
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 ReactDOM.render(
@@ -30,6 +31,10 @@ ReactDOM.render(
               <Route exact path="/contact">
                   <Contact />
               </Route>
+              <Route  exact path="/about">
+                  <Company />
+              </Route>
+
             </Switch>
           </div> 
     </BrowserRouter>

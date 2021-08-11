@@ -1,0 +1,89 @@
+.flex-container {
+  margin-top: 10%;
+}
+
+.Companyleft {
+  margin-left: 15%;
+}
+
+.Companyright {
+  margin-right: 5%;
+  text-align: right;
+}
+p {
+  font-size: 16px;
+}
+
+h2 {
+  color: Blue;
+}
+.button1-company {
+  margin-top: 3%;
+  padding: 10px;
+  background-color: transparent;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-color: white;
+}
+
+.CompanyMid1 {
+  margin-top: 5%;
+  color: White;
+  text-align: center;
+  margin-left: 15%;
+}
+h6 {
+  font-size: 17px;
+}
+
+.CompanyMid2 {
+  display: flex;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 10px;
+}
+
+#imageId {
+  width: 100px;
+  height: auto;
+}
+.CompanySub {
+  color: #666666;
+  font-size: 20px;
+}
+
+.image {
+  display: flex;
+  text-align: center;
+}
+
+.CompanyMid3 {
+  margin-top: 7%;
+  background-image: url("../../images/media_library/Group-972-1-min.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.last {
+  display: flex;
+  margin-top: 10%;
+}
+.techlogo {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin-top: 10%;
+  padding-left: 15%;
+}
+
+.lastHeading {
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}

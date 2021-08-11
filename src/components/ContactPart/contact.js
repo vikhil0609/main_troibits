@@ -14,6 +14,11 @@ function Contact(){
         <div className = "col"><h1><strong>Let’s Build Something
                         <br />Together!</strong></h1>
         </div >
+        <div  className="col" >
+            <div className="contactRect">
+                
+            </div>
+        </div>
         <div className = "col" ><h3>Design isn’t finished until somebody is using it.
         Let’s build interactive products for<br/> your idea and achieve brilliance together.</h3>
         <br /><br /><br />
