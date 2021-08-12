@@ -298,7 +298,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <img id="homeBack" src={homeBackImg} />
         <div className="main-wrap">
           <Home />
           <Services />

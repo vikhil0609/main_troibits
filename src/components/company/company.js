@@ -10,6 +10,7 @@ import Process from "../../assets/images/media_library/Group-973-1.png"
 function Company(){
     return(
         <div className="flex-container">
+            <div className="CompanyHeading">
             <div className="Companyleft">
                 <strong>
                     <span>
@@ -44,7 +45,7 @@ function Company(){
                 
                 </strong>
             </div>
-
+            </div>
             <div className="CompanyMid1">
                 <h1 style={{color:"White"}}>What we stand for</h1>
                 <h6>Troibits focuses on high quality customer experience, satisfaction and honesty. We have the</h6>

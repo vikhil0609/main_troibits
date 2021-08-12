@@ -14,13 +14,13 @@ import Gamerz from '../../assets/images/media_library/Group-985.png'
 function Work(){
     return(
         <div className="start" >
-           <div className = "col" id="main"><h1><strong>We <span style={{color:"#0a5de9" }}>Create </span>
+           <div className = "col" id="workmain"><h1><strong>We <span style={{color:"#0a5de9" }}>Create </span>
                                      Websites and Apps</strong></h1>
             </div>
-            <div className="col" id="main">
+            <div className="col" id="workmain">
                 <h6>
                 Our design is a key factor why we are able to create better products as we do a proper research 
-                and planning before ideations<br />
+                and planning before ideations <br />
                 and create something on a blank piece of paper which stands out and is minimal.
                 </h6>
                 <br/> <br/>
@@ -62,14 +62,14 @@ function Work(){
             </div>
 
             <div className="col" id="last">
-                <h3 style={{color:"white"}}>
+                <h2 style={{color:"white"}}>
                     Want us to craft well designed apps and digitally transform<br/> your business?  
-                </h3>
+                </h2>
             </div>
 
             <div className="col">
                 <button className="btn">
-                    Drop us a message
+                    <a href="/contact">Drop us a message</a>
                 </button>
             </div>
 

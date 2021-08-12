@@ -3,17 +3,39 @@
   font-family: "Montserrat";
 }
 
-h3 {
+#contactDesign {
   color: #666666;
+  margin-right: 20%;
 }
-img {
+
+#contactlast {
+  margin-top: 3%;
   max-width: 100%;
   height: auto;
+}
+
+#contactlast h6 {
+  color: white;
 }
 
 .contactRect {
   height: 5px;
   width: 80px;
   background-color: #0a5de9;
-  margin-bottom: 20px;
+  margin-bottom: 1%;
+}
+
+#contactlast :hover {
+  color: #0a5de9;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 840px) {
+  #contactDesign {
+    margin-right: 10%;
+    margin-left: 0;
+  }
+  #contactDesign br {
+    display: none;
+  }
 }

@@ -1,15 +1,18 @@
 .flex-container {
   margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.Companyleft {
-  margin-left: 15%;
+.CompanyHeading {
+  display: flex;
 }
 
 .Companyright {
-  margin-right: 5%;
+  float: left;
   text-align: right;
 }
+
 p {
   font-size: 16px;
 }
@@ -22,8 +25,6 @@ h2 {
   padding: 10px;
   background-color: transparent;
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
   border-color: white;
 }
 
@@ -31,7 +32,6 @@ h2 {
   margin-top: 5%;
   color: White;
   text-align: center;
-  margin-left: 15%;
 }
 h6 {
   font-size: 17px;
@@ -40,9 +40,6 @@ h6 {
 .CompanyMid2 {
   display: flex;
   margin-top: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 10px;
 }
 
 #imageId {
@@ -77,13 +74,10 @@ h6 {
   max-width: 700px;
   height: auto;
   margin-top: 10%;
-  padding-left: 15%;
 }
 
 .lastHeading {
   margin-top: 5%;
   width: 100%;
   height: auto;
-  padding-left: 10%;
-  padding-right: 10%;
 }

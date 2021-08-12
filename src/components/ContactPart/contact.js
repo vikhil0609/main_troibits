@@ -18,19 +18,15 @@ function Contact(){
             <div className="contactRect">
                 
             </div>
-        </div>
-        <div className = "col" ><h3>Design isn’t finished until somebody is using it.
-        Let’s build interactive products for<br/> your idea and achieve brilliance together.</h3>
+                <h3 id="contactDesign">Design isn’t finished until somebody is using it.
+                Let’s build interactive products for<br/> your idea and achieve brilliance together.</h3>
         <br /><br /><br />
         </div >
 
-        <div className = "col">
+        <div className = "col" id="contactlast">
             <img src={Email} />
             <h6>contact@troibits.com</h6>
             <br />
-        </div>
-
-        <div className = "col">
             <img src={Phone} />
             <h6>+91 989 950 0873</h6>
         </div>

@@ -12,6 +12,7 @@ import Company from "./components/company/company";
 import './index.css'
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 ReactDOM.render(
+  <div style={{ background: "#0b0b0"  }}>
     <BrowserRouter>
         <div className="main-wrap d-flex">
             <Header />
@@ -38,6 +39,7 @@ ReactDOM.render(
             </Switch>
           </div> 
     </BrowserRouter>
+  </div>
     ,
   document.getElementById("root")
 );

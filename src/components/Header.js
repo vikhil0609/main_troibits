@@ -23,9 +23,19 @@ class Header extends React.Component {
       this.handleResize();
       if(window.location.pathname==="/home")
          this.setState({active: "home"});
-      else if (window.location.pathname==="/services");
+      else if (window.location.pathname==="/services")
          this.setState({active: "services"});
-    }
+
+      else if (window.location.pathname==="/about")
+      this.setState({active: "about"});
+      
+      else if (window.location.pathname==="/work")
+      this.setState({active: "work"});
+
+      else if (window.location.pathname==="/contact");
+      this.setState({active: "contact"});
+
+   }
 
     componentWillUnmount() {
       window.removeEventListener('scroll', this.handleScroll);
@@ -86,7 +96,7 @@ class Header extends React.Component {
                      </NavLink>
                      <NavLink id = "portfolio" className= {`menuA-item ${this.state.active === "work" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/work">
                            Work
-                           <div id = "portfolio" className={`circle ${this.state.active === "portfolio" ? "" : " d-none"}`}></div>
+                           <div id = "portfolio" className={`circle ${this.state.active === "work" ? "" : " d-none"}`}></div>
                      </NavLink>
                      <NavLink id = "contact" className= {`menuA-item ${this.state.active === "contact" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/contact">
                            Contact
