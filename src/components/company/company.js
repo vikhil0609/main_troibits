@@ -3,9 +3,9 @@ import '../../assets/styles/companypart/company.css'
 import Notch from '../../assets/images/media_library/Group-454.png'
 import Consultant from '../../assets/images/media_library/Group-969-1.png'
 import Growth from '../../assets/images/media_library/Group-970-1.png'
-import Mid3 from "../../assets/images/media_library/Group-972-1-min.png"
-import Box from "../../assets/images/media_library/Group-971-1.png"
 import lastLogo from "../../assets/images/media_library/Group-491@2x-min.png"
+import CompanyLogo from "../../assets/images/media_library/Group-1190.png"
+import Background from "../../assets/images/media_library/Group-972-1-min.png"
 
 function Company(){
     return(
@@ -19,7 +19,7 @@ function Company(){
                     </span>
                         <h1>A <span style={{color:"Blue"}}>Creative </span> Company</h1>
                         <h4>Delivering interactive experiences and creating new standards</h4>
-                        <p>Troibits is an Indian Technology Company that makes your business and daily life technology 
+                        <p style={{fontSize:"16px"}}>Troibits is an Indian Technology Company that makes your business and daily life technology 
                         enabled by becoming your Technology Partners. From IT Consultation, Product Design, 
                         Branding, App Development, Website Development, Digital Marketing, Growth Strategy and Investment, 
                         Troibits support and work together to grow and make business ideas successful. 
@@ -34,7 +34,7 @@ function Company(){
             <div className="Companyright">
                 <strong>
                     <br /><br />
-                    <h2>What do we do</h2>
+                    <h2 style={{color:"blue"}}>What do we do</h2>
                     <h4>Startup Acceleration</h4>
                     <h4>Mobile App Development</h4>
                     <h4>Website Development</h4>
@@ -86,7 +86,12 @@ function Company(){
             
             <div className="CompanyMid3">
                 <div className="CompanyBox">
-
+                        <div id="Box">
+                            <img src={CompanyLogo} />
+                            <h2 style={{fontSize:"2vw",color:"blue"}}>Our Mission</h2>
+                            <h4>"To technically enable business around the globe</h4>
+                            <h4>by providing innovative solutions and grow together"</h4>    
+                        </div>
                 </div>
             </div>
             <div className="CompanyLast">
@@ -95,7 +100,7 @@ function Company(){
                 </div>
 
                 <div className="process">
-                    <h1 style={{fontSize:"3vw"}}>Our Process</h1>
+                    <h1 style={{fontSize:"3em"}}>Our Process</h1>
                     <h6>From idea to product launch, growth and software maintenance. We are determined to provide
                          IT support through complete life cycle of your business.</h6>
                     <ul>
