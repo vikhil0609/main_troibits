@@ -6,10 +6,11 @@ import Growth from '../../assets/images/media_library/Group-970-1.png'
 import Mid3 from "../../assets/images/media_library/Group-972-1-min.png"
 import Box from "../../assets/images/media_library/Group-971-1.png"
 import lastLogo from "../../assets/images/media_library/Group-491@2x-min.png"
-import Process from "../../assets/images/media_library/Group-973-1.png"
+
 function Company(){
     return(
-        <div className="flex-container">
+        <div >
+            <div className="CompanyHead">
             <div className="CompanyHeading">
             <div className="Companyleft">
                 <strong>
@@ -81,30 +82,36 @@ function Company(){
                     </div>
                 </div>
             </div>
+            </div>
             
             <div className="CompanyMid3">
                 <div className="CompanyBox">
-                    <centre><img src={Box} /></centre>
+
                 </div>
             </div>
+            <div className="CompanyLast">
+                <div className="techLogo">
+                    <img src={lastLogo}/>
+                </div>
 
-            <div className="last">
-            <div className="techlogo">
-                        <img src={lastLogo} />
+                <div className="process">
+                    <h1 style={{fontSize:"3vw"}}>Our Process</h1>
+                    <h6>From idea to product launch, growth and software maintenance. We are determined to provide
+                         IT support through complete life cycle of your business.</h6>
+                    <ul>
+                        <li>IP Protection</li>
+                        <li>Consultation And Research</li>
+                        <li>Ideation And Strategic Planning</li>
+                        <li>Product Design</li>
+                        <li>Agile Development</li>
+                        <li>testing And Quality Assurance</li>
+                        <li>Product Launch</li>
+                        <li>Growth And Maintainance</li>
+                    </ul>
                 </div>
-                <div className="lastHeading">
-                    <h2 style={{color:"white"}}>Our Process</h2>
-                    <div className="CompanySub">
-                        From idea to product launch, growth and software maintenance.
-                        We are determined to provide IT support through complete life cycle of your business.
-                    </div>
-                    <div className="process">
-                        <img src={Process} />
-                    </div>
-                </div>
+
             </div>
-
-        </div>
+            </div>
     );
 }
 

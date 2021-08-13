@@ -1,16 +1,20 @@
-.flex-container {
+.CompanyHead {
   margin-top: 10%;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .CompanyHeading {
+  margin-top: 7%;
   display: flex;
 }
 
+.Companyleft {
+  margin-right: 20%;
+}
+
 .Companyright {
-  float: left;
-  text-align: right;
+  font-size: 0.1vw;
 }
 
 p {
@@ -32,6 +36,7 @@ h2 {
   margin-top: 5%;
   color: White;
   text-align: center;
+  margin-left: 15%;
 }
 h6 {
   font-size: 17px;
@@ -40,20 +45,21 @@ h6 {
 .CompanyMid2 {
   display: flex;
   margin-top: 10%;
+  font-size: 1.2vw;
 }
-
+.image {
+  text-align: center;
+}
 #imageId {
-  width: 100px;
+  width: 100%;
+  max-width: 80px;
   height: auto;
+  margin-bottom: 5%;
 }
 .CompanySub {
   color: #666666;
-  font-size: 20px;
-}
-
-.image {
-  display: flex;
-  text-align: center;
+  text-align: centre;
+  margin-left: 3%;
 }
 
 .CompanyMid3 {
@@ -62,22 +68,49 @@ h6 {
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 80vh;
 }
 
-.last {
+.CompanyMid3 .CompanyBox {
+  border: 1px solid white;
+  margin-right: 35%;
+  margin-left: 30%;
+  padding: 9%;
+}
+
+.CompanyLast {
   display: flex;
-  margin-top: 10%;
-}
-.techlogo {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-left: 15%;
 }
 
-.lastHeading {
-  margin-top: 5%;
-  width: 100%;
+.techLogo img {
+  width: 120%;
+  max-width: 800px;
   height: auto;
+  margin-top: 25%;
+}
+
+.process {
+  float: right;
+  margin-left: 10%;
+  margin-right: 6%;
+}
+.process ul {
+  margin-top: 5%;
+  list-style: none;
+  font-size: 1.7vw;
+  background-color: transparent;
+}
+li {
+  color: #e6e4e1;
+}
+.process li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: Blue; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  padding-bottom: 3%;
 }
