@@ -9,6 +9,7 @@ import Header from './components/Header'
 import Contact from "./components/ContactPart/contact";
 import Work from "./components/workpart/work";
 import Company from "./components/company/company";
+import "./assets/styles/header.scss"
 import './index.css'
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 ReactDOM.render(

@@ -5,52 +5,50 @@ import Consultant from '../../assets/images/media_library/Group-969-1.png'
 import Growth from '../../assets/images/media_library/Group-970-1.png'
 import lastLogo from "../../assets/images/media_library/Group-491@2x-min.png"
 import CompanyLogo from "../../assets/images/media_library/Group-1190.png"
-import Background from "../../assets/images/media_library/Group-972-1-min.png"
+import Footer from "../Footer";
+
 
 function Company(){
     return(
         <div >
             <div className="CompanyHead">
             <div className="CompanyHeading">
-            <div className="Companyleft">
-                <strong>
-                    <span>
-                        <h4>We are</h4>
-                    </span>
-                        <h1>A <span style={{color:"Blue"}}>Creative </span> Company</h1>
-                        <h4>Delivering interactive experiences and creating new standards</h4>
-                        <p style={{fontSize:"16px"}}>Troibits is an Indian Technology Company that makes your business and daily life technology 
-                        enabled by becoming your Technology Partners. From IT Consultation, Product Design, 
-                        Branding, App Development, Website Development, Digital Marketing, Growth Strategy and Investment, 
-                        Troibits support and work together to grow and make business ideas successful. 
-                        With impeccable knowledge of Internet of Things, Business Automation, 
-                        Content Management Systems (CMS), Customer Relationship Management (CRM), Point of Sales Systems (POS),
-                         Search Engine Optimization (SEO) , 
-                        Marketing Strategy and latest Technology , Troibits has all the aspects of growth covered.</p>
-                </strong>
-                <button className="button1-company">Lets Chat</button>
-            </div>
+                <div className="Companyleft">
+                    <strong>
+                        <span>
+                            <h4>We are</h4>
+                        </span>
+                            <h1>A <span style={{color:"Blue"}}>Creative </span> Company</h1>
+                            <h4>Delivering interactive experiences and creating new standards</h4>
+                            <p style={{fontSize:"16px"}}>Troibits is an Indian Technology Company that makes your business and daily life technology 
+                            enabled by becoming your Technology Partners. From IT Consultation, Product Design, 
+                            Branding, App Development, Website Development, Digital Marketing, Growth Strategy and Investment, 
+                            Troibits support and work together to grow and make business ideas successful. 
+                            With impeccable knowledge of Internet of Things, Business Automation, 
+                            Content Management Systems (CMS), Customer Relationship Management (CRM), Point of Sales Systems (POS),
+                            Search Engine Optimization (SEO) , 
+                            Marketing Strategy and latest Technology , Troibits has all the aspects of growth covered.</p>
+                    </strong>
+                    <button className="button1-company">Lets Chat</button>
+                </div>
 
             <div className="Companyright">
-                <strong>
-                    <br /><br />
                     <h2 style={{color:"blue"}}>What do we do</h2>
-                    <h4>Startup Acceleration</h4>
-                    <h4>Mobile App Development</h4>
-                    <h4>Website Development</h4>
-                    <h4>Enterprise App Development</h4>
-                    <h4>Product Design and Branding</h4>
-                    <h4>Next Gen Technology</h4>
-                    <h4>Growth Marketing</h4>
-                    <h4>Maintenance and Support</h4>
-                
-                </strong>
+                    <h5>Startup Acceleration</h5>
+                    <h5>Mobile App Development</h5>
+                    <h5>Website Development</h5>
+                    <h5>Enterprise App Development</h5>
+                    <h5>Product Design and Branding</h5>
+                    <h5>Next Gen Technology</h5>
+                    <h5>Growth Marketing</h5>
+                    <h5>Maintenance and Support</h5>
+            </div>
             </div>
             </div>
             <div className="CompanyMid1">
                 <h1 style={{color:"White"}}>What we stand for</h1>
-                <h6>Troibits focuses on high quality customer experience, satisfaction and honesty. We have the</h6>
-                <h6>confidence in our ability to digitally transform our customer’s lives and business.</h6>
+                <h6>Troibits focuses on high quality customer experience, satisfaction and honesty. We have the<br />
+                confidence in our ability to digitally transform our customer’s lives and business.</h6>
             </div>
 
             <div className="CompanyMid2">
@@ -60,8 +58,7 @@ function Company(){
                     <div className="CompanySub">
                     We focus on a broad range of activities, like competitive analysis, 
                         corporate strategy, operations management
-                        , our core value is to tell you what is right for your business.
-                    </div>         
+                        , our core value is to tell you what is right for your business.      
                 </div>
 
                 <div className="image">
@@ -100,7 +97,7 @@ function Company(){
                 </div>
 
                 <div className="process">
-                    <h1 style={{fontSize:"3em"}}>Our Process</h1>
+                    <h1 style={{fontSize:"2em"}}>Our Process</h1>
                     <h6>From idea to product launch, growth and software maintenance. We are determined to provide
                          IT support through complete life cycle of your business.</h6>
                     <ul>
@@ -114,8 +111,7 @@ function Company(){
                         <li>Growth And Maintainance</li>
                     </ul>
                 </div>
-
-            </div>
+            </div>                
             </div>
     );
 }

@@ -1,3 +1,6 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
 .CompanyHead {
   margin-top: 10%;
   margin-left: 10%;
@@ -9,12 +12,13 @@
   display: flex;
 }
 
-.Companyleft {
-  margin-right: 20%;
-}
-
 .Companyright {
-  font-size: 0.1vw;
+  border: 1px solid red;
+  margin-top: 5%;
+  text-align: right;
+}
+.Companyright h5 {
+  margin-top: 1.5%;
 }
 .button1-company {
   margin-top: 3%;
@@ -29,7 +33,6 @@
   margin-top: 5%;
   color: White;
   text-align: center;
-  margin-left: 15%;
 }
 h6 {
   font-size: 1.2em;
@@ -85,20 +88,18 @@ h6 {
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   height: 82vh;
 }
 
 .CompanyLast {
   display: flex;
   margin-top: 5%;
-  margin-left: 15%;
+  margin-left: 10%;
 }
-
 .techLogo img {
-  width: 120%;
-  max-width: 800px;
-  height: auto;
-  margin-top: 25%;
+  max-width: 105%;
+  margin-top: 30%;
 }
 
 .process {
@@ -110,11 +111,14 @@ h6 {
 .process ul {
   margin-top: 5%;
   list-style: none;
-  font-size: 1.5em;
+  font-size: 1.3em;
   background-color: transparent;
 }
 li {
   color: #e6e4e1;
+}
+.process {
+  padding-bottom: 10%;
 }
 .process li::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
@@ -124,6 +128,10 @@ li {
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em;
   padding-bottom: 3%;
+}
+.footer {
+  margin-top: 7%;
+  margin-left: 2%;
 }
 
 @media screen and (max-width: 991px) {
@@ -140,7 +148,8 @@ li {
   .Companyright {
     margin-left: 75%;
   }
-  .CompanyMid1 {
+  .CompanyLast {
+    margin-top: 0%;
   }
   .CompanyMid2 {
     display: block;
@@ -151,10 +160,10 @@ li {
   .CompanyLast {
     display: block;
     margin-left: 4%;
-    margin-top: 0%;
+    margin-top: 1%;
   }
   .techLogo {
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
     margin-right: 20%;
   }

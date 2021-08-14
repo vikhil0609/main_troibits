@@ -9,7 +9,7 @@ import CoinKarts from '../../assets/images/media_library/Group-982.png'
 import Hospitals from '../../assets/images/media_library/Group-98332.png'
 import BluePaisa from '../../assets/images/media_library/Group-984.png'
 import Gamerz from '../../assets/images/media_library/Group-985.png'
-
+import '../../assets/styles/header.scss'
 
 function Work(){
     return(
@@ -26,54 +26,55 @@ function Work(){
                 <br/> <br/>
 
             <div className="" id="row">
-               <div className="column">
+               <div className="WorkColumn">
                     <img src={Android} id="Image" />
                </div>
-               <div className="column">
+               <div className="WorkColumn">
                     <img src={Logistics} id="Image"/>
                </div> 
-               <div className="column">
+               <div className="WorkColumn">
                     <img src={Yolo} id="Image"/>
                </div>  
             </div> 
            
             <div className="" id="row">
-                <div className="column">
+                <div className="WorkColumn">
                         <img src={CaptainThug} id="Image" />
                 </div>
-                <div className="column">
+                <div className="WorkColumn">
                         <img src={Excursify} id="Image"/>
                 </div> 
-                <div className="column">
+                <div className="WorkColumn">
                         <img src={CoinKarts} id="Image"/>
                </div> 
             </div>
 
             <div className="" id="row">
-                <div className="column">
+                <div className="WorkColumn">
                         <img src={Hospitals} id="Image"/>
                 </div>
-                <div className="column">
+                <div className="WorkColumn">
                         <img src={BluePaisa} id="Image"/>
                 </div> 
-                <div className="column">
-                        <img src={Gamerz} id="Image"/>
+                <div className="WorkColumn" >
+                    <img src={Gamerz} id="Image"/>
                </div> 
             </div>
+            </div>
 
-            <div className="col" id="last">
+            <div className="col" id="Worklast">
                 <h2 style={{color:"white"}}>
                     Want us to craft well designed apps and digitally transform<br/> your business?  
                 </h2>
             </div>
 
             <div className="col">
+            <a href="/contact"> 
                 <button className="btn">
-                    <a href="/contact">Drop us a message</a>
+                    Drop us a message
                 </button>
+                </a>
             </div>
-
-        </div>
         </div>
     );
 }
