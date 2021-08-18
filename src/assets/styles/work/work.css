@@ -3,16 +3,18 @@
 }
 .start {
   margin-top: 15%;
-  padding-right: 17%;
-  margin-left: 5%;
+  margin-right: 10%;
+  margin-left: 12%;
+
   text-align: center;
 }
 
-h1 {
+#workmain h1 {
   font-size: 3.4em;
 }
-h6 {
-  font-size: 2vmin;
+
+#workmain h6 {
+  font-size: 1.2em;
   color: #666666;
   margin-bottom: 10%;
 }

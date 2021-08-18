@@ -112,15 +112,15 @@ function Company(){
                     <h6>From idea to product launch, growth and software maintenance. We
                          are determined to provide IT support through complete life cycle of
                           your business.</h6>
-                    <ul>
-                        <li>Ip Protection</li>
-                        <li>Consultant And Research</li>
-                        <li>Ideation And Strategic Planning</li>
-                        <li>Product Design</li>
-                        <li>Agile Deveploment</li>
-                        <li>Testing and Quality Assurance</li>
-                        <li>Product Launch</li>
-                        <li>Growth and Maintenance</li>
+                    <ul className={styles.Companyulist}>
+                        <li id={styles.Companylist}>IP Protection</li>
+                        <li id={styles.Companylist}>Consultant And Research</li>
+                        <li id={styles.Companylist}>Ideation And Strategic Planning</li>
+                        <li id={styles.Companylist}>Product Design</li>
+                        <li id={styles.Companylist}>Agile Deveploment</li>
+                        <li id={styles.Companylist}>Testing and Quality Assurance</li>
+                        <li id={styles.Companylist}>Product Launch</li>
+                        <li id={styles.Companylist}>Growth and Maintenance</li>
                     </ul>
                 </div>
             </div>

@@ -23,6 +23,8 @@ class Header extends React.Component {
       this.handleResize();
       if(window.location.pathname==="/home"){
          this.setState({active: "home"});}
+      else if(window.location.pathname==="/"){
+         this.setState({active: "home"});}
       else if (window.location.pathname==="/services"){
          this.setState({active: "services"});}
 
@@ -34,6 +36,10 @@ class Header extends React.Component {
 
       else if (window.location.pathname==="/contact"){
       this.setState({active: "contact"});}
+
+      else{
+         
+      }
 
    }
 
