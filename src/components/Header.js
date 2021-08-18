@@ -21,19 +21,19 @@ class Header extends React.Component {
       window.addEventListener('scroll', this.handleScroll);
       window.addEventListener("resize", this.handleResize);
       this.handleResize();
-      if(window.location.pathname==="/home")
-         this.setState({active: "home"});
-      else if (window.location.pathname==="/services")
-         this.setState({active: "services"});
+      if(window.location.pathname==="/home"){
+         this.setState({active: "home"});}
+      else if (window.location.pathname==="/services"){
+         this.setState({active: "services"});}
 
-      else if (window.location.pathname==="/about")
-      this.setState({active: "about"});
+      else if (window.location.pathname==="/about"){
+      this.setState({active: "about"});}
       
-      else if (window.location.pathname==="/work")
-      this.setState({active: "work"});
+      else if (window.location.pathname==="/work"){
+      this.setState({active: "work"});}
 
-      else if (window.location.pathname==="/contact");
-      this.setState({active: "contact"});
+      else if (window.location.pathname==="/contact"){
+      this.setState({active: "contact"});}
 
    }
 
@@ -90,6 +90,7 @@ class Header extends React.Component {
                            Services
                            <div id = "services" className={`circle ${this.state.active === "services" ? "" : " d-none"}`}></div>
                      </NavLink>
+            
                      <NavLink id = "about" className= {`menuA-item ${this.state.active === "about" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/about">
                            Company
                            <div id = "about" className={`circle ${this.state.active === "about" ? "" : " d-none"}`}></div>

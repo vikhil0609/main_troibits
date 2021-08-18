@@ -7,7 +7,6 @@ import Technology from '../components/Services/technology';
 import Achievement from '../components/Services/achievement';
 import Reason from '../components/Services/reason';
 import DropMessage from '../components/Services/drop-message';
-import Footer from '../components/Services/footer';
 import TabSlider from '../components/Services/tabSlider';
 import Sidebar from "../components/sidebar";
 import '../assets/styles/services/index.css';
@@ -104,17 +103,6 @@ class Services extends React.Component {
                 </div>
                 <div className = "drop-message">
                     <DropMessage/>
-                </div>
-                <div className = "footer">
-                    <Footer />
-                </div>
-                <div className = "sub-footer">
-                    <div className = "letf-footer-menu">2019 Troibits Infotech Private limited</div>
-                    <div className = "right-footer-menu">
-                        <span className = "right-footer-menu-item">Sitemap</span>
-                        <span className = "right-footer-menu-item">Term Of Use</span>
-                        <span className = "right-footer-menu-item">Privacy Policy</span>
-                    </div>
                 </div>
             </div>
         )

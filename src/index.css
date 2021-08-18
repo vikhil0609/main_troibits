@@ -4,6 +4,10 @@ body {
   font-family: sans-serif;
 }
 
-.main-wrap{
+.main-wrap {
   flex-direction: column;
+}
+
+.Main-footer {
+  margin-top: 10%;
 }

@@ -306,7 +306,6 @@ class App extends Component {
           <Intro />
           <Contact />
           <Map />
-          <Footer />
         </div> 
 
         <div className="loading">

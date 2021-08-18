@@ -1,0 +1,173 @@
+.CompanyHeading {
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+.Companyleft {
+  float: left;
+  width: 60%;
+}
+.Companyleft p {
+  font-size: 1.2em;
+  padding-top: 2%;
+  word-spacing: 1%;
+}
+.Companyright {
+  margin-top: 10%;
+  padding-top: 5%;
+  text-align: right;
+  padding-right: 5%;
+}
+.Companyright h1 {
+  font-size: 3em;
+}
+.Companyright h5 {
+  padding-top: 1%;
+}
+
+.CompanyBtn1 {
+  margin-top: 5%;
+  border: 1% solid;
+  background-color: transparent;
+  border-color: white;
+  text-align: center;
+  padding: 1%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.Companymid {
+  margin-top: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: block;
+}
+
+.Companymid1 {
+  text-align: center;
+}
+.Companymid1 h6 {
+  padding-top: 1%;
+  font-size: 1.2em;
+}
+.Companymid2 {
+  text-align: center;
+  display: flex;
+}
+.Companymid2 h6 {
+  font-size: 1.3em;
+  padding-left: 5%;
+}
+#image {
+  max-width: 100%;
+  margin-bottom: 10%;
+}
+.BackgroundLogo {
+  width: 100%;
+  height: 1000px;
+  background-image: url("../../images/media_library/Group-972-1-min.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.firstBox {
+  border: 1 px solid;
+  padding-bottom: 8%;
+}
+
+.CompanyBox {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-color: rgb(41, 41, 41);
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-bottom: 2%;
+}
+
+.CompanyBox img {
+  max-width: 10%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+.CompanyBox .Data {
+  font-size: 3em;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+
+.CompanyLast {
+  margin-left: 10%;
+  margin-right: 3%;
+  display: inline-flex;
+}
+.CompanyLast img {
+  width: 500px;
+  padding-top: 20%;
+}
+.Process {
+  padding-left: 10%;
+}
+h6 {
+  font-size: 1.1em;
+}
+
+.Process li,
+ul {
+  background-color: transparent;
+  list-style-type: none;
+  padding-bottom: 1.5%;
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 1100px) {
+  .CompanyHeading {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .Companyleft {
+    width: 100%;
+  }
+  br {
+    display: none;
+  }
+
+  .Companymid {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .Companymid2 {
+    display: block;
+    font-size: 0.9em;
+    padding-left: 0%;
+  }
+  #image {
+    margin-bottom: 3%;
+  }
+  .BackgroundLogo {
+    height: 500px;
+  }
+
+  .Data h2,
+  h4 {
+    font-size: 0.3em;
+  }
+  .CompanyLast {
+    margin-top: -20%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .CompanyLast img {
+    margin-top: -25%;
+    max-width: 80%;
+  }
+  .Process {
+    font-size: 0.8em;
+  }
+  .Process ul {
+    font-size: 1.2em;
+  }
+}

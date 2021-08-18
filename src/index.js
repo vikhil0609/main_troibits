@@ -12,8 +12,9 @@ import Company from "./components/company/company";
 import "./assets/styles/header.scss"
 import './index.css'
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import Footer from "./components/HomePart/Footer";
 ReactDOM.render(
-  <div style={{ background: "#0b0b0"  }}>
+  <div>
     <BrowserRouter>
         <div className="main-wrap d-flex">
             <Header />
@@ -38,6 +39,9 @@ ReactDOM.render(
               </Route>
 
             </Switch>
+            <div className="Main-footer">
+              <Footer />
+            </div>
           </div> 
     </BrowserRouter>
   </div>
