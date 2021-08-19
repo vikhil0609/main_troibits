@@ -54,9 +54,9 @@ function Achievement(){
             </div>
             <div className = "project">
                 <div className = "row d-flex text-center">
-                <div className = "col"><h2>Lorem Ipsum Lorem Ipsum Lorem</h2></div >
-                <div className = "col" ><h4>Our design is a key factor why we are able to create better products as we a propper ideation, research,<br/> 
-                    planning then create something on a blank piece of paper which stands out and is minimal.</h4></div >
+                <div className = "col"><h2>Advancing beyond your expectations</h2></div >
+                <div className = "col" ><h4>Smart UI and intuitive design is our forte. We customise it for you after proper ideation, research, planning and create something on a blank,<br/> 
+                canvas which stands out, is minimal and uniquely crafted for your business.</h4></div >
                 </div>
                 <div className = "box d-flex">
                     <NavLink to = "#" className = "variant text-primary">Explore More Project</NavLink>

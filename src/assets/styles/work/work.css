@@ -1,5 +1,6 @@
 * {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 .start {
   margin-top: 15%;
@@ -15,7 +16,7 @@
 
 #workmain h6 {
   font-size: 1.2em;
-  color: #666666;
+  color: #ffffff;
   margin-bottom: 10%;
 }
 

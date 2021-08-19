@@ -10,6 +10,7 @@ import panelLogoMaintence from '../../assets/images/homeimages/panel-logo-mainte
 import panelLogoMarket    from '../../assets/images/homeimages/panel-logo-market.png';
 import panelLogoFuning    from '../../assets/images/homeimages/panel-logo-funing.png';
 import panelLogoChat      from '../../assets/images/homeimages/panel-logo-chat.png';
+import Growth from "../../assets/images/media_library/growth-Marketing.png"
 
 const Services = () => {
     return (
@@ -20,7 +21,9 @@ const Services = () => {
          <div className="content-wrap">
             <div className="services-content subpart-content">
                <div className="main-title">What we do?</div>
-               <div className="main-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</div>
+               <div className="main-description"><h6>Your search for end-to-end technology partner ends here. 
+               We are digitallytransforming businesses with our well designed, easy to use smart apps.</h6>
+               </div>
                <div className="panels">
                   <div className="panel-row">
                      <div className="panel-item">
@@ -28,10 +31,10 @@ const Services = () => {
                            <img src={panelLogoStrategy}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Strategy</div> <div>&nbsp; and Consultation</div>
+                           <div>StartUp</div> <div>&nbsp;Acceleration</div>
                         </div>
                         <div className="description">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        Strategic Planning, Pitch Deck, B2B, B2C Plans, IT Consultation and ROI Management
                         </div>
                      </div>
                      <div className="panel-item">
@@ -39,10 +42,10 @@ const Services = () => {
                            <img src={panelLogoBrand}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Brand</div> <div>&nbsp; and Setup</div>
+                           <div>Mobile App</div> <div>&nbsp; Development</div>
                         </div>
                         <div className="description">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        Android App Development, iOS App Development, Hybrid App Development, Flutter and SaaS
                         </div>
                      </div>
                      <div className="panel-item">
@@ -50,11 +53,11 @@ const Services = () => {
                            <img src={panelLogoApp}></img>
                         </div>
                         <div className="panel-title">
-                           <div>App Develop</div> <div>&nbsp; iot and auto</div>
+                           <div>Website</div> <div>&nbsp; Development</div>
                            {/*meny mation */}
                         </div>
                         <div className="description">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        React, Angular, WordPress, CMS and Admin Web Apps, Marketing Ready Websites
                         </div>
                      </div>
                      <div className="panel-item">
@@ -62,10 +65,10 @@ const Services = () => {
                            <img src={panelLogoProduct}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Product</div> <div>&nbsp; Design</div>
+                           <div>Enterprise App</div> <div>&nbsp; Development</div>
                         </div>
                         <div className="description">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        Sales, Logistics, Inventory and Employee Management, CRM , CMS , POS and SaaS
                         </div>
                      </div>
                   </div>
@@ -75,10 +78,10 @@ const Services = () => {
                            <img src={panelLogoMaintence}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Maintenance</div> <div>&nbsp; and support</div>
+                           <div>Product Design</div> <div>&nbsp; and Branding</div>
                         </div>
                         <div className="description">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        Branding, Corporate Identity, Logo, Marketing Media, Web and Mobile App Design
                         </div>
                      </div>
                      <div className="panel-item">
@@ -86,10 +89,21 @@ const Services = () => {
                            <img src={panelLogoMarket}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Growth</div> <div>&nbsp; marketing</div>
+                           <div>Next Gen</div> <div>&nbsp; Technology</div>
                         </div>
                         <div className="description">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        AI, AR, VR, ML, Connected Hardware, I.O.T, Automation and Drone Tech
+                        </div>
+                     </div>
+                     <div className="panel-item">
+                        <div className="panel-logo">
+                           <img src={Growth}></img>
+                        </div>
+                        <div className="panel-title">
+                           <div>Growth</div> <div>&nbsp; Marketing</div>
+                        </div>
+                        <div className="description">
+                        Digital Marketing Campaigns, Media and Video Production, Social Media Marketing and PR
                         </div>
                      </div>
                      <div className="panel-item">
@@ -97,18 +111,12 @@ const Services = () => {
                            <img src={panelLogoFuning}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Funing</div> <div>&nbsp; and investments</div>
+                           <div>Maintainance</div> <div>&nbsp; and support</div>
                         </div>
                         <div className="description">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        Adaptive Enhancements, Updates, Features and Release Management, Server Migration
                         </div>
-                     </div>
-                     <div className="panel-item panel-item-chat">
-                        <div className="panel-title">
-                           Let's chat 
-                           <img src={panelLogoChat}></img>
-                        </div>
-                     </div>
+                  </div>
                   </div>
                </div>
             </div>

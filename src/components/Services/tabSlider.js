@@ -166,7 +166,7 @@ class TabSlider extends React.Component{
                             <div id = "item-1" className={`carousel-item tab-slider-item ${this.state.count === 1 ? ` active` : ``}`}>
                                 <span  onClick = {this.addActiveClass} id = "item-1-1" className = {`d-block ${this.state.active === `item-1-1` ? ` active` : this.state.selected === "item-1-1" ? ` active` : `` }`}>Web Development</span>
                                 <span  onClick = {this.addActiveClass} id = "item-1-2" className = {`d-block ${this.state.active === `item-1-2` ? ` active` : this.state.selected === "item-1-2" ? ` active` : `` }`}>Enterprise App Development</span>
-                                <span  onClick = {this.addActiveClass} id = "item-1-2" className = {`d-block ${this.state.active === `item-1-3` ? ` active` : this.state.selected === "item-1-3" ? ` active` : `` }`}>IOT</span>
+                                <span  onClick = {this.addActiveClass} id = "item-1-2" className = {`d-block ${this.state.active === `item-1-3` ? ` active` : this.state.selected === "item-1-3" ? ` active` : `` }`}>Next Gen Technology</span>
                             </div>
                             <div id = "item-2" className={`carousel-item tab-slider-item ${this.state.count === 2 ? ` active` : ``}`}>
                                 <span  onClick = {this.addActiveClass} id = "item-2-1" className = {`d-block ${this.state.active === `item-2-1` ? ` active` : this.state.selected === "item-2-1" ? ` active` : `` }`}>Growth and Digital Marketing</span>

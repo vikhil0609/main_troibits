@@ -3,9 +3,10 @@ import '../../assets/styles/services/header.css';
 
 const HeaderServices = () =>(
     <div className = "row d-flex text-center">
-        <div className = "col"><h1><strong>Services For Your<span className = "text-primary"> Every Need</span></strong></h1></div >
-        <div className = "col" ><h3>Our design is a key factor why we are able to create better products as we a propper ideation, research,<br/> 
-        planning then create something on a blank piece of paper which stands out and is minimal.</h3></div >
+        <div className = "col"><h1
+        ><strong>Your End-to-End <span className = "text-primary">Technology Partner</span></strong></h1></div >
+        <div className = "col" ><h3>We are your extended team who keeps digitizing your business and moves the software development and marketing process quickly to exponentially grow your business 
+            by introducing latest innovations, reducing management time and increasing efficiency.</h3></div >
     </div>
 )
 

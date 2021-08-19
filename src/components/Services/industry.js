@@ -11,8 +11,8 @@ function Industry(){
             </div>
             <div className = "title-industry text-center">
                 <div className = "col  "><h1><strong>Industries We Serve</strong></h1></div >
-                <div className = "col-industry" ><h3>Our design is a key factor why we are able to create better products as we a propper ideation, research,<br/> 
-                    planning then create something on a blank piece of paper which stands out and is minimal.</h3></div >
+                <div className = "col-industry" ><h3>Your search for end-to-end technology partner ends here. Our services address all of your business needs and processes,<br/> 
+                enabling us to generate higher productivity, faster resolutions and reduced costs.</h3></div >
             </div>
             <div className ="d-flex list-items">
                     <div className = "item" >

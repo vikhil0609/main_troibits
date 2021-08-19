@@ -39,9 +39,6 @@ ReactDOM.render(
               </Route>
 
             </Switch>
-            <div className="Main-footer">
-              <Footer />
-            </div>
           </div> 
     </BrowserRouter>
   </div>

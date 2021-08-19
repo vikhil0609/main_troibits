@@ -1,7 +1,8 @@
 import React from 'react';
 import contactstyles from '../../assets/styles/contact/contact.module.css';
 import Email from '../../assets/images/media_library/emaillabel.png';
-import Phone from '../../assets/images/media_library/phonelabel.png'
+import Phone from '../../assets/images/media_library/phonelabel.png';
+import Footer from '../Footer';
 
 
 
@@ -9,7 +10,7 @@ function Contact(){
 
     console.log("in contact");
     return (
-        <div className = "row d-flex text-left">
+        <div className = "row d-flex text-left" id={contactstyles.heading}>
         <div className = {contactstyles.col}><h1><strong>Let’s Build Something
                         <br />Together!</strong></h1>
         </div >
@@ -21,6 +22,7 @@ function Contact(){
                 Let’s build interactive products for<br/> your idea and achieve brilliance together.</h3>
         <br /><br /><br />
         </div >
+
 
         <div className = {contactstyles.col} id={contactstyles.contactlast}>
             <img src={Email} />

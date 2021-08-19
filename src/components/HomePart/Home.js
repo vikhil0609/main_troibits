@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../assets/styles/homepart/home.css';
 
+
 import Cube      from './HomePart/Cube';
 import Services    from './HomePart/Services';
 import Efficient from './HomePart/Efficient';
@@ -44,13 +45,14 @@ class Home extends Component {
             <div className="home">
                 <div className="home-content subpart-content">
                     <div className="left-string home-part">
-                        <div className="title">Mobile App and Game Design</div>
+                        <div className="title">Mobile App Development<br /> & Digital Development</div>
+             
                       
                         <div className="int-line"></div>
                         <div className="description pro-thin">
-                           Our design is a key factor why we are able to create better products as we do proper ideation, research, planning then create something on a blank piece of paperwhich stands out and is minimal
+                        We are your extended team who keeps digitizing your business and moves the software development and marketing process quickly with latest innovations and smart app systems.
                         </div>
-                        <div className="chat-btn">Lets Chat!</div>
+                        <div className="chat-btn">lets chat</div>
                     </div>
                     <div className="right-webgl home-part" id="rightWebGL">
                         <div id="colorShadow"><img src={shadowBackImg} /></div>

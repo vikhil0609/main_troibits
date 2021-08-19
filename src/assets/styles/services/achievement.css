@@ -1,559 +1,546 @@
-.achievement-challenges{
-    position: relative;
-    display: block;
-    width: 100%;
-    margin: auto 0;
-    padding-top: 120px;
-    padding-bottom: 20px;
+.achievement-challenges {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: auto 0;
+  padding-top: 120px;
+  padding-bottom: 20px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.achievement-titl h1{
-    font-size: 3em;
+.achievement-titl h1 {
+  font-size: 3em;
 }
 
-.achievement-title{
-    margin-bottom: 40px;
+.achievement-title {
+  margin-bottom: 40px;
 }
 
-
-.achievement-challenges .notice{
-    width: 350px;
-    bottom: 0;
-    background-color: rgba(128, 128, 128, 0.048);
+.achievement-challenges .notice {
+  width: 350px;
+  bottom: 0;
+  background-color: rgba(128, 128, 128, 0.048);
 }
 
-.achievement-challenges .notice::after{
-    left: 85.6%;
-    top: 0.1px;
-    bottom: 0;
-    height: 80px;
-    border-bottom-color: #121212;
-    transform: rotate(180deg);
+.achievement-challenges .notice::after {
+  left: 85.6%;
+  top: 0.1px;
+  bottom: 0;
+  height: 80px;
+  border-bottom-color: #121212;
+  transform: rotate(180deg);
 }
 
-.achievement-challenges .carousel{
-    width: 95%;
-    min-height: 300px;
-    margin: 0 auto;
+.achievement-challenges .carousel {
+  width: 95%;
+  min-height: 300px;
+  margin: 0 auto;
 }
 
-.achievement-challenges .carousel .carousel-inner{
-    width: 85%;
-    min-height: 300px;
-    margin: 0 auto;
+.achievement-challenges .carousel .carousel-inner {
+  width: 85%;
+  min-height: 300px;
+  margin: 0 auto;
 }
-.achievement-challenges .carousel .carousel-inner .carousel-item{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    min-height: 300px;
-}
-
-.puppy img{
-    width: 600px;
-    height: 600px;
-    margin:  0 auto;
-    margin-right: 10px;
+.achievement-challenges .carousel .carousel-inner .carousel-item {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 300px;
 }
 
-.puppy .description{
-    width: 40%;
-    min-width: 250px;
-    flex-direction: column;
-    margin: auto 0;
-    margin-right: 40px;
+.puppy img {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  margin-right: 10px;
 }
 
-.title-desc{
-    color: #eee;
-    font-size: 30px;
-}
-.header-desc{
-    margin-bottom: 20px;
-}
-.sub-title{
-    font-size: 16px;
-    font-weight: 400;;
+.puppy .description {
+  width: 40%;
+  min-width: 250px;
+  flex-direction: column;
+  margin: auto 0;
+  margin-right: 40px;
 }
 
-.footer-desc .know a{
-    font-size: 1.1em;
-    font-weight: 600;
-    text-decoration: none;
-    color: #0A5DE9;
+.title-desc {
+  color: #eee;
+  font-size: 30px;
+}
+.header-desc {
+  margin-bottom: 20px;
+}
+.sub-title {
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.footer-desc .know  a i{
-    display: inline-block;
-    position: relative;
-    top: 6px;
-    color: #0A5DE9;
+.footer-desc .know a {
+  font-size: 1.1em;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0a5de9;
 }
 
-
-.footer-desc .know a:hover{
-    color: #fff ;
-} 
-
-.project{
-    width: 75%;
-    flex-direction: column;
-    margin: 0 auto;
+.footer-desc .know a i {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  color: #0a5de9;
 }
 
-
-.project .col:nth-child(2){
-    margin-top: -50px;
+.footer-desc .know a:hover {
+  color: #fff;
 }
 
-.project h2{
-    margin: 10px auto;
-    font-size: 1.8em;
-    font-weight: 500;
+.project {
+  width: 75%;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.project h4{
-    margin: 10px auto;
-    font-size: 1.1em;
-    color: rgb(153, 153, 152);
+.project .col:nth-child(2) {
+  margin-top: -50px;
 }
 
-.box{
-    width: 35%;
-    min-width: 350px;
-    height: 65px;
-    border: 3px solid  #0A5DE9;
-    margin: 0 auto;
-    margin-top: -100px;
-    justify-content: center;
-    box-shadow: 0 10px 20px rgba(38, 3, 165, 0.19), 0 6px 6px rgba(38, 3, 165,0.23);
+.project h2 {
+  margin: 10px auto;
+  font-size: 3em;
+  margin-bottom: 10%;
 }
 
-.box a{
-    font-size: 19px;
-    text-align: center;
-    text-decoration: none;
-    margin: auto 0;
+.project h4 {
+  margin: 10px auto;
+  font-size: 1.2em;
+  color: rgb(153, 153, 152);
+  margin-bottom: 7%;
 }
 
-.client{
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 230px;
+.box {
+  width: 35%;
+  min-width: 350px;
+  height: 65px;
+  border: 3px solid #0a5de9;
+  margin: 0 auto;
+  margin-top: -100px;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(38, 3, 165, 0.19),
+    0 6px 6px rgba(38, 3, 165, 0.23);
 }
 
-
-
-.client-title h1{
-    font-size: 3em;
-    font-weight: 600;
+.box a {
+  font-size: 19px;
+  text-align: center;
+  text-decoration: none;
+  margin: auto 0;
 }
 
-.client-title{
-    margin-bottom: 100px;
+.client {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 230px;
 }
 
-.inner-client{
-    width: 70%;
-    height: 250px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+.client-title h1 {
+  font-size: 3em;
+  font-weight: 600;
 }
 
-
-.client-item-box{
-    flex-direction: column;
-    justify-content: space-around;
-    height: 250px;
-    width: 90%;
-    margin: auto 0;
-    border: 0 solid;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    background: rgba(128, 128, 128, 0.148);
-    border-radius: 15px;
+.client-title {
+  margin-bottom: 100px;
 }
 
-.header-client-box{
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 50px;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 30px;
+.inner-client {
+  width: 70%;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
-.profile-client{
-    flex-direction: row;
-    margin: auto 0;
-    width: 40%;
+.client-item-box {
+  flex-direction: column;
+  justify-content: space-around;
+  height: 250px;
+  width: 90%;
+  margin: auto 0;
+  border: 0 solid;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background: rgba(128, 128, 128, 0.148);
+  border-radius: 15px;
 }
 
-.profile-client img{
-    width: 75px;
-    height:  75px;
-    border: 3px solid gray;
-    border-radius: 75px;
-}
-.profile-info{
-    margin-left: 25px;
-    height: 75px;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+.header-client-box {
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 50px;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
-.profile-info h5{
-    font-size: 19px;
-    font-weight: lighter
-}
-.profile-info h6{
-    font-size: 12px;
-}
- 
-.company-logo img{
-    width: 60px;
-    height: 60px;
+.profile-client {
+  flex-direction: row;
+  margin: auto 0;
+  width: 40%;
 }
 
-.body-client-box{
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
+.profile-client img {
+  width: 75px;
+  height: 75px;
+  border: 3px solid gray;
+  border-radius: 75px;
+}
+.profile-info {
+  margin-left: 25px;
+  height: 75px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.body-client-box .icon-utf{
-    width: 15%;
+.profile-info h5 {
+  font-size: 19px;
+  font-weight: lighter;
+}
+.profile-info h6 {
+  font-size: 12px;
 }
 
-.body-client-box .icon-utf h4{
-    font-size: 4vw;
+.company-logo img {
+  width: 60px;
+  height: 60px;
 }
 
-.body-client-box .client-word{
-    width: 85%;
+.body-client-box {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.footer-logo-ach{
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 140px;
+.body-client-box .icon-utf {
+  width: 15%;
 }
 
-.footer-logo-ach .image{
-    margin: 20px auto;
-    width: 17%;
-    display: flex;
-    justify-content: center;
+.body-client-box .icon-utf h4 {
+  font-size: 4vw;
 }
 
-.footer-logo-ach .image img{
-    width: 60px;
-    height: 60px;
-    margin:  0 auto;
+.body-client-box .client-word {
+  width: 85%;
 }
 
+.footer-logo-ach {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 140px;
+}
+
+.footer-logo-ach .image {
+  margin: 20px auto;
+  width: 17%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo-ach .image img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
 
 @media only screen and (max-width: 1345px) {
-    .puppy img {
-        height: 500px;
-        width: 500px;
-    }
+  .puppy img {
+    height: 500px;
+    width: 500px;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
-    .puppy img {
-        height: 450px;
-        width: 450px;
-    }
-    .client-item-box,
-    .carousel-client,
-    .inner-client{
-        height: 200px;
-    }
+  .puppy img {
+    height: 450px;
+    width: 450px;
+  }
+  .client-item-box,
+  .carousel-client,
+  .inner-client {
+    height: 200px;
+  }
 
-    .carousel-client .carousel-control-prev, 
-    .carousel-client .carousel-control-next{
-        width: 10%;
-        top: -50px
-    }
+  .carousel-client .carousel-control-prev,
+  .carousel-client .carousel-control-next {
+    width: 10%;
+    top: -50px;
+  }
 
-    .profile-client img{
-        width: 60px;
-        height: 60px;
-        border-radius: 60px;
-    }
+  .profile-client img {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+  }
 
-    .profile-info h5{
-        font-size: 17px;
-        font-weight: lighter
-    }
-    .profile-info h6{
-        font-size: 11px;
-    }
+  .profile-info h5 {
+    font-size: 17px;
+    font-weight: lighter;
+  }
+  .profile-info h6 {
+    font-size: 11px;
+  }
 
-    .body-client-box .client-word p {
-        font-size: 10px;
-    }
+  .body-client-box .client-word p {
+    font-size: 10px;
+  }
 }
 
 @media only screen and (max-width: 1040px) {
-    .puppy img {
-        margin: 0 auto;
-    }
+  .puppy img {
+    margin: 0 auto;
+  }
 }
-
 
 @media only screen and (max-width: 1012px) {
-    .achievement-titl h1{
-        font-size: 3.0em;
-    }
+  .achievement-titl h1 {
+    font-size: 3em;
+  }
 
-    .carousel-mockup .carousel-control-prev, 
-    .carousel-mockup .carousel-control-next{
-        width: 10%;
-        top: -300px
-    }
+  .carousel-mockup .carousel-control-prev,
+  .carousel-mockup .carousel-control-next {
+    width: 10%;
+    top: -300px;
+  }
 
-    .puppy img {
-        height: 500px;
-        width: 500px;
-    }
+  .puppy img {
+    height: 500px;
+    width: 500px;
+  }
 
-    .puppy .description {
-        width: 90%;
-    }
+  .puppy .description {
+    width: 90%;
+  }
 }
-
 
 @media only screen and (max-width: 970px) {
-    .project .box{
-        margin-top: 0;
-    }
+  .project .box {
+    margin-top: 0;
+  }
 }
 
-
 @media only screen and (max-width: 880px) {
-    .achievement-titl h1{
-        font-size: 2.8em;
-        margin-bottom: 40px;
-    }
-    .achievement-challenges .carousel{
-        width: 100%;
-    }
-    .puppy {
-        flex-direction: column;
-    }
-    .puppy .description {
-        width: 90%;
-    }
-    .puppy img {
-        height: 300px;
-    }
-    .project h2{
-        margin-bottom: 80px;
-    }
-    .profile-info h5{
-        font-size: 12px;
-    }
-    .profile-info h6{
-        font-size: 9px;
-    }
-    .client{
-        width: 100%;
-    }    
+  .achievement-titl h1 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+  }
+  .achievement-challenges .carousel {
+    width: 100%;
+  }
+  .puppy {
+    flex-direction: column;
+  }
+  .puppy .description {
+    width: 90%;
+  }
+  .puppy img {
+    height: 300px;
+  }
+  .project h2 {
+    margin-bottom: 80px;
+  }
+  .profile-info h5 {
+    font-size: 12px;
+  }
+  .profile-info h6 {
+    font-size: 9px;
+  }
+  .client {
+    width: 100%;
+  }
 
-    .client .carousel{
-        max-height: 150px;
-        width: 100%;
-    }
+  .client .carousel {
+    max-height: 150px;
+    width: 100%;
+  }
 
-    .inner-client{
-        max-height: 150px;
-    }
+  .inner-client {
+    max-height: 150px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    .profile-info {
-        flex-direction: column;
-        min-width: 250px;
-    }
+  .profile-info {
+    flex-direction: column;
+    min-width: 250px;
+  }
 
-    .client {
-        margin-top: 80px;
-    }
-    .client-item-box,
-    .carousel-client,
-    .inner-client{
-        height: 150px;
-    }
+  .client {
+    margin-top: 80px;
+  }
+  .client-item-box,
+  .carousel-client,
+  .inner-client {
+    height: 150px;
+  }
 
-    .carousel-client .carousel-control-prev, 
-    .carousel-client .carousel-control-next{
-        width: 5%;
-        top: -150px
-    }
+  .carousel-client .carousel-control-prev,
+  .carousel-client .carousel-control-next {
+    width: 5%;
+    top: -150px;
+  }
 
-    .profile-client img{
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-    }
+  .profile-client img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
 
-    .company-logo,
-    .profile-info{
-        margin-top: -10px;
-    }
+  .company-logo,
+  .profile-info {
+    margin-top: -10px;
+  }
 
-    .profile-info h5{
-        font-size: 14px;
-        font-weight: lighter
-    }
-    .profile-info h6{
-        font-size: 10px;
-    }
+  .profile-info h5 {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  .profile-info h6 {
+    font-size: 10px;
+  }
 
-    .body-client-box .client-word p {
-        font-size: 10px;
-    }
+  .body-client-box .client-word p {
+    font-size: 10px;
+  }
 
-    .footer-logo-ach{
-        width: 75%;
-        margin-top: 0;
-    }
+  .footer-logo-ach {
+    width: 75%;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-    .achievement-titl h1{
-        font-size: 2.5em;
-        margin-bottom: 40px;
-    }
+  .achievement-titl h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
-    .puppy img {
-        height: 200px;
-        margin: 5px 30px;
-    }
-    .puppy .description {
-        min-width: 250px;
-        margin: 0 auto;
-    }
+  .puppy img {
+    height: 200px;
+    margin: 5px 30px;
+  }
+  .puppy .description {
+    min-width: 250px;
+    margin: 0 auto;
+  }
 
-    .project h2{
-        font-size: 1.3em;
-    }
+  .project h2 {
+    font-size: 1.3em;
+  }
 
-    .project h4{
-        font-size: .9em;
-    }
+  .project h4 {
+    font-size: 0.9em;
+  }
 
-    .box{
-        min-width: 120px ;
-        width: 150px;
-    }
-    
-    .box a{
-        font-size: 14px;
-    }
+  .box {
+    min-width: 120px;
+    width: 150px;
+  }
+
+  .box a {
+    font-size: 14px;
+  }
 }
-
 
 @media only screen and (max-width: 600px) {
-    .achievement-titl {
-        width: 300px;
-        margin: 10px auto;
-    }
-    .client-title h1{
-        font-size: 2em;
-    }
-    .achievement-titl h1{
-        font-size: 2.2em;        
-    }
-    .achievement-challenges .carousel{
-        width: 100%;
-    }
-    .puppy .description {
-        width: 90%;
-        padding: 30px;
-    }
-    .profile-client img{
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-    }
-    .profile-info{
-        margin-left: 5px;
-        height: 55px;
-    }
+  .achievement-titl {
+    width: 300px;
+    margin: 10px auto;
+  }
+  .client-title h1 {
+    font-size: 2em;
+  }
+  .achievement-titl h1 {
+    font-size: 2.2em;
+  }
+  .achievement-challenges .carousel {
+    width: 100%;
+  }
+  .puppy .description {
+    width: 90%;
+    padding: 30px;
+  }
+  .profile-client img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  .profile-info {
+    margin-left: 5px;
+    height: 55px;
+  }
 
-    .footer-logo-ach .image img{
-        width: 30px;
-        height: 30px;
-    }
+  .footer-logo-ach .image img {
+    width: 30px;
+    height: 30px;
+  }
 
-    .company-logo,
-    .profile-info,
-    .profile-client img
-    {
-        margin-top: -30px;
-    }
+  .company-logo,
+  .profile-info,
+  .profile-client img {
+    margin-top: -30px;
+  }
 
-    .footer-logo-ach{
-        margin-top: -60px;
-    }
+  .footer-logo-ach {
+    margin-top: -60px;
+  }
 }
-
 
 @media only screen and (max-width: 500px) {
-    .carousel-control-prev .carousel-control-prev-icon, 
-    .carousel-control-next .carousel-control-next-icon{
-        width: 15px;
-        height: 15px;
-    }
-    .carousel-mockup .carousel-control-prev, 
-    .carousel-mockup .carousel-control-next{
-        width: 5%;
-        top: -400px
-    }
+  .carousel-control-prev .carousel-control-prev-icon,
+  .carousel-control-next .carousel-control-next-icon {
+    width: 15px;
+    height: 15px;
+  }
+  .carousel-mockup .carousel-control-prev,
+  .carousel-mockup .carousel-control-next {
+    width: 5%;
+    top: -400px;
+  }
 }
 
-
 @media only screen and (max-width: 400px) {
-    .achievement-titl h1{
-        font-size: 2em;        
-    }
-    .client-title h1{
-        font-size: 1.8em;
-    }
+  .achievement-titl h1 {
+    font-size: 2em;
+  }
+  .client-title h1 {
+    font-size: 1.8em;
+  }
 }
 
 @media only screen and (max-width: 320px) {
-    .achievement-titl h1{
-        font-size: 1.8em;        
-    }
+  .achievement-titl h1 {
+    font-size: 1.8em;
+  }
 
-    .company-logo img{
-        width: 30px;
-        height: 30px;
-    }
+  .company-logo img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-
 @media only screen and (max-width: 260px) {
-    .company-logo img{
-        display: none;
-    }
+  .company-logo img {
+    display: none;
+  }
 }

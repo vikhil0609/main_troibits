@@ -10,6 +10,7 @@ import DropMessage from '../components/Services/drop-message';
 import TabSlider from '../components/Services/tabSlider';
 import Sidebar from "../components/sidebar";
 import '../assets/styles/services/index.css';
+import Footer from "../components/Footer"
 
 class Services extends React.Component {
 
@@ -104,6 +105,9 @@ class Services extends React.Component {
                 <div className = "drop-message">
                     <DropMessage/>
                 </div>
+            <div className="Main-footer">
+              <Footer />
+            </div>
             </div>
         )
     }

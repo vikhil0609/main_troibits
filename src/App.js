@@ -5,6 +5,7 @@ import * as THREE from 'three';
 import OrbitControls from 'three-orbitcontrols';
 import FBXLoader from 'three-fbxloader-offical';
 
+
 import './App.css';
 
 import Home      from './components/HomePart/Home';
@@ -306,6 +307,10 @@ class App extends Component {
           <Intro />
           <Contact />
           <Map />
+
+          <div className="Main-footer">
+              <Footer />
+            </div>
         </div> 
 
         <div className="loading">
