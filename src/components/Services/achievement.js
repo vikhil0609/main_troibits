@@ -28,11 +28,13 @@ function Achievement(){
                             </div>
                             <div className = "body-desc" >
                                 <p className = "text-secondary w-80">
-                                    El día de ayer, 28 de septiembre, por la tarde, los servicios de Microsoft, incluidos Teams, 
-                                    y Office 365, 
-                                    presentaron fallas. Usuarios de diversos países, entre ellos México, Australia, Brasil
-                                    Estados Unidos y Reino Unido señalaron a través de diversos medios que no podían 
-                                    acceder a varias de las.
+                                    Bit7Pay is a Cryptocurrency Wallet & Exchange to store
+                                    Buy and Sell Bitcoin, Ethereum, Ripple,Bitcoin Gold and keep
+                                    all all other Cryptocurrencies safe. Download Bit7Pay on your mobile and 
+                                    get your account verified within hours to make your first investment
+                                    . We made an easy to use interface that allows users to quickly make 
+                                    the transactions with no latency. Troibits helped Bit7Pay to run its 
+                                    cloud servers on the latest hardware available today.
                                 </p>
                             </div>
                             <div className = "footer-desc">
@@ -51,15 +53,16 @@ function Achievement(){
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>
                 </a>
+        
             </div>
             <div className = "project">
                 <div className = "row d-flex text-center">
                 <div className = "col"><h2>Advancing beyond your expectations</h2></div >
-                <div className = "col" ><h4>Smart UI and intuitive design is our forte. We customise it for you after proper ideation, research, planning and create something on a blank,<br/> 
+                <div className = "col" ><h4>Smart UI and intuitive design is our forte. We customise it for you after proper ideation, research, planning and create something on a blank,
                 canvas which stands out, is minimal and uniquely crafted for your business.</h4></div >
                 </div>
                 <div className = "box d-flex">
-                    <NavLink to = "#" className = "variant text-primary">Explore More Project</NavLink>
+                    <NavLink to = "/work" className = "variant text-primary">Explore More Project</NavLink>
                 </div>
             </div>
             <div className = "client">

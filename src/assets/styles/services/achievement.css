@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   width: 100%;
-  margin: auto 0;
+  margin-left: 0%;
   padding-top: 120px;
   padding-bottom: 20px;
 }
@@ -98,8 +98,7 @@ a {
 }
 
 .project {
-  width: 75%;
-  flex-direction: column;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -109,25 +108,19 @@ a {
 }
 
 .project h2 {
-  margin: 10px auto;
-  font-size: 3em;
-  margin-bottom: 10%;
+  font-size: 2.5em;
 }
 
 .project h4 {
   margin: 10px auto;
-  font-size: 1.2em;
+  font-size: 1em;
   color: rgb(153, 153, 152);
   margin-bottom: 7%;
 }
 
-.box {
-  width: 35%;
-  min-width: 350px;
-  height: 65px;
+.project .box {
   border: 3px solid #0a5de9;
   margin: 0 auto;
-  margin-top: -100px;
   justify-content: center;
   box-shadow: 0 10px 20px rgba(38, 3, 165, 0.19),
     0 6px 6px rgba(38, 3, 165, 0.23);
@@ -355,7 +348,9 @@ a {
     height: 300px;
   }
   .project h2 {
+    margin-top: 10%;
     margin-bottom: 80px;
+    font-size: 2.2em;
   }
   .profile-info h5 {
     font-size: 12px;
@@ -408,6 +403,12 @@ a {
   .profile-info {
     margin-top: -10px;
   }
+  .project h2 {
+    font-size: 2em;
+  }
+  .project h4 {
+    font-size: 1em;
+  }
 
   .profile-info h5 {
     font-size: 14px;
@@ -432,6 +433,13 @@ a {
     font-size: 2.5em;
     margin-bottom: 40px;
   }
+  .project h2 {
+    font-size: 1.8em;
+    margin-bottom: 10%;
+  }
+  .project h4 {
+    font-size: 0.8em;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -445,10 +453,11 @@ a {
   }
 
   .project h2 {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 
   .project h4 {
+    margin-top: 10%;
     font-size: 0.9em;
   }
 
@@ -531,6 +540,9 @@ a {
 @media only screen and (max-width: 320px) {
   .achievement-titl h1 {
     font-size: 1.8em;
+  }
+  .project h4 {
+    margin-top: 20%;
   }
 
   .company-logo img {

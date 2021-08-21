@@ -1,7 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import logoImg from '../../assets/images/logo.png';
-import '../../assets/styles/services/list-item.css';
+import '../../assets/styles/services/list-item.scss';
 
 function ListItem (props){
     const {isPositionFixed, isCarousel, isStatic, estatico, isSticky} = props;
@@ -31,15 +31,12 @@ function ListItem (props){
                 </div>
                 <div className = "footer d-flex">
                     <div className ="d-flex nav">
-                        <NavLink className = "nav-Link" to = "#">Strategy Planning</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Market Analysis</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Product Reasearch</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Company Creation</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Funding Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Legal Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Infrastructure Setuo</NavLink>
-                        <NavLink className = "nav-Link" to = "#">HR Support</NavLink>
-                    </div>
+                        <NavLink className = "nav-Link" to = "#"><span id="text">Strategy Planning</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Pitch Deck</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>B2B,B2C Marketing</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>ROI Management</span></NavLink>
+                        
+                        </div>
                     <div className = "know">
                         <NavLink to={"#"}>Know more <i className="material-icons">keyboard_arrow_right</i></NavLink>
                     </div>
@@ -67,14 +64,10 @@ function ListItem (props){
                 </div>
                 <div className = "footer d-flex">
                     <div className ="d-flex nav">
-                        <NavLink className = "nav-Link" to = "#">Strategy Planning</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Market Analysis</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Product Reasearch</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Company Creation</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Funding Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Legal Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Infrastructure Setuo</NavLink>
-                        <NavLink className = "nav-Link" to = "#">HR Support</NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Logo and Corporate Identity</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Branding and Marketing Media</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Web and Mobile App Design</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Animation and Graphics</span></NavLink>
                     </div>
                     <div className = "know">
                         <NavLink to={"#"}>Know more <i className="material-icons">keyboard_arrow_right</i></NavLink>
@@ -103,14 +96,10 @@ function ListItem (props){
                 </div>
                 <div className = "footer d-flex">
                     <div className ="d-flex nav">
-                        <NavLink className = "nav-Link" to = "#">Strategy Planning</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Market Analysis</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Product Reasearch</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Company Creation</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Funding Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Legal Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Infrastructure Setuo</NavLink>
-                        <NavLink className = "nav-Link" to = "#">HR Support</NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Android App Development</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>iOS App Development</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Hybrid App Development</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Flutter and SaaS</span></NavLink>
                     </div>
                     <div className = "know">
                         <NavLink to={"#"}>Know more <i className="material-icons">keyboard_arrow_right</i></NavLink>
@@ -119,7 +108,7 @@ function ListItem (props){
             </div>
             <div className = {`list-item tab-content  py-3 px-3 px-sm-0 d-flex ${isPositionFixed && !isCarousel ? ` carou`: isStatic ? ` stat` : ``}`} id="d">
                 <div className = 'header-list d-flex'>
-                    <div className = 'col title'><h1>Web Development</h1>
+                    <div className = 'col title'><h1>Web App Development</h1>
                     <div className = "bara"></div>
                     </div>
                     <div className = "col icon"><img src = {logoImg}/></div>
@@ -139,14 +128,10 @@ function ListItem (props){
                 </div>
                 <div className = "footer d-flex">
                     <div className ="d-flex nav">
-                        <NavLink className = "nav-Link" to = "#">Strategy Planning</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Market Analysis</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Product Reasearch</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Company Creation</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Funding Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Legal Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Infrastructure Setuo</NavLink>
-                        <NavLink className = "nav-Link" to = "#">HR Support</NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>React, Angular and Vue Js</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Wordpress, Woo-commerce, SEO</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>CMS and Admin Web Apps</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Marketing Ready Websites</span></NavLink>
                     </div>
                     <div className = "know">
                         <NavLink to={"#"}>Know more <i className="material-icons">keyboard_arrow_right</i></NavLink>
@@ -176,14 +161,10 @@ function ListItem (props){
                 </div>
                 <div className = "footer d-flex">
                     <div className ="d-flex nav">
-                        <NavLink className = "nav-Link" to = "#">Strategy Planning</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Market Analysis</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Product Reasearch</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Company Creation</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Funding Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Legal Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Infrastructure Setuo</NavLink>
-                        <NavLink className = "nav-Link" to = "#">HR Support</NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>CMS, CRM and POS Systems</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Sales and Inventory Management</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Logistics and Team Management</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>E-Commerce and SaaS Systems</span></NavLink>
                     </div>
                     <div className = "know">
                         <NavLink to={"#"}>Know more <i className="material-icons">keyboard_arrow_right</i></NavLink>
@@ -213,14 +194,10 @@ function ListItem (props){
                 </div>
                 <div className = "footer d-flex">
                     <div className ="d-flex nav">
-                        <NavLink className = "nav-Link" to = "#">Strategy Planning</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Market Analysis</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Product Reasearch</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Company Creation</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Funding Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Legal Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Infrastructure Setuo</NavLink>
-                        <NavLink className = "nav-Link" to = "#">HR Support</NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>AI, AR, VR and ML</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>I.O.T and Connected Hardware</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Intelligent Automation</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Robotics and Drone Tech</span></NavLink>
                     </div>
                     <div className = "know">
                         <NavLink to={"#"}>Know more <i className="material-icons">keyboard_arrow_right</i></NavLink>
@@ -247,14 +224,10 @@ function ListItem (props){
                 </div>
                 <div className = "footer d-flex">
                     <div className ="d-flex nav">
-                        <NavLink className = "nav-Link" to = "#">Strategy Planning</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Market Analysis</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Product Reasearch</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Company Creation</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Funding Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Legal Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Infrastructure Setuo</NavLink>
-                        <NavLink className = "nav-Link" to = "#">HR Support</NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Digital Marketing Campaigns</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Media and Video Production</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Social Media Marketing and PR</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>PPC and Search Engine Marketing</span></NavLink>
                     </div>
                     <div className = "know">
                         <NavLink to={"#"}>Know more <i className="material-icons">keyboard_arrow_right</i></NavLink>
@@ -262,14 +235,14 @@ function ListItem (props){
                 </div>
             </div>
             <div className = {`list-item tab-content  py-3 px-3 px-sm-0 d-flex ${isPositionFixed && !isCarousel ? ` carou`: isStatic ? ` stat` : ``}`} id="h">
-                <div className = 'header-list d-flex'>
+                <div className = 'header-list d-flex' id="software">
                     <div className = 'col title'><h1>Software Maintenance</h1>
                     <div className = "bara"></div>
                     </div>
                     <div className = "col icon"><img src = {logoImg}/></div>
     
                 </div>
-                <div className = "body-list">
+                <div className = "body-list" >
                     <p>
                     Our on demand application and software management services help in 
                     maintaining your enterprise software and apps and we consistently 
@@ -282,14 +255,10 @@ function ListItem (props){
                 </div>
                 <div className = "footer d-flex">
                     <div className ="d-flex nav">
-                        <NavLink className = "nav-Link" to = "#">Strategy Planning</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Market Analysis</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Product Reasearch</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Company Creation</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Funding Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Legal Support</NavLink>
-                        <NavLink className = "nav-Link" to = "#">Infrastructure Setuo</NavLink>
-                        <NavLink className = "nav-Link" to = "#">HR Support</NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Adaptive Enhancements</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Software Release Management</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Server Migration and Updates</span></NavLink>
+                        <NavLink className = "nav-Link" to = "#"><span>Performance Improvements</span></NavLink>
                     </div>
                     <div className = "know">
                         <NavLink to={"#"}>Know more <i className="material-icons">keyboard_arrow_right</i></NavLink>

@@ -11,11 +11,11 @@
 }
 
 #workmain h1 {
-  font-size: 3.4em;
+  font-size: 3em;
 }
 
 #workmain h6 {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #ffffff;
   margin-bottom: 10%;
 }
@@ -77,7 +77,10 @@
     margin-top: 15%;
   }
   #workmain h1 {
-    font-size: 3em;
+    font-size: 2.5em;
+  }
+  #workmain h6 {
+    font-size: 0.9em;
   }
   br {
     display: none;
@@ -85,10 +88,10 @@
 }
 
 @media only screen and (max-width: 803px) {
-  #workmain h1,
-  h6 {
+  #workmain h1 {
     font-size: 2.1em;
   }
+
   #worklast {
     margin-top: 10%;
   }
@@ -104,14 +107,14 @@
 
 @media only screen and (max-width: 657px) {
   .start {
-    margin-left: -3%;
-    margin-right: -4%;
+    margin-left: 7%;
+    margin-right: 5%;
   }
   #workmain h1 {
-    font-size: 1.7em;
+    font-size: 2em;
   }
   #workmain h6 {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   #Worklast h2 {
@@ -123,14 +126,14 @@
 @media only screen and (max-width: 450px) {
   .start {
     margin-top: 20%;
-    margin-left: -8%;
-    margin-right: -6.5%;
+    margin-left: 7%;
+    margin-right: 2%;
   }
   #workmain h1 {
     font-size: 1.4em;
   }
   #workmain h6 {
-    font-size: 1em;
+    font-size: 0.7em;
   }
 
   #Worklast h2 {

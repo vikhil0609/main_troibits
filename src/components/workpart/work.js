@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/styles/work/work.css'
+import contactstyle from  '../../assets/styles/work/work.module.css'
 import Android from '../../assets/images/media_library/Group-977.png'
 import Logistics from '../../assets/images/media_library/Group-978.png'
 import Yolo from '../../assets/images/media_library/Group-979.png'
@@ -11,13 +11,15 @@ import BluePaisa from '../../assets/images/media_library/Group-984.png'
 import Gamerz from '../../assets/images/media_library/Group-985.png'
 import '../../assets/styles/header.scss'
 
+
+
 function Work(){
     return(
-        <div className="start" >
-           <div className = "col" id="workmain"><h1><strong>We <span style={{color:"#0a5de9" }}>Create </span>
+        <div className={contactstyle.start} >
+           <div className = {contactstyle.col} id={contactstyle.workmain}><h1><strong>We <span style={{color:"#0a5de9" }}>Create </span>
                                      Websites and Apps</strong></h1>
             </div>
-            <div className="col" id="workmain">
+            <div className={contactstyle.col} id={contactstyle.workmain}>
                 <h6>
                 Our design is a key factor why we are able to create better products as we do a proper research 
                 and planning before ideations <br />
@@ -25,52 +27,52 @@ function Work(){
                 </h6>
                 <br/> <br/>
 
-            <div className="" id="row">
-               <div className="WorkColumn">
-                    <img src={Android} id="Image" />
+            <div className="" id={contactstyle.row}>
+               <div className={contactstyle.WorkColumn}>
+                    <img src={Android} id={contactstyle.Image} />
                </div>
-               <div className="WorkColumn">
-                    <img src={Logistics} id="Image"/>
+               <div className={contactstyle.WorkColumn}>
+                    <img src={Logistics} id={contactstyle.Image} />
                </div> 
-               <div className="WorkColumn">
-                    <img src={Yolo} id="Image"/>
+               <div className={contactstyle.WorkColumn}>
+                    <img src={Yolo} id={contactstyle.Image}/>
                </div>  
             </div> 
            
-            <div className="" id="row">
-                <div className="WorkColumn">
-                        <img src={CaptainThug} id="Image" />
+            <div className="" id={contactstyle.row}>
+                <div className={contactstyle.WorkColumn}>
+                        <img src={CaptainThug} id={contactstyle.Image} />
                 </div>
-                <div className="WorkColumn">
-                        <img src={Excursify} id="Image"/>
+                <div className={contactstyle.WorkColumn}>
+                        <img src={Excursify} id={contactstyle.Image}/>
                 </div> 
-                <div className="WorkColumn">
-                        <img src={CoinKarts} id="Image"/>
+                <div className={contactstyle.WorkColumn}>
+                        <img src={CoinKarts} id={contactstyle.Image}/>
                </div> 
             </div>
 
-            <div className="" id="row">
-                <div className="WorkColumn">
-                        <img src={Hospitals} id="Image"/>
+            <div className="" id={contactstyle.row}>
+                <div className={contactstyle.WorkColumn}>
+                        <img src={Hospitals} id={contactstyle.Image}/>
                 </div>
-                <div className="WorkColumn">
-                        <img src={BluePaisa} id="Image"/>
+                <div className={contactstyle.WorkColumn}>
+                        <img src={BluePaisa} id={contactstyle.Image}/>
                 </div> 
-                <div className="WorkColumn" >
-                    <img src={Gamerz} id="Image"/>
+                <div className={contactstyle.WorkColumn} >
+                    <img src={Gamerz} id={contactstyle.Image}/>
                </div> 
             </div>
             </div>
 
-            <div className="col" id="Worklast">
+            <div className={contactstyle.col} id={contactstyle.Worklast}>
                 <h2 style={{color:"white"}}>
                     Want us to craft well designed apps and digitally transform<br/> your business?  
                 </h2>
             </div>
 
-            <div className="col">
+            <div className={contactstyle.col}>
             <a href="/contact"> 
-                <button className="btn">
+                <button className={contactstyle.btn}>
                     Drop us a message
                 </button>
                 </a>

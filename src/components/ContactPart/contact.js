@@ -11,8 +11,8 @@ function Contact(){
     console.log("in contact");
     return (
         <div className = "row d-flex text-left" id={contactstyles.heading}>
-        <div className = {contactstyles.col}><h1><strong>Let’s Build Something
-                        <br />Together!</strong></h1>
+        <div className = {contactstyles.col}><h1><strong>Let’s Build Something 
+                        <br /> Together!</strong></h1>
         </div >
         <div  className={contactstyles.col} >
             <div className={contactstyles.contactRect}>

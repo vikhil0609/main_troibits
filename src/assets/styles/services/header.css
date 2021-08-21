@@ -2,28 +2,25 @@
   flex-direction: column;
   position: relative;
   min-height: 200px;
-  margin-top: 160px;
-  margin-bottom: 80px;
+  margin-top: 15%;
+  margin-bottom: 0%;
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.bara {
-  margin-top: 0%;
-}
 .row .col h1 {
   font-size: 3em;
 }
 
 .row .col h3 {
-  font-size: 1.2em;
-  font-weight: 400;
+  font-size: 1.05em;
+  color: grey;
   margin: 0;
 }
 
 @media only screen and (max-width: 1160px) {
   .row .col h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .row .col h3 {
     font-size: 1.3em;
@@ -33,10 +30,10 @@
 
 @media only screen and (max-width: 1030px) {
   .row .col h1 {
-    font-size: 2.8em;
+    font-size: 2.5em;
   }
   .row .col h3 {
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0;
   }
 }
@@ -44,29 +41,44 @@
 @media only screen and (max-width: 970px) {
   .row {
     margin-bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .row .col h1 {
-    font-size: 2.6em;
+    font-size: 2.4em;
   }
   .row .col h3 {
-    font-size: 1.1em;
+    font-size: 0.9em;
     margin: 0;
   }
 }
 
 @media only screen and (max-width: 880px) {
   .row {
-    margin-top: 80px;
+    margin-top: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .row .col h1 {
+    font-size: 1.9em;
+    padding-bottom: 0px;
+  }
+  .row .col h3 {
+    font-size: 0.9em;
+    margin-top: 0px;
   }
 }
 
 @media only screen and (max-width: 840px) {
+  .row {
+    margin-left: 1%;
+    margin-right: 2%;
+  }
   .row .col h1 {
     font-size: 2em;
   }
   .row .col h3 {
-    font-size: 1em;
-    margin: 0 40px;
+    font-size: 0.8em;
   }
 
   .row .col h1 span {
@@ -75,8 +87,12 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .row {
+    margin-left: 1%;
+    margin-right: 2%;
+  }
   .row .col h1 {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
   .row {
     margin-top: 100px;

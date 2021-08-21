@@ -5,6 +5,11 @@ import partnerSkypeImg    from '../../assets/images/partner-skype.png';
 import partnerHpImg       from '../../assets/images/partner-hp.png';
 import partnerIntelImg    from '../../assets/images/partner-intel.png';
 import partnerNikeImg     from '../../assets/images/partner-nike.png';
+import DesignImg from '../../assets/images/media_library/Group-1173.png'
+import WebImg from '../../assets/images/media_library/Group-1172.png'
+import MobileImg from '../../assets/images/media_library/Group-1184.png'
+import NextImg from '../../assets/images/media_library/Group-1185.png'
+
 
 class Technology extends Component{
 
@@ -14,6 +19,7 @@ class Technology extends Component{
             active : "design",
             count: 0
         }
+
         this.addActiveClass = this.addActiveClass.bind(this);
         this.setIncrementCount = this.setIncrementCount.bind(this);
         this.setDecrementCount = this.setDecrementCount.bind(this);
@@ -111,95 +117,18 @@ class Technology extends Component{
             }
           {
               this.state.active === "design" ? (
-                <div  className = "table-tech d-flex" >
-                <div className = "image d-flex ">
-                    <img src = {partnerHpImg}/>
-                <   span className = "caption">Lorem Ipsum</span>
-
+                <div id="design" >
+                    <img src={DesignImg} />
                 </div>
-                <div className = "image">
-                    <img src = {partnerIntelImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerNikeImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerSkypeImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerIntelImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerNikeImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerSkypeImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-          </div>
               ): this.state.active === "web" ? (
-                <div id = "design" className = "table-tech d-flex" >
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
+                <div id="design" >
+                    <img src={WebImg} />
                 </div>
-                <div className = "image">
-                    <img src = {partnerIntelImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerNikeImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerSkypeImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-          </div>
+    
               ):this.state.active === "mobile" ? (
-                <div id = "design" className = "table-tech d-flex" >
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
+                <div id="design" >
+                    <img src={MobileImg} />
                 </div>
-                <div className = "image">
-                    <img src = {partnerIntelImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerNikeImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerSkypeImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-          </div>
               ) : this.state.active === "devops" ? (
                 <div id = "design" className = "table-tech d-flex" >
                 <div className = "image">
@@ -247,28 +176,9 @@ class Technology extends Component{
                 </div>
           </div>
               ) : this.state.active === "nextgettech" ? (
-                <div id = "design" className = "table-tech d-flex" >
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
+                <div id="design" >
+                    <img src={NextImg} />
                 </div>
-                <div className = "image">
-                    <img src = {partnerIntelImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerNikeImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerSkypeImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                    <span className = "caption">Lorem Ipsum</span>
-                </div>
-          </div>
               ) : null
           }
         </div>
