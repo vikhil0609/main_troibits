@@ -7,8 +7,13 @@ import partnerIntelImg    from '../../assets/images/partner-intel.png';
 import partnerNikeImg     from '../../assets/images/partner-nike.png';
 import Leo   from '../../assets/images/lio.jpg';
 import '../../assets/styles/services/achievement.css';
+import group1 from '../../assets/images/media_library/groupasda.png';
 
 function Achievement(){
+    function clicked(){
+        document.getElementsByClassName("text-primary");
+    }
+
     return(
         <div className = "achievement-challenges">
             <div className="notice top-tri tri-part">
@@ -69,15 +74,15 @@ function Achievement(){
                 <div className = "client-title text-center">
                     <div className = "col"><strong><h1>Our Clients Love Us</h1></strong></div >
                 </div>
-                <div id="carouselExampleControls" className="carousel  carousel-client slide" data-ride="carousel">
+                <div id="carouselExampleControls"  className="carousel  carousel-client slide" data-ride="carousel">
                 <div className=" inner-client">
                     <div className="d-flex client-item-box active">
                         <div className = "header-client-box d-flex">
                             <div className = "profile-client d-flex">
                                 <img src = {Leo}/>
                                 <div className = "profile-info">
-                                    <h5>Daniel Fisher</h5>
-                                    <h6 className = "text-primary">Art Director At intel</h6>
+                                    <h5>Lorenzo Zamorano</h5>
+                                    <h6 className = "text-primary">Manage at Yolo</h6>
                                 </div>
                             </div>
                             <div className = "company-logo">
@@ -85,18 +90,15 @@ function Achievement(){
                             </div>
                         </div>
                         <div className = "body-client-box d-flex" >
-                            <div className = "icon-utf"><h4>&#10077;</h4></div>
                             <div className = "client-word">
                                 <p>
-                                    El día de ayer, 28 de septiembre, por la tarde, los servicios de Microsoft, incluidos Teams, 
-                                    y Office 365, 
-                                    presentaron fallas..
+                                    &#10077; Tarun made pixel perfect designs for yolo cabs &#10078;
                                 </p>
                             </div>
                         </div>
                    </div>
                 </div>
-                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <a className="carousel-control-prev" onClick={clicked} href="#carouselExampleControls" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="sr-only">Previous</span>
                 </a>
@@ -107,36 +109,9 @@ function Achievement(){
             </div>
             </div>
             <div className = "footer-logo-ach">
-            <div className = "image">
-                    <img src = {partnerIntelImg}/>
-                </div>
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                </div>
-                <div className = "image">
-                    <img src = {partnerNikeImg}/>
-                </div>
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                </div>
-                <div className = "image">
-                    <img src = {partnerSkypeImg}/>
-                </div>
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                </div>
-                <div className = "image">
-                    <img src = {partnerIntelImg}/>
-                </div>
-                <div className = "image">
-                    <img src = {partnerNikeImg}/>
-                </div>
-                <div className = "image">
-                    <img src = {partnerSkypeImg}/>
-                </div>
-                <div className = "image">
-                    <img src = {partnerHpImg}/>
-                </div>
+            <div className="image">
+                <img src = {group1} />
+            </div>
             </div>
         </div>
     )

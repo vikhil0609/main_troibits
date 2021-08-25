@@ -33,14 +33,9 @@
   margin-left: 30px;
   font-size: 17px;
   width: 80%;
-  color: #f9f4fe;
 }
 .home-part.left-string .description.hide {
   display: none;
-}
-.chat-btn {
-  cursor: pointer;
-  margin: 10%;
 }
 
 /* .home-part.right-webgl{
@@ -110,12 +105,13 @@
   text-align: center;
   margin-left: 10%;
 }
-.home.port .home-part.left-string .chat-btn {
-  font-size: 18px;
+.home.port .home-part.left-string .home-btn1 {
+  font-size: 3em;
   width: 160px;
   height: 33px;
   margin-left: calc(50% - 80px);
   padding-top: 10px;
+  color: black;
 }
 
 @media only screen and (max-width: 1280px) {

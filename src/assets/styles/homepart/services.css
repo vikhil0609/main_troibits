@@ -58,7 +58,7 @@
   position: absolute;
   top: 30px;
   left: 30px;
-  width: 30px;
+  max-width: 100%;
 }
 .services-content .panels .panel-row .panel-item .panel-title {
   position: absolute;
@@ -88,6 +88,10 @@
 }
 .services-content .panels .panel-row .panel-item:hover .description {
   opacity: 1;
+}
+.services-content .panels .panel-row .panel-item:hover img {
+  transition: 2s;
+  display: none;
 }
 .services-content .panels .panel-row .panel-item.panel-item-chat {
   width: calc(25% - 22px);

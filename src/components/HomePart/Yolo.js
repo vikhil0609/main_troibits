@@ -10,6 +10,7 @@ import arrowLeftImg       from '../../assets/images/homeimages/arrow-left.png';
 import arrowRightImg      from '../../assets/images/homeimages/arrow-right.png';
 
 const Yolo = () => {
+    
     var selAppItem = "yolo";
 
     setTimeout(() => {
@@ -38,9 +39,12 @@ const Yolo = () => {
         <div className="yolo">
             <div className="yolo-content subpart-content">
                 <div className="yolo-part left-taxi">
+                    
                     <div className="notice-blue">Taxi booking</div>
                     <div className="yolo-title">YOLO</div>
-                    <div className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</div>
+                    <div className="description">The smartest way to get around
+                        <br/> Android | iOS
+                    </div>
                     <div className="arrow-part">
                         <img src={arrowLeftImg} onClick={() => clickArrow('left')}></img>
                         <img src={arrowRightImg} onClick={() => clickArrow('right')}></img>

@@ -2,6 +2,14 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import logoImg from '../../assets/images/logo.png';
 import '../../assets/styles/services/list-item.scss';
+import startup from '../../assets/images/AssetsTroibits/startup.PNG'
+import ProductDesign from '../../assets/images/AssetsTroibits/productDesign.PNG'
+import mobile from '../../assets/images/AssetsTroibits/mobile.PNG';
+import website from '../../assets/images/AssetsTroibits/website.PNG';
+import enterprise from '../../assets/images/AssetsTroibits/enterprise.PNG';
+import NextGen from '../../assets/images/AssetsTroibits/NextGen.PNG';
+import Growth from '../../assets/images/AssetsTroibits/Growth.PNG'
+import maintainance from '../../assets/images/AssetsTroibits/maintainance.PNG'
 
 function ListItem (props){
     const {isPositionFixed, isCarousel, isStatic, estatico, isSticky} = props;
@@ -15,7 +23,7 @@ function ListItem (props){
                     <div className = 'col title'><h1>Statup Accelerator</h1>
                     <div className = "bara"></div>
                     </div>
-                    <div className = "col icon"><img src = {logoImg}/></div>
+                    <div className = "col icon"><img src = {startup}/></div>
     
                 </div>
                 <div className = "body-list">
@@ -47,7 +55,7 @@ function ListItem (props){
                     <div className = 'col title'><h1>Product Design</h1>
                     <div className = "bara"></div>
                     </div>
-                    <div className = "col icon"><img src = {logoImg}/></div>
+                    <div className = "col icon"><img src = {ProductDesign}/></div>
     
                 </div>
                 <div className = "body-list">
@@ -77,9 +85,9 @@ function ListItem (props){
             <div className = {`list-item tab-content  py-3 px-3 px-sm-0 d-flex ${isPositionFixed && !isCarousel ? ` carou`: isStatic ? ` stat` : ``}`} id="c">
                 <div className = 'header-list d-flex'>
                     <div className = 'col title'><h1>Mobile App Development</h1>
-                    <div className = "bara"></div>
+                    <div className = "bara"> &nbsp; </div>
                     </div>
-                    <div className = "col icon"><img src = {logoImg}/></div>
+                    <div className = "col icon"><img src = {mobile}/></div>
     
                 </div>
                 <div className = "body-list">
@@ -111,7 +119,7 @@ function ListItem (props){
                     <div className = 'col title'><h1>Web App Development</h1>
                     <div className = "bara"></div>
                     </div>
-                    <div className = "col icon"><img src = {logoImg}/></div>
+                    <div className = "col icon"><img src = {website}/></div>
     
                 </div>
                 <div className = "body-list">
@@ -141,9 +149,9 @@ function ListItem (props){
             <div className = {`list-item tab-content  py-3 px-3 px-sm-0 d-flex ${isPositionFixed && !isCarousel ? ` carou`: isStatic ? ` stat` : ``}`} id="e">
                 <div className = 'header-list d-flex'>
                     <div className = 'col title'><h1>Enterprise App Development</h1>
-                    <div className = "bara"></div>
+                    <div className = "bara"> &nbsp; </div>
                     </div>
-                    <div className = "col icon"><img src = {logoImg}/></div>
+                    <div className = "col icon"><img src = {enterprise}/></div>
     
                 </div>
                 <div className = "body-list">
@@ -174,9 +182,9 @@ function ListItem (props){
             <div className = {`list-item tab-content  py-3 px-3 px-sm-0 d-flex ${isPositionFixed && !isCarousel ? ` carou`: isStatic ? ` stat` : ``}`} id="f">
                 <div className = 'header-list d-flex'>
                     <div className = 'col title  margin '><h1>Next Gen Technology</h1>
-                    <div className = "bara"></div>
+                    <div className = "bara"> &nbsp; </div>
                     </div>
-                    <div className = "col icon"><img src = {logoImg}/></div>
+                    <div className = "col icon"><img src = {NextGen}/></div>
     
                 </div>
                 <div className = "body-list">
@@ -207,9 +215,9 @@ function ListItem (props){
             <div className = {`list-item tab-content  py-3 px-3 px-sm-0 d-flex ${isPositionFixed && !isCarousel ? ` carou`: isStatic ? ` stat` : ``}`} id="g">
                 <div className = 'header-list d-flex'>
                     <div className = 'col title'><h1>Growth  Digital Marketing</h1>
-                    <div className = "bara"></div>
+                    <div className = "bara"> &nbsp; </div>
                     </div>
-                    <div className = "col icon"><img src = {logoImg}/></div>
+                    <div className = "col icon"><img src = {Growth}/></div>
     
                 </div>
                 <div className = "body-list">
@@ -239,7 +247,7 @@ function ListItem (props){
                     <div className = 'col title'><h1>Software Maintenance</h1>
                     <div className = "bara"></div>
                     </div>
-                    <div className = "col icon"><img src = {logoImg}/></div>
+                    <div className = "col icon"><img src = {maintainance}/></div>
     
                 </div>
                 <div className = "body-list" >

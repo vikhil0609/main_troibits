@@ -18,11 +18,9 @@ html {
   margin: 40px 0;
   flex-direction: column;
 }
-
 .list-item:nth-child(8) {
   margin-bottom: 240px;
 }
-
 .header-list {
   width: 100%;
   height: 150px;
@@ -57,20 +55,22 @@ html {
 
 .header-list .icon {
   display: flex;
+  margin-left: 10%;
   justify-content: center;
   padding-bottom: 40px;
 }
 
 .header-list .icon img {
-  width: 80px;
-  height: 80px;
+  padding-top: 10%;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 .body-list {
   width: 100%;
 }
 .body-list p {
-  margin-top: 20px;
+  margin-top: 5%;
   color: gray;
   font-size: 1em;
   width: 100%;
@@ -195,8 +195,8 @@ html {
   }
 
   .header-list .icon img {
-    width: 60px;
-    height: 60px;
+    max-width: 100%;
+    height: auto;
   }
 
   .header-list .icon {
@@ -254,8 +254,8 @@ html {
   }
 
   .header-list .icon img {
-    width: 40px;
-    height: 40px;
+    max-width: 100%;
+    height: auto;
   }
 
   .header-list .icon {
@@ -279,8 +279,8 @@ html {
   }
 
   .header-list .icon img {
-    width: 30px;
-    height: 30px;
+    max-width: 100%;
+    height: auto;
   }
 
   .body-list p {

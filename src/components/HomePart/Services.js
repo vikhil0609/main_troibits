@@ -10,7 +10,14 @@ import panelLogoMaintence from '../../assets/images/homeimages/panel-logo-mainte
 import panelLogoMarket    from '../../assets/images/homeimages/panel-logo-market.png';
 import panelLogoFuning    from '../../assets/images/homeimages/panel-logo-funing.png';
 import panelLogoChat      from '../../assets/images/homeimages/panel-logo-chat.png';
-import Growth from "../../assets/images/media_library/growth-Marketing.png"
+import Growth from "../../assets/images/media_library/growth-Marketing.png";
+import Startup from '../../assets/images/AssetsTroibits/startup.PNG';
+import enterprise from '../../assets/images/AssetsTroibits/enterprise.PNG';
+import website from '../../assets/images/AssetsTroibits/website.PNG';
+import mobile from '../../assets/images/AssetsTroibits/mobile.PNG';
+import maintainance from '../../assets/images/AssetsTroibits/maintainance.PNG';
+import nextgen from '../../assets/images/AssetsTroibits/NextGen.PNG';
+import productdesign from '../../assets/images/AssetsTroibits/productDesign.PNG';
 
 const Services = () => {
     return (
@@ -21,17 +28,17 @@ const Services = () => {
          <div className="content-wrap">
             <div className="services-content subpart-content">
                <div className="main-title">What we do?</div>
-               <div className="main-description"><h6>Your search for end-to-end technology partner ends here. 
+               <div className="main-description"><h6 style={{color:"white"}}>Your search for end-to-end technology partner ends here. 
                We are digitallytransforming businesses with our well designed, easy to use smart apps.</h6>
                </div>
                <div className="panels">
                   <div className="panel-row">
                      <div className="panel-item">
                         <div className="panel-logo">
-                           <img src={panelLogoStrategy}></img>
+                           <img src={Startup}></img>
                         </div>
                         <div className="panel-title">
-                           <div>StartUp</div> <div>&nbsp;Acceleration</div>
+                           <div>StartUp</div> <div>Acceleration</div>
                         </div>
                         <div className="description">
                         Strategic Planning, Pitch Deck, B2B, B2C Plans, IT Consultation and ROI Management
@@ -39,10 +46,11 @@ const Services = () => {
                      </div>
                      <div className="panel-item">
                         <div className="panel-logo">
-                           <img src={panelLogoBrand}></img>
+             
+                           <img src={mobile}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Mobile App</div> <div>&nbsp; Development</div>
+                           <div>Mobile App</div> <div>Development</div>
                         </div>
                         <div className="description">
                         Android App Development, iOS App Development, Hybrid App Development, Flutter and SaaS
@@ -50,10 +58,10 @@ const Services = () => {
                      </div>
                      <div className="panel-item">
                         <div className="panel-logo">
-                           <img src={panelLogoApp}></img>
+                           <img src={website}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Website</div> <div>&nbsp; Development</div>
+                           <div>Website</div> <div>Development</div>
                            {/*meny mation */}
                         </div>
                         <div className="description">
@@ -62,10 +70,10 @@ const Services = () => {
                      </div>
                      <div className="panel-item">
                         <div className="panel-logo">
-                           <img src={panelLogoProduct}></img>
+                           <img src={enterprise}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Enterprise App</div> <div>&nbsp; Development</div>
+                           <div>Enterprise App</div> <div>Development</div>
                         </div>
                         <div className="description">
                         Sales, Logistics, Inventory and Employee Management, CRM , CMS , POS and SaaS
@@ -75,10 +83,10 @@ const Services = () => {
                   <div className="panel-row">
                      <div className="panel-item">
                         <div className="panel-logo">
-                           <img src={panelLogoMaintence}></img>
+                           <img src={productdesign}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Product Design</div> <div>&nbsp; and Branding</div>
+                           <div>Product Design</div> <div>and Branding</div>
                         </div>
                         <div className="description">
                         Branding, Corporate Identity, Logo, Marketing Media, Web and Mobile App Design
@@ -86,10 +94,10 @@ const Services = () => {
                      </div>
                      <div className="panel-item">
                         <div className="panel-logo">
-                           <img src={panelLogoMarket}></img>
+                           <img src={nextgen}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Next Gen</div> <div>&nbsp; Technology</div>
+                           <div>Next Gen</div> <div>Technology</div>
                         </div>
                         <div className="description">
                         AI, AR, VR, ML, Connected Hardware, I.O.T, Automation and Drone Tech
@@ -100,7 +108,7 @@ const Services = () => {
                            <img src={Growth}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Growth</div> <div>&nbsp; Marketing</div>
+                           <div>Growth</div> <div>Marketing</div>
                         </div>
                         <div className="description">
                         Digital Marketing Campaigns, Media and Video Production, Social Media Marketing and PR
@@ -108,10 +116,10 @@ const Services = () => {
                      </div>
                      <div className="panel-item">
                         <div className="panel-logo">
-                           <img src={panelLogoFuning}></img>
+                           <img src={maintainance}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Maintainance</div> <div>&nbsp; and support</div>
+                           <div>Maintainance</div> <div>and support</div>
                         </div>
                         <div className="description">
                         Adaptive Enhancements, Updates, Features and Release Management, Server Migration

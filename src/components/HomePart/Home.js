@@ -42,17 +42,18 @@ class Home extends Component {
 
     render() {
         return (
+
             <div className="home">
                 <div className="home-content subpart-content">
                     <div className="left-string home-part">
                         <div className="title">Mobile App Development<br /> & Digital Development</div>
-             
-                      
                         <div className="int-line"></div>
                         <div className="description pro-thin">
                         We are your extended team who keeps digitizing your business and moves the software development and marketing process quickly with latest innovations and smart app systems.
                         </div>
-                        <div className="chat-btn">lets chat</div>
+                        <div className="home-btn1">
+                                Lets Chat!
+                       </div>
                     </div>
                     <div className="right-webgl home-part" id="rightWebGL">
                         <div id="colorShadow"><img src={shadowBackImg} /></div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../../assets/styles/home.css';
+import '../../../assets/styles/homepart/home.css';
 
 import shadowBackImg from '../../../assets/images/homeimages/shadow-back.png';
 import cubeBackImg from '../../../assets/images/homeimages/cube-back.png';
