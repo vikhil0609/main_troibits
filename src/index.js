@@ -39,6 +39,7 @@ ReactDOM.render(
               </Route>
 
             </Switch>
+            <Footer />
           </div> 
     </BrowserRouter>
   </div>

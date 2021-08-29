@@ -24,16 +24,16 @@
 }
 
 #contactlast {
-  margin-top: 80px;
+  margin-top: 20px;
   max-width: 100%;
   height: auto;
-  padding: 0%;
+  padding-bottom: 5%;
 }
 
 #contactlast h6 {
   color: white;
   font-size: 1.2em;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 
 #contactlast :hover {
