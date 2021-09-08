@@ -1,20 +1,21 @@
 .CompanyHeading {
-  margin-top: 15%;
-  margin-left: 10%;
+  margin-top: 13%;
+  margin-left: 12%;
   margin-right: 10%;
   margin-bottom: 10%;
 }
 .Companyleft {
   float: left;
-  width: 60%;
+  width: 65%;
 }
 .Companyleft h4 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 .Companyleft p {
-  font-size: 1.2em;
+  font-size: 1em;
   padding-top: 2%;
-  word-spacing: 1%;
+  line-height: 28px;
+  font-weight: 550;
 }
 .Companyright {
   margin-top: 10%;
@@ -23,10 +24,12 @@
   padding-right: 5%;
 }
 .Companyright h1 {
-  font-size: 3em;
+  font-size: 2em;
+  padding-bottom: 1%;
 }
 .Companyright h5 {
-  padding-top: 1%;
+  padding-top: 0.7%;
+  font-size: 1.2em;
 }
 
 .CompanyBtn1 {
@@ -52,14 +55,17 @@
 }
 .Companymid1 h6 {
   padding-top: 1%;
-  font-size: 1.2em;
+  font-size: 1em;
+  line-height: 25px;
+  color: #989898;
 }
 .Companymid2 {
   text-align: center;
   display: flex;
 }
 .Companymid2 h6 {
-  font-size: 1.3em;
+  font-size: 1em;
+  line-height: 25px;
   padding-left: 5%;
 }
 #image {
@@ -115,8 +121,9 @@
 }
 h6 {
   font-size: 1.1em;
-  color: #666666;
+  color: #989898;
   margin-bottom: 5%;
+  padding-right: 10%;
 }
 
 .Companyulist {

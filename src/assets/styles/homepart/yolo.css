@@ -1,10 +1,11 @@
 .yolo {
   width: 100%;
-  height: 1200px;
   background-color: #000000;
   position: relative;
   padding-bottom: 200px;
+  height: 1000px;
 }
+
 .yolo-content {
   position: relative;
 }
@@ -81,7 +82,7 @@
   border-left: 2px solid #0061d0;
   color: #dddddd;
 }
-.yolo .yolo-projectsheadline {
+.yolo-projectsheadline {
   font-size: 55px;
   color: #fbfbfb;
   float: right;
@@ -93,7 +94,7 @@
   font-family: "ProximaNovaRegular";
 }
 
-.yolo .yolo-projects-subheading {
+.yolo-projects-subheading {
   font-size: 18px;
   display: block;
 
@@ -107,7 +108,7 @@
 
   font-family: "ProximaNovaRegular";
 }
-.yolo .yolo-projects-button {
+.yolo-projects-button {
   font-size: 20px;
   display: block;
   border: 2px solid #095de8;
@@ -122,12 +123,12 @@
 
   font-family: "ProximaNovaRegular";
 }
-.yolo .yolo-footer {
+.yolo-footer {
   width: 200px;
   background-color: #1b1b1b;
   z-index: 1;
 }
-.yolo .yolo-footer::before {
+.yolo-footer::before {
   right: 100%;
   border-top-color: #1b1b1b;
 }
@@ -258,9 +259,6 @@
   }
 }
 @media only screen and (max-width: 960px) {
-  .yolo {
-    height: 600px;
-  }
   .yolo .left-taxi .description {
     display: none;
   }
@@ -279,9 +277,6 @@
   }
 }
 @media only screen and (max-width: 600px) {
-  .yolo {
-    height: 850px;
-  }
   .yolo .yolo-content {
     padding-top: 30px;
   }

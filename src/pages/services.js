@@ -8,8 +8,6 @@ import Achievement from '../components/Services/achievement';
 import Reason from '../components/Services/reason';
 import DropMessage from '../components/Services/drop-message';
 import TabSlider from '../components/Services/tabSlider';
-import Sidebar from "../components/sidebar";
-import '../assets/styles/services/index.css';
 import Footer from "../components/Footer"
 
 class Services extends React.Component {
@@ -82,12 +80,6 @@ class Services extends React.Component {
         const {isCarousel, isPositionFixed, isSidebar, isStatic, selected} = this.state;
         return(
             <div className = "page-wrapper">
-                {
-                    isSidebar ? (
-                        <Sidebar/>
-                    ):
-                    ""
-                }
                 <HeaderServices/>
                 {isCarousel ? <TabSlider/> : <Navbar isStatic = {isStatic} selected = {selected} isPositionFixed = {isPositionFixed}/>}
                 <div className = "industry">

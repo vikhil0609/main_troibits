@@ -23,6 +23,7 @@
   background-color: blue;
   float: right;
   margin-top: 1%;
+  margin-right: 10%;
 }
 
 .reason-mid1 .reason1-sub {
@@ -35,6 +36,7 @@
 
 .reason1-sub h4 {
   font-size: 1.5em;
+  margin-right: 10%;
 }
 
 .reason1-sub h6 {
@@ -109,7 +111,7 @@
     margin-left: 5%;
   }
   .reason-mid1 {
-    width: 100%;
+    width: 105%;
   }
   .reason-mid1 img {
     max-width: 100%;

@@ -3,13 +3,13 @@ import React, {Fragment} from "react";
 import ReactDOM from "react-dom";
 import registerServiceWorker from './registerServiceWorker';
 import App from './App';
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 import HomePage from "./pages/home";
 import Services from './pages/services'
-import Header from './components/Header'
+import Header from './components/HomePart/Header'
 import Contact from "./components/ContactPart/contact";
 import Work from "./components/workpart/work";
 import Company from "./components/company/company";
-import "./assets/styles/header.scss"
 import './index.css'
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Footer from "./components/HomePart/Footer";
@@ -20,7 +20,7 @@ ReactDOM.render(
             <Header />
             <Switch>
               <Route exact path="/" >
-                <App />
+                <App style={{backgroundColor:"grey"}}/>
               </Route>
               <Route exact path="/home">
                 <App />
@@ -39,7 +39,6 @@ ReactDOM.render(
               </Route>
 
             </Switch>
-            <Footer />
           </div> 
     </BrowserRouter>
   </div>

@@ -8,9 +8,9 @@ import yoloPhoneImg       from '../../assets/images/homeimages/yolo-phone.png'; 
 import yoloPhoneColorImg  from '../../assets/images/homeimages/yolo-phone-color.png'; //  phone-frame
 import arrowLeftImg       from '../../assets/images/homeimages/arrow-left.png';
 import arrowRightImg      from '../../assets/images/homeimages/arrow-right.png';
+import bit7pay from '../../assets/images/homeimages/bit7pay.png';
 
 const Yolo = () => {
-    
     var selAppItem = "yolo";
 
     setTimeout(() => {
@@ -21,6 +21,24 @@ const Yolo = () => {
         selAppItem = str;
         jQuery(".app-content-item").removeClass("active");
         jQuery(".app-content-"+str).addClass("active");
+        if (selAppItem == "yolo"){
+            jQuery("#yolo").css("display","block");
+            jQuery("#first-app").css("display","none");
+            jQuery("#third-app").css("display","none");
+        } 
+
+        else if (selAppItem == "first"){
+            jQuery("#yolo").css("display","none");
+            jQuery("#third-app").css("display","none");
+            jQuery("#first-app").css("display","block");
+        }
+
+        else if (selAppItem == "third"){
+            jQuery("#third-app").css("display","block");
+            jQuery("#first-app").css("display","none");
+            jQuery("#yolo").css("display","none");
+        }
+
     }
     function clickArrow(dir) {
         if (dir == "left") {
@@ -36,15 +54,13 @@ const Yolo = () => {
     }
 
     return (
-        <div className="yolo">
+        <div className="main">
+        <div className="yolo" id="yolo">
             <div className="yolo-content subpart-content">
                 <div className="yolo-part left-taxi">
-                    
                     <div className="notice-blue">Taxi booking</div>
                     <div className="yolo-title">YOLO</div>
-                    <div className="description">The smartest way to get around
-                        <br/> Android | iOS
-                    </div>
+                    <div className="description">The smartest way to get around</div>
                     <div className="arrow-part">
                         <img src={arrowLeftImg} onClick={() => clickArrow('left')}></img>
                         <img src={arrowRightImg} onClick={() => clickArrow('right')}></img>
@@ -57,21 +73,63 @@ const Yolo = () => {
                 <div className="yolo-part right-app">
                     <div className="app-title">App Showcase</div>
                     <div className="app-content">
-                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>First app</div>
+                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>Skylar</div>
                         <div className="app-content-item app-content-yolo" onClick={() => clickApp('yolo')}>Yolo</div>
-                        <div className="app-content-item app-content-third" onClick={() => clickApp('third')}>Third one</div>
+                        <div className="app-content-item app-content-third" onClick={() => clickApp('third')}>Bit7Pay</div>
                     </div>
                 </div>
             </div>
-
-            <div className="yolo-footer foot-tri tri-part"></div>
-
-               <div className="yolo-projectsheadline">Lorem Ipsum Lorem Ipsum Lorem</div>
-                 <div className="yolo-projects-subheading">Our design is a key factor why we are able to create better products as we do a proper ideation, research, planning then create something on a blank piece of paper which stands out and is minimal.</div>
-    <div className="yolo-projects-button">Explore More Projects</div>
-              
-            
-        </div>
+    </div>
+    <div className="yolo" id="first-app">
+    <div className="yolo-content subpart-content">
+                <div className="yolo-part left-taxi">
+                    <div className="yolo-title">Skylar</div>
+                    <div className="description">North India’s Biggest Poultry Group</div>
+                    <div className="arrow-part">
+                        <img src={arrowLeftImg} onClick={() => clickArrow('left')}></img>
+                        <img src={arrowRightImg} onClick={() => clickArrow('right')}></img>
+                    </div>
+                </div>
+                <div className="yolo-part center-img">
+                    <img className="yolo-cube-img" src={yoloCubeImg}></img>
+                    <img className="yolo-phone-img" src={yoloPhoneColorImg}></img>
+                </div>
+                <div className="yolo-part right-app">
+                    <div className="app-title">App Showcase</div>
+                    <div className="app-content">
+                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>skylar</div>
+                        <div className="app-content-item app-content-yolo" onClick={() => clickApp('yolo')}>Yolo</div>
+                        <div className="app-content-item app-content-third" onClick={() => clickApp('third')}>Bit7Pay</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <div className ="yolo" id="third-app">
+    <div className="yolo-content subpart-content">
+                <div className="yolo-part left-taxi">
+                    <div className="notice-blue">Cryptocurrency</div>
+                    <div className="yolo-title">Bit7Pay</div>
+                    <div className="description">Buy,Sell and Store multiple cryptocurrencies</div>
+                    <div className="arrow-part">
+                        <img src={arrowLeftImg} onClick={() => clickArrow('left')}></img>
+                        <img src={arrowRightImg} onClick={() => clickArrow('right')}></img>
+                    </div>
+                </div>
+                <div className="yolo-part center-img">
+                    <img className="yolo-phone-img" src={bit7pay}></img>
+                </div>
+                <div className="yolo-part right-app">
+                    <div className="app-title">App Showcase</div>
+                    <div className="app-content">
+                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>skylar</div>
+                        <div className="app-content-item app-content-yolo" onClick={() => clickApp('yolo')}>Yolo</div>
+                        <div className="app-content-item app-content-third" onClick={() => clickApp('third')}>Bit7Pay</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
     );
 }
 

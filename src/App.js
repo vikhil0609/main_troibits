@@ -311,10 +311,6 @@ class App extends Component {
               <Footer />
             </div>
         </div> 
-
-        <div className="loading">
-          <img src={loadingImg} />
-        </div>
       </div>
     );
   }

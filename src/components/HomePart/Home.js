@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../../assets/styles/homepart/home.css';
 
-
 import Cube      from './HomePart/Cube';
 import Services    from './HomePart/Services';
 import Efficient from './HomePart/Efficient';
@@ -10,6 +9,7 @@ import Yolo      from './HomePart/Yolo';
 import Contact   from './Contact';
 import Map       from './Map';
 import Footer    from './Footer';
+
 
 
 import shadowBackImg from '../../assets/images/homeimages/shadow-back.png';
@@ -38,22 +38,22 @@ class Home extends Component {
     //     setTimeout(() => {
     //         this.props.callSetBase({length:this.state.length, thick:this.state.thick, height:this.state.height, vase:this.state.vase});
     //     }, 0);
+
     // }
 
     render() {
+        
         return (
-
             <div className="home">
                 <div className="home-content subpart-content">
                     <div className="left-string home-part">
-                        <div className="title">Mobile App Development<br /> & Digital Development</div>
+                        <div className="title">Mobile App Development <br /> & Digital Transformation</div>
+                      
                         <div className="int-line"></div>
-                        <div className="description pro-thin">
-                        We are your extended team who keeps digitizing your business and moves the software development and marketing process quickly with latest innovations and smart app systems.
+                        <div className="description pro-thin" style={{"color":"lightgrey"}}>
+                        We are your extended team who keeps digitizing your business and moves the software development and marketing process quickly with latest innovations and smart app systems. 
+                        <div className="chat-btn">Lets Chat!</div>
                         </div>
-                        <div className="home-btn1">
-                                Lets Chat!
-                       </div>
                     </div>
                     <div className="right-webgl home-part" id="rightWebGL">
                         <div id="colorShadow"><img src={shadowBackImg} /></div>

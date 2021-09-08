@@ -1,8 +1,10 @@
 .home {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   min-height: 600px;
+  padding-left: 5%;
+  margin-top: 5%;
 }
 .home-part {
   float: left;
@@ -14,30 +16,40 @@
   margin-top: calc(50vh - 350px);
 }
 .home-part.left-string .title {
-  font-size: 43px;
-  margin-top: 70px;
-  margin-left: 30px;
+  font-size: 2.2em;
+  margin-left: 5%;
 }
 .home-part.left-string .success {
   font-size: 100px;
 }
 .home-part.left-string .int-line {
-  width: 110px;
-  margin-left: 30px;
-  margin-top: 8px;
-  height: 4px;
+  width: 17%;
+  margin-top: 1%;
+  margin-left: 5%;
+  height: 3px;
   background-color: #0072ff;
 }
 .home-part.left-string .description {
-  margin-top: 35px;
+  margin-top: 2%;
   margin-left: 30px;
-  font-size: 17px;
+  font-size: 1.2em;
   width: 80%;
-}
-.home-part.left-string .description.hide {
-  display: none;
+  line-height: 30px;
 }
 
+.home-part.left-string .description .chat-btn {
+  margin-top: 30px;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 0.8em;
+  padding-bottom: 40px;
+  margin-right: 10%;
+}
+
+.home-part.left-string .description .chat-btn :hover {
+  background-color: white;
+  color: black;
+}
 /* .home-part.right-webgl{
   height: 100vh;
   overflow: hidden;
@@ -57,7 +69,7 @@
   margin-left: 49px;
   margin-top: 25px;
 
-  background: radial-gradient(closest-side, #0061d0, #0f4080, #121212);
+  background: radial-gradient(closest-side, #0072ff, #0f4080, #121212);
 }
 #container img {
   width: 100%;
@@ -105,40 +117,40 @@
   text-align: center;
   margin-left: 10%;
 }
-.home.port .home-part.left-string .home-btn1 {
-  font-size: 3em;
+.home.port .home-part.left-string .chat-btn {
+  font-size: 18px;
   width: 160px;
   height: 33px;
   margin-left: calc(50% - 80px);
   padding-top: 10px;
-  color: black;
 }
 
 @media only screen and (max-width: 1280px) {
-  .home-part.left-string {
-    margin-top: calc(50vh - 270px);
+  .home {
+    margin-left: -8%;
   }
-  .home-part.left-string .title {
-    font-size: 30px;
-  }
-  .home-part.left-string .success {
-    font-size: 90px;
-  }
-  .home-part.left-string .description {
-    font-size: 16px;
-  }
-  .home-part.left-string .chat-btn {
-    font-size: 20px;
-    width: 200px;
-    height: 35px;
-    padding-top: 13px;
-  }
+}
+s .home-part.left-string .title {
+  font-size: 30px;
+}
+.home-part.left-string .success {
+  font-size: 90px;
+}
+.home-part.left-string .description {
+  font-size: 16px;
+}
+.home-part.left-string .chat-btn {
+  font-size: 20px;
+  width: 200px;
+  height: 35px;
+  padding-top: 13px;
 }
 
 @media only screen and (max-width: 780px) {
-  .home-part.left-string {
-    margin-top: calc(50vh - 270px);
+  .home {
+    margin-top: -10%;
   }
+
   .home-part.left-string .title {
     font-size: 22px;
   }
@@ -155,27 +167,25 @@
 
 @media only screen and (max-width: 600px) {
   .home {
-    height: 1000px;
+    height: auto;
+    margin-top: 10%;
   }
   .home-part {
     position: absolute;
     width: 100%;
   }
-  .home-part.left-string .description {
-    display: none;
-  }
-  .home-part.right-webgl {
-    top: 100px;
-  }
   .home-part.left-string {
-    top: 560px;
-    width: 72%;
-    left: 14%;
+    top: 0px;
+    width: 100%;
   }
   .home-part.left-string .title {
-    font-size: 20px;
+    font-size: 2em;
   }
-  .home-part.left-string .success {
-    font-size: 60px;
+  .home-part.left-string .description {
+    font-size: 0.95em;
+    line-height: 25px;
+  }
+  .home-part.right-webgl {
+    display: none;
   }
 }
