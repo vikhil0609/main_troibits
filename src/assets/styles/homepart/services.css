@@ -132,22 +132,24 @@
   .services .content-wrap .services-content .panels .panel-row .panel-item {
     width: 45%;
   }
-
-  .services .content-wrap .services-content .main-description {
-    font-size: 1.3em;
+  .services .notice {
+    display: none;
   }
-  .services .content-wrap .services-content .panels .panel-row .panel-title {
-    padding-top: 5%;
-  }
-  .services
-    .content-wrap
-    .services-content
-    .panels
-    .panel-item:hover
-    .description {
-    padding-top: 1%;
-    margin-bottom: 10%;
-  }
+}
+.services .content-wrap .services-content .main-description {
+  font-size: 1.3em;
+}
+.services .content-wrap .services-content .panels .panel-row .panel-title {
+  padding-top: 5%;
+}
+.services
+  .content-wrap
+  .services-content
+  .panels
+  .panel-item:hover
+  .description {
+  padding-top: 1%;
+  margin-bottom: 10%;
 }
 
 @media screen and (max-width: 540px) {
