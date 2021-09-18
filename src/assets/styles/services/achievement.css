@@ -180,15 +180,15 @@ a {
 
 .profile-client {
   flex-direction: row;
-  margin: auto 0;
-  width: 40%;
+  width: 45%;
+  margin-left: 5%;
 }
 
 .profile-client img {
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 70px;
   border: 3px solid gray;
-  border-radius: 75px;
+  border-radius: 50%;
 }
 .profile-info {
   margin-left: 25px;

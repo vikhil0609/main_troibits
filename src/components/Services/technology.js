@@ -48,9 +48,6 @@ class Technology extends Component{
     render(){
         return(
         <div className = "tab-technology">
-            <div className="notice top-tri tri-part">
-                <div className="label d-none">Our Services</div>
-            </div>
             <div className = "title-tech text-center">
                 <div className = "col"><h1><strong>Our Fully Loaded Technology Stack</strong></h1></div >
             </div>

@@ -2,13 +2,13 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logoImg from '../assets/images/logo.png';
 import  '../assets/styles/header.scss';
+import jQuery from 'jquery';
 
-
-class Header extends React.Component {
+class HomeHeader extends React.Component {
    constructor(props){
       super(props);
       this.state = {
-          active : "home",
+          active :"home" ,
           isPositionFixed: false,
           isCarousel : false
       }
@@ -62,6 +62,8 @@ class Header extends React.Component {
   handleScroll(event) {
       let scrollTop = event.srcElement.body.scrollTop,
           itemTranslate = Math.min(0, scrollTop/3 - 60);
+      
+      jQuery("#Scroll").css("background-color","#0b0b0b")
 
        if(event.srcElement.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
           this.setState({isPositionFixed: true});
@@ -81,7 +83,7 @@ class Header extends React.Component {
       if(!isCarousel)
          
          return (
-            <div className= {`header-wrap${this.state.isPositionFixed ? ' fixed' : ""}`} onScroll = {this.handleScroll}>
+            <div id="Scroll" style={{backgroundColor:"transparent"}} className= {`header-wrap${this.state.isPositionFixed ? ' fixed' : ""}`} onScroll = {this.handleScroll}>
                <div className="header">
                   <div className="left-logo">
                      <img className="logo-img" src={logoImg} />
@@ -97,13 +99,13 @@ class Header extends React.Component {
                            <div id = "services" className={`circle ${this.state.active === "services" ? "" : " d-none"}`}></div>
                      </NavLink>
             
-                     <NavLink id = "about" className= {`menuA-item ${this.state.active === "about" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/about">
+                     <NavLink id = "company" className= {`menuA-item ${this.state.active === "company" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/company">
                            Company
-                           <div id = "about" className={`circle ${this.state.active === "about" ? "" : " d-none"}`}></div>
+                           <div id = "company" className={`circle ${this.state.active === "company" ? "" : " d-none"}`}></div>
                      </NavLink>
-                     <NavLink id = "portfolio" className= {`menuA-item ${this.state.active === "work" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/work">
+                     <NavLink id = "work" className= {`menuA-item ${this.state.active === "work" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/work">
                            Work
-                           <div id = "portfolio" className={`circle ${this.state.active === "work" ? "" : " d-none"}`}></div>
+                           <div id = "work" className={`circle ${this.state.active === "work" ? "" : " d-none"}`}></div>
                      </NavLink>
                      <NavLink id = "contact" className= {`menuA-item ${this.state.active === "contact" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/contact">
                            Contact
@@ -118,4 +120,4 @@ class Header extends React.Component {
    }
 }
  
-export default Header;
+export default HomeHeader;

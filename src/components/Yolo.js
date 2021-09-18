@@ -47,7 +47,6 @@ const Yolo = () => {
                     </div>
                 </div>
                 <div className="yolo-part center-img">
-                    <img className="yolo-cube-img" src={yoloCubeImg}></img>
                     <img className="yolo-phone-img" src={yoloPhoneColorImg}></img>
                 </div>
                 <div className="yolo-part right-app">

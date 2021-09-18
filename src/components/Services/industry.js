@@ -6,9 +6,6 @@ import '../../assets/styles/services/industry.css';
 function Industry(){
     return(
         <div className = "col indu ">
-            <div className="notice top-tri tri-part">
-                <div className="label d-none">Our Services</div>
-            </div>
             <div className = "title-industry text-center">
                 <div className = "col  "><h1><strong>Industries We Serve</strong></h1></div >
                 <div className = "col-industry" ><h3>Your search for end-to-end technology partner ends here. Our services address all of your business needs and processes,<br/> 

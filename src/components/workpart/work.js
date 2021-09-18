@@ -13,7 +13,8 @@ import '../../assets/styles/header.scss'
 
 
 
-function Work(){
+class Work extends React.Component{
+    render(){
     return(
         <div className={contactstyle.start} >
            <div className = {contactstyle.col} id={contactstyle.workmain}><h1><strong>We <span style={{color:"#0a5de9" }}>Create </span>
@@ -79,6 +80,7 @@ function Work(){
             </div>
         </div>
     );
+}
 }
 
 export default Work;

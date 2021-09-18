@@ -1,17 +1,6 @@
 import React, { Component } from 'react';
 import '../../assets/styles/homepart/home.css';
 
-import Cube      from './HomePart/Cube';
-import Services    from './HomePart/Services';
-import Efficient from './HomePart/Efficient';
-import Intro     from './HomePart/Intro';
-import Yolo      from './HomePart/Yolo';
-import Contact   from './Contact';
-import Map       from './Map';
-import Footer    from './Footer';
-
-
-
 import shadowBackImg from '../../assets/images/homeimages/shadow-back.png';
 import cubeBackImg from '../../assets/images/homeimages/cube-back.png';
 

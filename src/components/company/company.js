@@ -8,7 +8,8 @@ import TechLogo from "../../assets/images/media_library/Group-491@2x-min.png"
 
 
 
-function Company(){
+class Company extends React.Component{
+    render(){
     return (
         <div className={styles.CompanyHead}>
             <div className={styles.CompanyHeading}>
@@ -126,6 +127,7 @@ function Company(){
             </div>
         </div>
     );
+}
 }
 
 export default Company;

@@ -5,8 +5,7 @@
 .start {
   margin-top: 15%;
   margin-right: 10%;
-  margin-left: 12%;
-
+  margin-left: 10%;
   text-align: center;
 }
 
@@ -16,8 +15,9 @@
 
 #workmain h6 {
   font-size: 1em;
-  color: #ffffff;
   margin-bottom: 10%;
+  line-height: 25px;
+  margin-left: 7%;
 }
 
 #row {
@@ -32,7 +32,8 @@
 #Worklast h2 {
   display: block;
   margin-top: 15%;
-  font-size: 1.7em;
+  font-size: 2.1em;
+  font-weight: bold;
 }
 
 #Image {
@@ -45,11 +46,13 @@
 }
 
 .btn {
-  margin-top: 3%;
-  margin-bottom: 10%;
+  transition: 0.5s;
+  margin-top: 4%;
   color: #0a5de9;
-  padding: 1%, 3%;
-  font-size: 3vh;
+  padding: 1.5%;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-size: 1em;
   background-color: transparent;
   text-align: center;
   border-radius: 0px;
@@ -57,7 +60,10 @@
 }
 
 .btn:hover {
+  transition: 0.5s;
   background-color: #0a5de9;
+  color: white;
+  box-shadow: 0 0 5px #0061d0;
 }
 
 @media only screen and (max-width: 1309px) {

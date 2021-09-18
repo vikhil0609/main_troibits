@@ -2,7 +2,6 @@
   width: 100%;
   background-color: #000000;
   position: relative;
-  padding-bottom: 200px;
   height: 1000px;
 }
 
@@ -31,13 +30,17 @@
   margin-top: 50px;
   width: 100%;
 }
-.yolo-content .left-taxi .arrow-part {
-  margin-top: 80px;
+.arrow-part {
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 15%;
+  z-index: 10;
 }
-.yolo-content .left-taxi .arrow-part img {
+.arrow-part img {
   width: 25px;
   margin-right: 40px;
   cursor: pointer;
+  position: relative;
 }
 .yolo-content .center-img {
   width: 50%;

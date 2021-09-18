@@ -42,6 +42,7 @@
 }
 
 #contactlast :hover {
+  transition: 1s;
   color: #0a5de9;
   font-size: 20px;
 }

@@ -4,6 +4,7 @@ import ListItem from './list-item';
 import '../../assets/styles/services/navbar.css';
 
 
+
 class  Navbar extends React.Component{
 
     constructor(props){
@@ -124,6 +125,7 @@ class  Navbar extends React.Component{
             posVal =  h.offsetTop + 360;
         document.documentElement.scrollTop = posVal;
     }
+
         
     render(){   
         const {selected, isSticky, isStatic} = this.state;
@@ -139,7 +141,7 @@ class  Navbar extends React.Component{
                                 id = "nav-product-tab"
                                 className = { `nav-item-bar ${selected === "nav-product-tab" ? ` actives`: ``}`}>
                                 <div id = "nav-product-tab" className="circle"></div>
-                                <span id = "nav-product-tab" >Product Design</span>
+                                <span  id = "nav-product-tab" >Product Design</span>
                             </div>
                             <div onClick = {this.handleClick}
                             id = "nav-mobile-tab" className = { `nav-item-bar ${selected === "nav-mobile-tab" ? ` actives`: ``}`}>

@@ -55,19 +55,18 @@ const Yolo = () => {
 
     return (
         <div className="main">
-        <div className="yolo" id="yolo">
+            <div className="arrow-part">
+                        <img src={arrowLeftImg} onClick={() => clickArrow('left')}></img>
+                        <img src={arrowRightImg} onClick={() => clickArrow('right')}></img>
+        </div>
+            <div className="yolo" id="yolo">
             <div className="yolo-content subpart-content">
                 <div className="yolo-part left-taxi">
                     <div className="notice-blue">Taxi booking</div>
                     <div className="yolo-title">YOLO</div>
                     <div className="description">The smartest way to get around</div>
-                    <div className="arrow-part">
-                        <img src={arrowLeftImg} onClick={() => clickArrow('left')}></img>
-                        <img src={arrowRightImg} onClick={() => clickArrow('right')}></img>
-                    </div>
                 </div>
                 <div className="yolo-part center-img">
-                    <img className="yolo-cube-img" src={yoloCubeImg}></img>
                     <img className="yolo-phone-img" src={yoloPhoneColorImg}></img>
                 </div>
                 <div className="yolo-part right-app">
@@ -83,15 +82,11 @@ const Yolo = () => {
     <div className="yolo" id="first-app">
     <div className="yolo-content subpart-content">
                 <div className="yolo-part left-taxi">
+                <div className="notice-blue">Taxi booking</div>
                     <div className="yolo-title">Skylar</div>
                     <div className="description">North India’s Biggest Poultry Group</div>
-                    <div className="arrow-part">
-                        <img src={arrowLeftImg} onClick={() => clickArrow('left')}></img>
-                        <img src={arrowRightImg} onClick={() => clickArrow('right')}></img>
-                    </div>
                 </div>
                 <div className="yolo-part center-img">
-                    <img className="yolo-cube-img" src={yoloCubeImg}></img>
                     <img className="yolo-phone-img" src={yoloPhoneColorImg}></img>
                 </div>
                 <div className="yolo-part right-app">
@@ -104,17 +99,12 @@ const Yolo = () => {
                 </div>
             </div>
     </div>
-    
     <div className ="yolo" id="third-app">
     <div className="yolo-content subpart-content">
                 <div className="yolo-part left-taxi">
                     <div className="notice-blue">Cryptocurrency</div>
                     <div className="yolo-title">Bit7Pay</div>
                     <div className="description">Buy,Sell and Store multiple cryptocurrencies</div>
-                    <div className="arrow-part">
-                        <img src={arrowLeftImg} onClick={() => clickArrow('left')}></img>
-                        <img src={arrowRightImg} onClick={() => clickArrow('right')}></img>
-                    </div>
                 </div>
                 <div className="yolo-part center-img">
                     <img className="yolo-phone-img" src={bit7pay}></img>

@@ -4,7 +4,6 @@ import * as THREE from 'three';
 import OrbitControls from 'three-orbitcontrols';
 import FBXLoader from 'three-fbxloader-offical';
 
-
 import './App.css';
 
 import Home      from './components/HomePart/Home';
@@ -298,8 +297,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="main-wrap">
+        <div className="main-wrap" style={{backgroundColor:"#0b0b0b"}}> 
+          <div>
           <Home />
+          </div>
           <Services />
           <Yolo />
           <Efficient />

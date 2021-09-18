@@ -28,6 +28,7 @@ class Services extends React.Component {
 
 
     componentDidMount() {
+        window.scrollTo(0, 0)
         window.addEventListener("resize", this.handleResize);
         window.addEventListener('scroll', this.handleScroll);
         this.handleResize();

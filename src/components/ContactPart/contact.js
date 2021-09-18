@@ -5,9 +5,8 @@ import Phone from '../../assets/images/media_library/phonelabel.png';
 import Footer from "../Footer";
 
 
-function Contact(){
-
-    console.log("in contact");
+class Contact extends React.Component{
+    render(){
     return (
         <div className = "row d-flex text-left" id={contactstyles.heading}>
         <div className = {contactstyles.col}><h1><strong>Let’s Build Something 
@@ -32,6 +31,7 @@ function Contact(){
         </div>
     </div>
     );
+}
 }
 
 export default Contact;

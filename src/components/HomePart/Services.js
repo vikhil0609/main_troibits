@@ -11,6 +11,7 @@ import maintainance from '../../assets/images/AssetsTroibits/maintainance.PNG';
 import nextgen from '../../assets/images/AssetsTroibits/NextGen.PNG';
 import productdesign from '../../assets/images/AssetsTroibits/productDesign.PNG';
 
+
 const Services = () => {
     return (
 
@@ -44,7 +45,7 @@ const Services = () => {
                            <img src={mobile}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Mobile App</div> <div>Development</div>
+                           <div>Mobile App</div><div>Development</div>
                         </div>
                         <div className="description">
                            
