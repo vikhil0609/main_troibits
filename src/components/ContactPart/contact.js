@@ -6,6 +6,12 @@ import Footer from "../Footer";
 
 
 class Contact extends React.Component{
+
+    componentDidMount(){
+        window.scrollTo(0,0);
+        window.addEventListener('load',window.scrollTo(10,10) )
+    }
+
     render(){
     return (
         <div className = "row d-flex text-left" id={contactstyles.heading}>

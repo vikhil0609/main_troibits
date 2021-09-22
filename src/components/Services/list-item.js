@@ -2,14 +2,15 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import logoImg from '../../assets/images/logo.png';
 import '../../assets/styles/services/list-item.scss';
-import startup from '../../assets/images/AssetsTroibits/startup.PNG'
-import ProductDesign from '../../assets/images/AssetsTroibits/productDesign.PNG'
-import mobile from '../../assets/images/AssetsTroibits/mobile.PNG';
-import website from '../../assets/images/AssetsTroibits/website.PNG';
-import enterprise from '../../assets/images/AssetsTroibits/enterprise.PNG';
-import NextGen from '../../assets/images/AssetsTroibits/NextGen.PNG';
-import Growth from '../../assets/images/AssetsTroibits/Growth.PNG'
-import maintainance from '../../assets/images/AssetsTroibits/maintainance.PNG'
+import Growth from "../../assets/images/serivces/growth.PNG"
+import startup from "../../assets/images/serivces/startup.PNG"
+import mobile from "../../assets/images/serivces/mobile.PNG"
+import website from "../../assets/images/serivces/website.PNG"
+import ProductDesign from "../../assets/images/serivces/product.PNG"
+import enterprise from "../../assets/images/serivces/enterprise.PNG"
+import maintainance from "../../assets/images/serivces/maintainance.PNG"
+import NextGen from "../../assets/images/serivces/nextgen.PNG"
+
 
 function ListItem (props){
     const {isPositionFixed, isCarousel, isStatic, estatico, isSticky} = props;

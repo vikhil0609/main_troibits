@@ -9796,6 +9796,11 @@
     "lodash.debounce" "^4.0.8"
     "resize-observer-polyfill" "^1.5.0"
 
+"react-use-effect@^0.0.1":
+  "integrity" "sha512-HCyEfSeDtm6ttSyTcitnx1s9qOf9XkWyXbz6L/nKc/yEvsrSGm1XCPyDPi/8cGg9VekIrQQ/2Gucj0id4HTHGQ=="
+  "resolved" "https://registry.npmjs.org/react-use-effect/-/react-use-effect-0.0.1.tgz"
+  "version" "0.0.1"
+
 "react@^0.14.0 || ^15.0.0 || ^16.0.0", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^0.14.0 || ^15.0.1 || ^16.0.0", "react@^15.5.4", "react@^15.7.0", "react@>= 16", "react@>=15":
   "integrity" "sha512-5/MMRYmpmM0sMTHGLossnJCrmXQIiJilD6y3YN3TzAwGFj6zdnMtFv6xmi65PHKRV+pehIHpT7oy67Sr6s9AHA=="
   "resolved" "https://registry.npmjs.org/react/-/react-15.7.0.tgz"

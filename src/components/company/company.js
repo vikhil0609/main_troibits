@@ -9,6 +9,16 @@ import TechLogo from "../../assets/images/media_library/Group-491@2x-min.png"
 
 
 class Company extends React.Component{
+
+    componentDidMount (){
+        window.scrollTo(0,0);
+        window.scrollTo({
+            top: 10,
+            left: 10,
+            behavior: 'smooth'
+          });
+    }
+
     render(){
     return (
         <div className={styles.CompanyHead}>

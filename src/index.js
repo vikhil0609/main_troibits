@@ -14,14 +14,12 @@ import './index.css'
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Footer from "./components/HomePart/Footer";
 import HomeHeader from "./components/HomePart/homeheader";
-import ScrollToTop from "./components/ScrollToTop";
-
+import ScrollToTop from "./components/ScrollToTop.js"
 
 ReactDOM.render(
   <div>
     <BrowserRouter>
         <div className="main-wrap d-flex">
-        <ScrollToTop />
             <Switch>
               <Route exact path="/" >
                 <div>
