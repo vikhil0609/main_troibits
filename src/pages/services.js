@@ -7,8 +7,9 @@ import Technology from '../components/Services/technology';
 import Achievement from '../components/Services/achievement';
 import Reason from '../components/Services/reason';
 import DropMessage from '../components/Services/drop-message';
-import TabSlider from '../components/Services/tabSlider';
+import Header from "../components/Header"
 import Footer from "../components/Footer"
+import TabSlider from '../components/Services/tabSlider';
 
 class Services extends React.Component {
 
@@ -82,7 +83,7 @@ class Services extends React.Component {
         return(
             <div className = "page-wrapper">
                 <HeaderServices/>
-                {isCarousel ? <TabSlider/> : <Navbar isStatic = {isStatic} selected = {selected} isPositionFixed = {isPositionFixed}/>}
+                {isCarousel ? <TabSlider /> : <Navbar isStatic = {isStatic} selected = {selected} isPositionFixed = {isPositionFixed}/>}
                 <div className = "industry">
                     <Industry/>
                 </div>

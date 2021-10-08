@@ -32,8 +32,8 @@
 }
 .arrow-part {
   position: absolute;
-  margin-top: 40%;
-  margin-left: 15%;
+  margin-top: calc(40% + 50px);
+  margin-left: calc(10% - 5px);
   z-index: 10;
 }
 .arrow-part img {
@@ -267,7 +267,7 @@
   }
   .yolo .right-app {
     margin-left: 0%;
-    margin-top: 80px;
+    margin-top: 10px;
   }
   .yolo .right-app .app-title {
     font-size: 20px;
@@ -283,6 +283,14 @@
   .yolo .yolo-content {
     padding-top: 30px;
   }
+
+  .arrow-part {
+    z-index: 999;
+    text-align: center;
+    margin-top: 140%;
+    margin-left: 40%;
+  }
+
   .yolo .right-app {
     display: none;
   }
@@ -305,9 +313,16 @@
   .yolo {
     height: 750px;
   }
+  .arrow-part {
+    margin-top: 145%;
+  }
 }
 @media only screen and (max-width: 400px) {
   .yolo {
     height: 650px;
+  }
+  .arrow-part {
+    margin-top: 160%;
+    margin-left: 36%;
   }
 }

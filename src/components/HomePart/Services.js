@@ -2,6 +2,7 @@ import React from 'react';
 import '../../assets/styles/homepart/services.css';
 import '../../assets/styles/homepart/common.css';
 
+
 import Growth from "../../assets/images/media_library/growth-Marketing.png";
 import Startup from '../../assets/images/AssetsTroibits/startup.PNG';
 import enterprise from '../../assets/images/AssetsTroibits/enterprise.PNG';
@@ -18,6 +19,7 @@ const Services = () => {
       <div className="services">
          <div className="notice top-tri tri-part">
             <div className="label">Our Services</div>
+            <span></span>
          </div>
          <div className="content-wrap">
             <div className="services-content subpart-content">

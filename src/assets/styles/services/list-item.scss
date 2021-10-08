@@ -18,9 +18,6 @@ html {
   margin: 40px 0;
   flex-direction: column;
 }
-.list-item:nth-child(8) {
-  margin-bottom: 240px;
-}
 .header-list {
   width: 100%;
   height: 150px;
@@ -123,10 +120,6 @@ html {
   position: relative;
   top: 6px;
   color: #0a5de9;
-}
-
-#software {
-  margin-top: 17%;
 }
 
 .footer .know a:hover {

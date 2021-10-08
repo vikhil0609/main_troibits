@@ -7,6 +7,57 @@
   padding-bottom: 20px;
 }
 
+.item-main {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-text p {
+  margin-top: 16px;
+  font-size: 1em;
+  color: #808080;
+}
+.item-main .mid div .sub-text {
+  padding-left: 10%;
+  margin-top: -8%;
+  margin-right: 18%;
+}
+
+.item-main .mid {
+  display: flex;
+  transition: 1s;
+  justify-content: space-around;
+}
+
+.item-main .mid div {
+  padding-top: 5%;
+}
+
+.item-main .mid img {
+  width: 45%;
+  margin-left: 5%;
+}
+.item-main .mid div .mid-title {
+  font-size: 1.5em;
+  margin-left: 10%;
+}
+
+.arrow {
+  padding-top: 25%;
+  position: relative;
+}
+
+.arrow img {
+  max-width: 100%;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -34,88 +85,25 @@ a {
   transform: rotate(180deg);
 }
 
-.achievement-challenges .carousel {
-  width: 95%;
-  min-height: 300px;
-  margin: 0 auto;
-}
-
-.achievement-challenges .carousel .carousel-inner {
-  width: 85%;
-  min-height: 300px;
-  margin: 0 auto;
-}
-.achievement-challenges .carousel .carousel-inner .carousel-item {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-height: 300px;
-}
-
-.puppy img {
-  width: 600px;
-  height: 600px;
-  margin: 0 auto;
-  margin-right: 10px;
-}
-
-.puppy .description {
-  width: 40%;
-  min-width: 250px;
-  flex-direction: column;
-  margin: auto 0;
-  margin-right: 40px;
-}
-
-.title-desc {
-  color: #eee;
-  font-size: 30px;
-}
-.header-desc {
-  margin-bottom: 20px;
-}
-.sub-title {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.footer-desc .know a {
-  font-size: 1.1em;
-  font-weight: 600;
-  text-decoration: none;
-  color: #0a5de9;
-}
-
-.footer-desc .know a i {
-  display: inline-block;
-  position: relative;
-  top: 6px;
-  color: #0a5de9;
-}
-
-.footer-desc .know a:hover {
-  color: #fff;
-}
-
 .project {
-  width: 100%;
+  width: 85%;
   margin: 0 auto;
   text-align: center;
 }
 
 .project .col:nth-child(2) {
-  margin-top: -50px;
+  margin-top: -80px;
 }
 
 .project h2 {
-  font-size: 2.5em;
+  font-size: 2.25em;
+  color: white;
 }
 
 .project h4 {
-  margin: 10px auto;
   font-size: 1em;
-  color: rgb(153, 153, 152);
-  margin-bottom: 7%;
+  line-height: 25px;
+  color: #ffffff;
 }
 
 .project .box {
@@ -126,17 +114,19 @@ a {
     0 6px 6px rgba(38, 3, 165, 0.23);
 }
 
-.box a {
-  font-size: 19px;
-  text-align: center;
-  text-decoration: none;
-  margin: auto 0;
+.project .box:hover {
+  background-color: #0a5de9;
+  transition: 0.5s;
+}
+
+.project .box .variant:hover {
+  color: white;
 }
 
 .client {
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
-  margin-top: 230px;
+  margin-top: 10%;
 }
 
 .client-title h1 {
@@ -160,7 +150,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   height: 250px;
-  width: 90%;
+  width: 720px;
   margin: auto 0;
   border: 0 solid;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -185,8 +175,8 @@ a {
 }
 
 .profile-client img {
-  width: 100px;
-  height: 70px;
+  width: 20%;
+  height: 70%;
   border: 3px solid gray;
   border-radius: 50%;
 }
@@ -201,10 +191,11 @@ a {
 
 .profile-info h5 {
   font-size: 19px;
-  font-weight: lighter;
+  font-weight: bold;
 }
 .profile-info h6 {
   font-size: 12px;
+  font-weight: bold;
 }
 
 .company-logo img {
@@ -215,7 +206,7 @@ a {
 .body-client-box {
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -235,9 +226,11 @@ a {
 
 .body-client-box .client-word {
   width: 100%;
-  padding-top: 2%;
-  font-size: 1.3em;
+  padding-top: -2%;
+  font-size: 1.1em;
   text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .footer-logo-ach {
@@ -267,22 +260,6 @@ a {
 }
 
 @media only screen and (max-width: 1140px) {
-  .puppy img {
-    height: 450px;
-    width: 450px;
-  }
-  .client-item-box,
-  .carousel-client,
-  .inner-client {
-    height: 200px;
-  }
-
-  .carousel-client .carousel-control-prev,
-  .carousel-client .carousel-control-next {
-    width: 10%;
-    top: -50px;
-  }
-
   .profile-client img {
     width: 60px;
     height: 60px;
@@ -294,11 +271,11 @@ a {
     font-weight: lighter;
   }
   .profile-info h6 {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .body-client-box .client-word p {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
@@ -312,21 +289,6 @@ a {
   .achievement-titl h1 {
     font-size: 3em;
   }
-
-  .carousel-mockup .carousel-control-prev,
-  .carousel-mockup .carousel-control-next {
-    width: 10%;
-    top: -300px;
-  }
-
-  .puppy img {
-    height: 500px;
-    width: 500px;
-  }
-
-  .puppy .description {
-    width: 90%;
-  }
 }
 
 @media only screen and (max-width: 970px) {
@@ -339,18 +301,6 @@ a {
   .achievement-titl h1 {
     font-size: 2.8em;
     margin-bottom: 40px;
-  }
-  .achievement-challenges .carousel {
-    width: 100%;
-  }
-  .puppy {
-    flex-direction: column;
-  }
-  .puppy .description {
-    width: 90%;
-  }
-  .puppy img {
-    height: 300px;
   }
   .project h2 {
     margin-top: 10%;
@@ -389,19 +339,19 @@ a {
   .client-item-box,
   .carousel-client,
   .inner-client {
-    height: 150px;
+    height: 200px;
   }
 
   .carousel-client .carousel-control-prev,
   .carousel-client .carousel-control-next {
-    width: 5%;
+    width: 100%;
     top: -150px;
   }
 
   .profile-client img {
     width: 50px;
     height: 50px;
-    border-radius: 50px;
+    border-radius: 100px;
   }
 
   .company-logo,
@@ -420,11 +370,11 @@ a {
     font-weight: lighter;
   }
   .profile-info h6 {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .body-client-box .client-word p {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .footer-logo-ach {
@@ -448,15 +398,6 @@ a {
 }
 
 @media only screen and (max-width: 650px) {
-  .puppy img {
-    height: 200px;
-    margin: 5px 30px;
-  }
-  .puppy .description {
-    min-width: 250px;
-    margin: 0 auto;
-  }
-
   .project h2 {
     font-size: 1.5em;
   }
@@ -487,13 +428,6 @@ a {
   .achievement-titl h1 {
     font-size: 2.2em;
   }
-  .achievement-challenges .carousel {
-    width: 100%;
-  }
-  .puppy .description {
-    width: 90%;
-    padding: 30px;
-  }
   .profile-client img {
     width: 50px;
     height: 50px;
@@ -502,6 +436,9 @@ a {
   .profile-info {
     margin-left: 5px;
     height: 55px;
+  }
+  .client-item-box {
+    height: 140px;
   }
 
   .company-logo,
@@ -516,16 +453,6 @@ a {
 }
 
 @media only screen and (max-width: 500px) {
-  .carousel-control-prev .carousel-control-prev-icon,
-  .carousel-control-next .carousel-control-next-icon {
-    width: 15px;
-    height: 15px;
-  }
-  .carousel-mockup .carousel-control-prev,
-  .carousel-mockup .carousel-control-next {
-    width: 5%;
-    top: -400px;
-  }
 }
 
 @media only screen and (max-width: 400px) {

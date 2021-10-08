@@ -52,7 +52,6 @@ const Yolo = () => {
             else clickApp('first');
         }
     }
-
     return (
         <div className="main">
             <div className="arrow-part">

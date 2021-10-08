@@ -1,23 +1,70 @@
-.menuB {
-  margin-top: 15px;
-  display: flex;
+.menu-B {
+  padding-top: 10px;
 }
-.menuB .bar {
-  cursor: pointer;
-  margin-left: 4%;
-  font-size: 1.2em;
-  margin-top: 7px;
-  margin-right: 10px;
-  display: flex;
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
-.menuB .headerlogo {
-  margin-left: 0.5%;
+.sidebarText {
+  font-size: 1em;
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+  text-decoration: none;
 }
 
-.menuB .headerlogo img {
-  width: 70%;
+.sidebarText:hover {
+  color: #0077bf;
 }
-label {
-  font-size: 1.2em;
-  margin-top: 4px;
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: aliceblue;
+}
+
+.sidebar .closebtn:hover {
+  cursor: pointer;
+  color: #0077bf;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border-color: transparent;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: 0.5s;
+  padding: 16px;
+}
+
+#mySidebar div {
+  text-align: center;
+  margin: 1% 0% 20% 0%;
+  font-size: 2em;
+}
+.bar {
+  justify-content: center;
+  width: 40%;
+  height: 5px;
+  background-color: #0077bf;
 }

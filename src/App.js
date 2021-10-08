@@ -298,16 +298,11 @@ class App extends Component {
     return (
       <div>
         <div className="main-wrap" style={{backgroundColor:"#0b0b0b"}}> 
-          <div>
           <Home />
-          </div>
           <Services />
           <Yolo />
           <Efficient />
-          <Intro />
-          <Contact />
           <Map />
-
           <div className="Main-footer">
               <Footer />
             </div>

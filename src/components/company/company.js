@@ -5,6 +5,10 @@ import Growth from "../../assets/images/media_library/Group-970-1.png";
 import Notch from "../../assets/images/media_library/Group-454.png";
 import MainLogo from "../../assets/images/media_library/Group-1190.png"
 import TechLogo from "../../assets/images/media_library/Group-491@2x-min.png"
+import Header from "../Header";
+import  '../../assets/styles/header.scss';
+import "../../assets/styles/header.css";
+import jQuery from 'jquery';
 
 
 
@@ -20,8 +24,18 @@ class Company extends React.Component{
     }
 
     render(){
+        function display_sub_text(Class){
+            jQuery(Class).css("display","block");
+            for (var i=1; i<9 ;i++){
+                var item = "#subText"+i
+                if (item!= Class){
+                    jQuery(item).css("display","none")
+                }
+            }
+        }
+
     return (
-        <div className={styles.CompanyHead}>
+        <div className={styles.CompanyHead}> 
             <div className={styles.CompanyHeading}>
                 <div className={styles.Companyleft}>
                     <strong>
@@ -44,9 +58,9 @@ class Company extends React.Component{
                           , Troibits has all the aspects of growth covered.
                          </p>
                     </strong>
-                    <button className={styles.CompanyBtn1}>
+                    <a href="/contact" style={{textDecoration:"none"}}><button className={styles.CompanyBtn1}>
                         Lets Chat
-                    </button>
+                    </button></a>
                 </div>
             <div className={styles.Companyright}>  
                 <h1 style={{color:"blue"}}> What do Do</h1>
@@ -124,14 +138,22 @@ class Company extends React.Component{
                          are determined to provide IT support through complete life cycle of
                           your business.</h6>
                     <ul className={styles.Companyulist}>
-                        <li id={styles.Companylist}>IP Protection</li>
-                        <li id={styles.Companylist}>Consultant And Research</li>
-                        <li id={styles.Companylist}>Ideation And Strategic Planning</li>
-                        <li id={styles.Companylist}>Product Design</li>
-                        <li id={styles.Companylist}>Agile Deveploment</li>
-                        <li id={styles.Companylist}>Testing and Quality Assurance</li>
-                        <li id={styles.Companylist}>Product Launch</li>
-                        <li id={styles.Companylist}>Growth and Maintenance</li>
+                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText1")}>IP Protection
+                            <div className={styles.subText} id="subText1" style={{display:"none"}}>This is subtext</div></li>
+                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText2")}>Consultant And Research
+                        <div className={styles.subText} id="subText2" style={{display:"none"}}>This is subtext</div></li>
+                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText3")}>Ideation And Strategic Planning
+                        <div className={styles.subText} id="subText3" style={{display:"none"}}>This is subtext</div></li>
+                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText4")}>Product Design
+                        <div className={styles.subText} id="subText4" style={{display:"none"}}>This is subtext</div></li>
+                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText5")}>Agile Deveploment
+                        <div className={styles.subText} id="subText5" style={{display:"none"}}>This is subtext</div></li>
+                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText6")}>Testing and Quality Assurance
+                        <div className={styles.subText} id="subText6" style={{display:"none"}}>This is subtext</div></li>
+                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText7")}>Product Launch
+                        <div className={styles.subText} id="subText7" style={{display:"none"}}>This is subtext</div></li>
+                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText8")}>Growth and Maintenance
+                        <div className={styles.subText} id="subText8" style={{display:"none"}}>This is subtext</div></li>
                     </ul>
                 </div>
             </div>

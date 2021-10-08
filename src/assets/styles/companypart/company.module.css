@@ -43,6 +43,12 @@
   padding-right: 4%;
 }
 
+.CompanyBtn1:hover {
+  transition: 1s;
+  background-color: white;
+  color: black;
+}
+
 .Companymid {
   margin-top: 20%;
   margin-left: 10%;
@@ -57,7 +63,7 @@
   padding-top: 1%;
   font-size: 1em;
   line-height: 25px;
-  color: #989898;
+  color: #808080;
 }
 .Companymid2 {
   text-align: center;
@@ -90,21 +96,33 @@
   border: 2px solid transparent;
   border-radius: 20px;
   background-color: rgb(41, 41, 41);
-  margin-left: 25%;
-  margin-right: 25%;
+  width: 650px;
+  height: 245px;
+  margin-left: 29%;
   padding-bottom: 2%;
 }
 
 .CompanyBox img {
-  max-width: 10%;
-  padding-top: 3%;
+  max-width: 5%;
+  padding-top: 2%;
   padding-bottom: 1%;
 }
 .CompanyBox .Data {
-  font-size: 3em;
   text-align: center;
   padding-top: 3%;
   padding-bottom: 1%;
+}
+.Data h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.Data h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-top: 1%;
 }
 
 .CompanyLast {
@@ -138,14 +156,19 @@ h6 {
   width: 2px;
   content: "";
   position: absolute;
-  top: 0px;
-  bottom: 0px;
+  top: 20px;
+  bottom: -11px;
   left: 5px;
 }
+
+#Companylist:nth-child(8):before {
+  background-color: transparent;
+}
+
 #Companylist {
   /* You need to turn on relative positioning so the line is placed relative to the item rather than absolutely on the page */
   position: relative;
-
+  transition: ;
   /* Use padding to space things out rather than margins as the line would get broken up otherwise */
   padding-top: 0;
   padding-bottom: 1em;
@@ -158,9 +181,16 @@ h6 {
   background-repeat: no-repeat;
   background-size: contain;
   left: 0;
-  top: 2px;
+  top: 10px;
   width: 12px;
   height: 12px;
+}
+
+.subText {
+  font-size: 0.8em;
+  color: #808080;
+  margin-top: 10px;
+  margin-left: 5%;
 }
 
 @media screen and (max-width: 1100px) {
@@ -191,18 +221,28 @@ h6 {
   #image {
     margin-bottom: 3%;
   }
+  .firstBox {
+    padding-bottom: 15%;
+  }
   .CompanyBox {
-    margin-top: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 600px;
+    margin-left: 17%;
   }
   .Data h2,
   h4 {
-    font-size: 0.4em;
+    font-size: 1.7em;
   }
   .CompanyLast {
     margin-top: -20%;
     display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .CompanyBox {
+    width: 550px;
+    margin-left: 14%;
+    margin-top: 6%;
   }
 }
 
@@ -228,21 +268,24 @@ h6 {
     font-size: 1em;
   }
   .CompanyBox {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: -5%;
+    margin-left: 7%;
+    margin-right: 0%;
+    width: 500px;
+    height: 200px;
   }
   .CompanyLast {
     margin-left: 2%;
-    margin-right: 2%;
+    margin-right: 12%;
   }
 }
 
 @media screen and (max-width: 512px) {
   .CompanyBox h4 {
-    font-size: 0.3em;
+    font-size: 0.6em;
   }
   .CompanyBox h2 {
-    font-size: 0.5em;
+    font-size: 1em;
   }
   .Companyleft p {
     font-size: 0.9em;
@@ -254,10 +297,11 @@ h6 {
     margin-right: 2%;
     margin-left: 0%;
   }
-}
-
-@media screen and (max-width: 393px) {
-  .CompanyBox h4 {
-    font-size: 0.2em;
+  .CompanyBox {
+    border-radius: 10px;
+    margin-top: 5%;
+    width: 90%;
+    margin-left: 5%;
+    height: 150px;
   }
 }

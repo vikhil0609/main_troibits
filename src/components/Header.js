@@ -2,6 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logoImg from '../assets/images/logo.png';
 import  '../assets/styles/header.scss';
+import "../assets/styles/header.css";
+import 'font-awesome/css/font-awesome.min.css';
 import jQuery from 'jquery';
 
 class HomeHeader extends React.Component {
@@ -21,25 +23,21 @@ class HomeHeader extends React.Component {
       window.addEventListener('scroll', this.handleScroll);
       window.addEventListener("resize", this.handleResize);
       this.handleResize();
-      if(window.location.pathname==="/home"){
+      if(window.location.pathname=="/home"){
          this.setState({active: "home"});}
-      else if(window.location.pathname==="/"){
+      else if(window.location.pathname=="/"){
          this.setState({active: "home"});}
-      else if (window.location.pathname==="/services"){
+      else if (window.location.pathname=="/services"){
          this.setState({active: "services"});}
 
-      else if (window.location.pathname==="/about"){
-      this.setState({active: "about"});}
+      else if (window.location.pathname=="/company"){
+      this.setState({active: "company"});}
       
-      else if (window.location.pathname==="/work"){
+      else if (window.location.pathname=="/work"){
       this.setState({active: "work"});}
 
-      else if (window.location.pathname==="/contact"){
+      else if (window.location.pathname=="/contact"){
       this.setState({active: "contact"});}
-
-      else{
-         
-      }
 
    }
 
@@ -77,7 +75,6 @@ class HomeHeader extends React.Component {
       this.setState({active : clicked});
    }
 
-
    render(){  
       const {isCarousel} = this.state;
       if(!isCarousel)
@@ -88,6 +85,7 @@ class HomeHeader extends React.Component {
                   <div className="left-logo">
                      <img className="logo-img" src={logoImg} />
                      <label className="logo-label">Troibits</label>
+   
                   </div>
                   <div className="menu menuA">
                      <NavLink id = "home"className= {`menuA-item ${this.state.active === "home" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/home">
@@ -116,7 +114,51 @@ class HomeHeader extends React.Component {
             </div>
         );
       else
-         return(<div className = 'd-none'></div>)
+         return(
+            <div className="menu-B">
+              <div id="mySidebar" className="sidebar">
+               <a className="closebtn" onClick={() => closeNav()}>×</a>
+               <div>
+               <img src={logoImg} />
+               <label>&nbsp;Troibits </label>
+               </div>
+               <div className="bar">
+
+               </div>
+               <NavLink className="sidebarText" to="/home" >
+                  HOME
+               </NavLink>
+               <NavLink className="sidebarText" to="/services" >
+                  SERVICES
+               </NavLink>
+               <NavLink className="sidebarText" to="/company" >
+                  COMPANY
+               </NavLink>
+               <NavLink className="sidebarText" to="/work" >
+                  WORK
+               </NavLink>
+               <NavLink className="sidebarText" to="/contact" >
+                  CONTACT
+               </NavLink>
+               <div className="bar">
+
+               </div>
+               </div>
+               <div id="main">
+               <a className="openbtn" onClick={() => openNav()}>☰</a>  
+            </div>
+            </div>
+         )
+
+         function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
    }
 }
  

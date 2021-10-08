@@ -5,6 +5,7 @@ import Phone from '../../assets/images/media_library/phonelabel.png';
 import Footer from "../Footer";
 
 
+
 class Contact extends React.Component{
 
     componentDidMount(){
@@ -31,9 +32,9 @@ class Contact extends React.Component{
 
         <div className = {contactstyles.col} id={contactstyles.contactlast}>
             <img src={Email} />
-            <h6>contact@troibits.com</h6>
+            <label>contact@troibits.com</label>
             <img src={Phone} />
-            <h6>+91 989 950 0873</h6>
+            <label>+91 989 950 0873</label>
         </div>
     </div>
     );

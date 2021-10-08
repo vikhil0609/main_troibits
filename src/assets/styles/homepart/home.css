@@ -2,7 +2,7 @@
   width: 100%;
   padding-left: 5%;
   margin-top: 5%;
-  padding-bottom: 20%;
+  margin-bottom: 600px;
 }
 .home-part {
   float: left;
@@ -11,14 +11,14 @@
 }
 
 .home-part.left-string .title {
-  font-size: 2.2em;
+  font-size: 2em;
   margin-left: 5%;
 }
 .home-part.left-string .success {
   font-size: 100px;
 }
 .home-part.left-string .int-line {
-  width: 17%;
+  width: 80px;
   margin-top: 1%;
   margin-left: 5%;
   height: 3px;
@@ -27,21 +27,23 @@
 .home-part.left-string .description {
   margin-top: 2%;
   margin-left: 30px;
-  font-size: 1.2em;
+  font-size: 1em;
   width: 80%;
-  line-height: 30px;
+  line-height: 28px;
 }
 
 .home-part.left-string .description .chat-btn {
-  margin-top: 30px;
   border: 2px solid white;
   text-align: center;
-  font-size: 0.8em;
-  padding-bottom: 40px;
-  margin-right: 10%;
+  font-size: 0.7em;
+  margin-top: 20px;
+  width: 22%;
+  padding: 8px;
 }
 
-.home-part.left-string .description .chat-btn :hover {
+.home-part.left-string .description .chat-btn:hover {
+  transition: 0.5s;
+  cursor: pointer;
   background-color: white;
   color: black;
 }
@@ -58,12 +60,11 @@
 }
 #colorShadow {
   position: relative;
-
   max-width: 220px;
   max-height: 130px;
   margin-left: 49px;
   margin-top: 25px;
-  background: radial-gradient(closest-side, #0072ff, #0f4080, white);
+  background: radial-gradient(closest-side, #0061d0, #0f4080, transparent);
 }
 #container img {
   width: 100%;
@@ -80,69 +81,25 @@
   display: block;
 }
 
-.home.port {
-  height: 1000px;
-}
-.home.port .home-part {
-  position: absolute;
-  width: 100%;
-}
-.home.port .home-part.right-webgl {
-  top: 0px;
-}
-.home.port .home-part.left-string {
-  width: 74%;
-  left: 13%;
-  margin-top: 80px;
-}
-.home.port .home-part.left-string .title {
-  font-size: 18px;
-  text-align: center;
-}
-.home.port .home-part.left-string .success {
-  font-size: 60px;
-  text-align: center;
-}
-.home.port .home-part.left-string .int-line {
-  margin-left: calc(50% - 30px);
-}
-.home.port .home-part.left-string .description {
-  font-size: 16px;
-  text-align: center;
-  margin-left: 10%;
-}
-.home.port .home-part.left-string .chat-btn {
-  font-size: 18px;
-  width: 160px;
-  height: 33px;
-  margin-left: calc(50% - 80px);
-  padding-top: 10px;
-}
-
 @media only screen and (max-width: 1280px) {
   .home {
     margin-left: -8%;
   }
-}
-s .home-part.left-string .title {
-  font-size: 30px;
-}
-.home-part.left-string .success {
-  font-size: 90px;
-}
-.home-part.left-string .description {
-  font-size: 16px;
-}
-.home-part.left-string .chat-btn {
-  font-size: 20px;
-  width: 200px;
-  height: 35px;
-  padding-top: 13px;
-}
 
+  .home-part.left-string .title {
+    font-size: 30px;
+  }
+  .home-part.left-string .success {
+    font-size: 90px;
+  }
+  .home-part.left-string .description {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 780px) {
   .home {
     margin-top: -10%;
+    margin-bottom: 500px;
   }
 
   .home-part.left-string .title {
@@ -154,9 +111,9 @@ s .home-part.left-string .title {
   .home-part.left-string .description {
     font-size: 14px;
   }
-  .home-part.left-string .chat-btn {
+  /* .home-part.left-string .chat-btn {
     font-size: 18px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 600px) {

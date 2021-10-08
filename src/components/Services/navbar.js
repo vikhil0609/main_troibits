@@ -2,7 +2,7 @@ import { extend } from 'jquery';
 import React from 'react';
 import ListItem from './list-item';
 import '../../assets/styles/services/navbar.css';
-
+import jQuery from 'jquery';
 
 
 class  Navbar extends React.Component{
@@ -16,11 +16,12 @@ class  Navbar extends React.Component{
             selected: "nav-startup-tab",
             isSidebar: false,
             isStatic: false,
-            long: 0
+            long: 0,
         }
         this.handleScroll = this.handleScroll.bind(this);
         this.handleClick = this.handleClick.bind(this);
     }
+
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
@@ -31,8 +32,9 @@ class  Navbar extends React.Component{
         window.removeEventListener('scroll', this.handleScroll);
     }
 
-    handleScroll = (event) =>{
-            
+    handleScroll = (event) =>{ 
+        const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop
         const container = document.getElementById('container-navbar'),
         tab = document.getElementById("tab-navbar-sticky"),
         a = document.getElementById("startup-accelerator"),
@@ -82,7 +84,7 @@ class  Navbar extends React.Component{
             this.setState({isSticky: false});
         }
 
-        if(selected === "nav-software-tab"){
+        if(winScroll >=5920){
             this.setState({isStatic: true, isSticky : false});
             tab.classList.remove("fixe-tab");
             tab.classList.add("tab-static");
@@ -123,11 +125,14 @@ class  Navbar extends React.Component{
             posVal =  g.offsetTop + 360;
         if(event.target.id === "nav-software-tab")
             posVal =  h.offsetTop + 360;
+            this.change = posVal +"px"
         document.documentElement.scrollTop = posVal;
     }
 
-        
-    render(){   
+    render(){ 
+        const pull_data = (data) => {
+            console.log(data)
+          }  
         const {selected, isSticky, isStatic} = this.state;
         const nav = 
         <nav id = "tab-navbar-sticky" className = {`tab-sticky`}>
@@ -182,7 +187,7 @@ class  Navbar extends React.Component{
         return(
             <div id = "container-navbar" className = {`container `}>
                 {nav}
-                <ListItem isSticky = {isSticky} estatico = {isStatic} />
+                <ListItem isSticky = {isSticky} estatico = {isStatic} func={pull_data} />
             </div>
         )
     }

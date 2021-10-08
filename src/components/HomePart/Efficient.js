@@ -10,56 +10,75 @@ import partnerNikeImg     from '../../assets/images/homeimages/partner-nike.png'
 
 const Effcient = () => {
     return (
-        <div className="efficient" style = {{ backgroundImage:`url(${backKeyBoardImg})` }}>
-            <div className="efficient-content subpart-content">
-
-                <div className="efficient-part left-partners">
-                    <div className="efficient-title">Our partners</div>
-                    <div className="partners-content">
-                        <div className="partner-item">
-                            <img className="partnerHpImg" src={partnerSkypeImg}></img>
-                            <div className="label">Skype</div>
-                        </div>
-                        <div className="partner-item">
-                            <img className="partnerHpImg" src={partnerHpImg}></img>
-                            <div className="label">Hewlett-packard</div>
-                        </div>
-                        <div className="partner-item">
-                            <img src={partnerIntelImg}></img>
-                            <div className="label">Intel Corp</div>
-                        </div>
-                        <div className="partner-item">
-                            <img src={partnerNikeImg}></img>
-                            <div className="label">Nike</div>
-                        </div>
-                    </div>
-                    <div className="chat-btn">Let's chat</div>
+        <div>
+        <div className="efficient">
+           <div className="efficient-left">
+                <div className="left-head" id="efficient-head">
+                    Our Partners
                 </div>
-
-                <div className="efficient-part center-about">
-                    <div className="efficient-title">About Company</div>
-                    <div className="big-title">
-                        <div>Effcient &&nbsp;</div> <div>trustworthy</div>
-                    </div>
-                    <div className="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    </div>
-                    <div className="chat-btn">Let's chat</div>
+                <div className="left-SubText">
+                    <img src={partnerNikeImg} className="partnerLogo" />
+                   Skype
                 </div>
-
-                <div className="efficient-part right-number">
-                    <div className="number-item">
-                        <div className="number">353</div>
-                        <div className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-                    </div>
-                    <div className="number-item">
-                        <div className="number">29</div>
-                        <div className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-                    </div>
+                <div className="left-SubText">
+                <img src={partnerNikeImg} className="partnerLogo" /> 
+                    Hewlett-Packard
                 </div>
-
-
-            </div>
+                <div className="left-SubText">
+                <img src={partnerNikeImg} className="partnerLogo" />
+                    Intel-crop
+                </div>
+                <div className="left-SubText">
+                <img src={partnerNikeImg} className="partnerLogo" />
+                    Intel
+                </div>
+           </div>
+           <div className="efficient-vrline"></div>
+           <div className="efficient-mid">
+                <div className="mid-head">
+                    About Company
+                </div>
+                <div className="mid-mid">
+                    <h1><strong>Efficient &</strong> </h1>
+                    <h1><strong>Trustworthy</strong></h1>
+                </div>
+                <div className="mid-subText">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        eli, sed do eisumod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud execrecitation ullamco laboris nisi ut
+                        Lorem ipsum dolor sit amet
+                    </p>
+                </div>
+                <div>
+                    <a href="/contact"><button>Lets Chat</button></a> 
+                </div>
+           </div>
+           <div className="efficient-end">
+               <div>
+               <div className="end-head">
+                   <strong>353</strong>
+               </div> 
+               <div className="end-subText">
+                   <p> Lorem ipsum dolor sit amet, <br />
+                    consectetur adipisicing </p>
+               </div>
+               </div>
+               <div>
+                <div className="end-head">
+                    <strong>29</strong>
+                </div>
+                <div className="end-subText">
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipisicing
+               </div>
+               </div>
+           </div>
+        </div>
+        <div className="info">
+            <h1>Liked Our Designs?</h1>
+            <a href="/contact"><button>Drop a message</button></a>
+        </div>
         </div>
     );
 }

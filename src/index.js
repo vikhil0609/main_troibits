@@ -15,6 +15,7 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Footer from "./components/HomePart/Footer";
 import HomeHeader from "./components/HomePart/homeheader";
 import ScrollToTop from "./components/ScrollToTop.js"
+import "./App.css"
 
 ReactDOM.render(
   <div>
@@ -34,18 +35,21 @@ ReactDOM.render(
                 </div>
               </Route>
               <Route exact path="/services" >
-                <div><Header />
+                <div>
+                  <Header />
                 <Services />
                 </div>
               </Route>
               <Route exact path="/work">
-              <div><Header />
+              <div>
+                <Header />
                 <Work />
                 <Footer />
                 </div>
               </Route>
               <Route exact path="/contact">
-              <div><Header />
+              <div>
+                  <Header />
                   <Contact />
                   <Footer />
               </div>

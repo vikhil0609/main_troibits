@@ -1,145 +1,102 @@
-.efficient{
-    width: 100%;
-    height: 950px;
-    position: relative;
-    background-position: center center;
+.efficient {
+  padding: 4% 5%;
+  display: flex;
+  justify-content: space-between;
 }
-.efficient-content {
-    padding-top: 240px;
-    position: relative;
-}
-.efficient .efficient-part{
-    float: left;
-}
-.efficient .left-partners{
-    width: 25%;
-}
-.efficient-title{
-    font-family: "ProximaNovaRegular";
-    font-size: 24px;
-    color: #DDDDDD;
-}
-.efficient .left-partners .partners-content{
-    margin-top:40px;
-    width: 90%;
-}
-.efficient .left-partners .partners-content .partner-item{
-    margin-top: 35px;
-    clear: both;
-}
-.efficient .left-partners .partners-content .partner-item img{
-    width: 60px;
-    float: left;
-}
-.efficient .left-partners .partners-content .partner-item .label{
-    font-family: "ProximaNovaRegular";
-    font-size: 20px;
-    color: #888888;
-    padding-top: 15px;
-    padding-left: 80px;
-}
-.efficient .left-partners .partners-content .partner-item .partnerHpImg{
-    opacity: 0.4;
-}
-.efficient .left-partners .chat-btn{display: none;}
-  
-.efficient .center-about{
-    width: 50%;
-}
-.efficient .center-about .big-title{
-    font-size: 70px;
-}
-.efficient .center-about .description{
-    font-size: 18px;
-    color: #666666;
-    margin-top: 30px;
-    width: 90%;
-}
-.efficient .center-about .chat-btn{
-    margin-top: 30px;
-    border: 1px solid #666666;
-    text-align: center;
-    height: 40px;
-    width: 180px;
-    font-size: 24px;
-    color: #DDDDDD;
-    padding-top: 10px;
-}
-  
-.efficient .right-number{
-    width: 20%;
-}
-.efficient .right-number .number-item{
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-.efficient .right-number .number-item .number{
-    font-size: 60px;
-    color:#DDDDDD;
-}
-.efficient .right-number .number-item .description{
-    font-size: 18px;
-    color: #666666;
+.left-head {
+  padding-bottom: 10%;
+  color: #007bff;
 }
 
-.efficient.port {height: 970px;}
-.efficient.port .efficient-part{position: absolute; width: 100%;}
-.efficient.port .center-about{top: 140px;}
-.efficient.port .center-about .efficient-title{text-align: center; font-size: 16px;}
-.efficient.port .center-about .big-title {text-align: center; margin-top: 20px; font-size: 32px;}
-.efficient.port .center-about .description {text-align: center;}
-.efficient.port .center-about .description {font-size: 14px; margin-left: 5%;}
-.efficient.port .center-about .chat-btn {display: none;}
-
-.efficient.port .right-number{top: 440px;}
-.efficient.port .right-number .number-item{ width: 50%; float: left; }
-.efficient.port .right-number .number-item .number{text-align: center; font-size: 36px; color: #0061D0;}
-.efficient.port .right-number .number-item .description { text-align: center; font-size: 14px; width: 90%; margin-left: 5%;}
-
-.efficient.port .left-partners{top: 620px;}
-.efficient.port .left-partners .efficient-title{text-align: center; font-size: 20px;}
-.efficient.port .left-partners .partners-content {margin-top: 0; width: 340px; margin-left: calc(50% - 170px); height: 180px;}
-.efficient.port .left-partners .partners-content .partner-item {width: 25%; float: left; text-align: center; clear: none;}
-.efficient.port .left-partners .partners-content .partner-item img {float: none; width: 50px;}
-.efficient.port .left-partners .partners-content .partner-item .label {padding-left: 0; font-size: 14px;}
-.efficient .left-partners .chat-btn{
-    display: block;
-    border: 2px solid #666666;
-    text-align: center;
-    margin-left: calc(50% - 80px);
-    height: 35px;
-    width: 160px;
-    font-size: 20px;
-    color: #DDDDDD;
-    padding-top: 10px;
+.mid-head {
+  padding-bottom: 5%;
+  color: #007bff;
+}
+.mid-mid h1 {
+  font-weight: 700;
+  font-size: 3em;
 }
 
+.left-SubText {
+  padding-bottom: 10%;
+  font-size: 1em;
+}
+.partnerLogo {
+  max-width: 15%;
+  margin-right: 15px;
+}
 
-@media only screen and (max-width: 1280px) {
-    .efficient {height: 830px;}
-    .efficient-content.subpart-content{ padding-top: 160px;}
-    .efficient .center-about .big-title { font-size: 60px; }
+.efficient-vrline {
+  width: 1px;
+  height: 230px;
+  background: white;
+  margin-top: 3%;
 }
-/* @media only screen and (max-width: 960px) {
-    .efficient {height: 750px;}
-    .efficient .right-number{display: none;}
-    .efficient .left-partners{width: 35%;}
-    .efficient .center-about{width: 65%;}
-    .efficient .center-about .big-title {
-        font-size: 50px;
-    }
+
+.efficient-mid {
+  margin-left: 10%;
 }
-@media only screen and (max-width: 600px) {
-    .efficient .left-partners{display: none;}
-    .efficient .center-about{width: 100%;}
-    .efficient .center-about .big-title div:first-child{
-        float: left;
-    }
-    .efficient .center-about .big-title div:nth-child(2){
-        margin-left: 10px;
-    }
-    .efficient .center-about .big-title {
-        margin-top: 15px;
-        font-size: 40px;
-    }
-} */
+
+.mid-subText p {
+  font-size: 1em;
+  color: grey;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  margin-right: 25%;
+}
+
+.efficient-mid button {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 30px;
+}
+
+.efficient-mid button:hover {
+  transition: 0.5s;
+  background-color: white;
+  color: black;
+}
+
+.efficient-end {
+  margin-top: 4%;
+  width: 70%;
+}
+
+.end-subText {
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 20%;
+  line-height: 35px;
+}
+
+.end-head strong {
+  color: #007bff;
+  font-size: 3em;
+}
+
+.info {
+  padding-bottom: 10%;
+  text-align: center;
+}
+
+.info a button {
+  color: #007bff;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-color: #007bff;
+  padding: 10px 50px;
+  margin-top: 30px;
+}
+
+.info a button:hover {
+  transition: 0.5s;
+  color: white;
+  background-color: #007bff;
+}
+
+.info .notice {
+  width: 300px;
+  height: 45px;
+  background-color: #000000;
+  display: flex;
+}

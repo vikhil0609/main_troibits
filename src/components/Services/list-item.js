@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import {NavLink} from "react-router-dom";
 import logoImg from '../../assets/images/logo.png';
 import '../../assets/styles/services/list-item.scss';
@@ -10,10 +10,38 @@ import ProductDesign from "../../assets/images/serivces/product.PNG"
 import enterprise from "../../assets/images/serivces/enterprise.PNG"
 import maintainance from "../../assets/images/serivces/maintainance.PNG"
 import NextGen from "../../assets/images/serivces/nextgen.PNG"
+import jQuery from "jquery";
 
 
-function ListItem (props){
-    const {isPositionFixed, isCarousel, isStatic, estatico, isSticky} = props;
+class ListItem extends React.Component {
+    constructor(props){
+        super(props);
+        this.handleScroll = this.handleScroll.bind(this);
+        
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+        this.handleScroll();
+    }
+  
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = (event) =>{ 
+        var element = (window.scrollY + document.querySelector('#last').getBoundingClientRect().top)
+        this.props.func(element);
+    }
+
+
+    render(){
+    const {isPositionFixed, isCarousel, isStatic, estatico, isSticky} = this.props;
+    function doing(){
+        var element = document.getElementById("last")
+        // console.log(element.getBoundingClientRect())
+        // props.func(element);
+    }
     return (
         <div className = {`list-name-container ${isSticky ? ' stick': estatico ? ' status': ''}`}>
             <div 
@@ -269,13 +297,14 @@ function ListItem (props){
                         <NavLink className = "nav-Link" to = "#"><span>Server Migration and Updates</span></NavLink>
                         <NavLink className = "nav-Link" to = "#"><span>Performance Improvements</span></NavLink>
                     </div>
-                    <div className = "know">
+                    <div className = "know" id="last" onScroll={() => doing()}>
                         <NavLink to={"#"}>Know more <i className="material-icons">keyboard_arrow_right</i></NavLink>
                     </div>
                 </div>
             </div>
         </div>
     )
+}
 }
 
 

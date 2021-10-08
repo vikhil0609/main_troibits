@@ -21,8 +21,8 @@
 }
 
 .tab-static {
-  position: sticky !important;
-  margin-top: 4600px;
+  position: sticky;
+  top: 4750px;
 }
 
 *,

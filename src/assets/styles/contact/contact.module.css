@@ -31,10 +31,11 @@
   padding-bottom: 5%;
 }
 #contactlast img {
+  display: block;
   padding-bottom: 1%;
 }
 
-#contactlast h6 {
+#contactlast label {
   color: white;
   font-size: 1em;
   margin-bottom: 2%;
