@@ -54,8 +54,9 @@
 }
 
 .gradient-background {
-  height: auto;
-  text-align: center;
+  width: 150%;
+  height: 300px;
+  z-index: -999;
 }
 
 .gradient-none {

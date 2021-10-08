@@ -31,6 +31,8 @@ class ListItem extends React.Component {
 
     handleScroll = (event) =>{ 
         var element = (window.scrollY + document.querySelector('#last').getBoundingClientRect().top)
+        var topElement = document.querySelector('#last').getBoundingClientRect().top
+        element = element - topElement;
         this.props.func(element);
     }
 
@@ -40,7 +42,7 @@ class ListItem extends React.Component {
     function doing(){
         var element = document.getElementById("last")
         // console.log(element.getBoundingClientRect())
-        // props.func(element);
+        this.props.func(element);
     }
     return (
         <div className = {`list-name-container ${isSticky ? ' stick': estatico ? ' status': ''}`}>

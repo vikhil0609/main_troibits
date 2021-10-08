@@ -17,6 +17,7 @@ class  Navbar extends React.Component{
             isSidebar: false,
             isStatic: false,
             long: 0,
+            isdata:0
         }
         this.handleScroll = this.handleScroll.bind(this);
         this.handleClick = this.handleClick.bind(this);
@@ -84,7 +85,7 @@ class  Navbar extends React.Component{
             this.setState({isSticky: false});
         }
 
-        if(winScroll >=5920){
+        if(winScroll >= 6536 - 601){
             this.setState({isStatic: true, isSticky : false});
             tab.classList.remove("fixe-tab");
             tab.classList.add("tab-static");

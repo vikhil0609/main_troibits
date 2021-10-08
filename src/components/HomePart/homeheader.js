@@ -76,6 +76,10 @@ class HomeHeader extends React.Component {
                      <img className="logo-img" src={logoImg} />
                      <label className="logo-label">Troibits</label>
                   </div>
+
+                  <div>
+                     <img className={`${this.state.isGradient ? "gradient-background": "gradient-none"}`}  src={Gradient} />
+                  </div>
                   <div className="menu menuA">
                      <NavLink id = "home" className= {`menuA-item ${this.state.active === "home" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/home">
                            Home
