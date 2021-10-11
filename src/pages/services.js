@@ -22,6 +22,7 @@ class Services extends React.Component {
             selected: "nav-startup-tab",
             isSidebar: false,
             isStatic: false,
+            element:"",
         }
         this.handleScroll = this.handleScroll.bind(this);
         this.handleResize = this.handleResize.bind(this);
@@ -51,7 +52,7 @@ class Services extends React.Component {
             this.setState({isPositionFixed: false});
 
         let isStatic = false;
-        if(document.documentElement.scrollTop > 4670)
+        if(document.documentElement.scrollTop > 5200)
             isStatic = true;
         else
             isStatic = false;
@@ -80,10 +81,13 @@ class Services extends React.Component {
 
     render(){   
         const {isCarousel, isPositionFixed, isSidebar, isStatic, selected} = this.state;
+        const pull_data = (data) => {
+            console.log(data)
+          } 
         return(
             <div className = "page-wrapper">
                 <HeaderServices/>
-                {isCarousel ? <TabSlider /> : <Navbar isStatic = {isStatic} selected = {selected} isPositionFixed = {isPositionFixed}/>}
+                {isCarousel ? <TabSlider /> : <Navbar isStatic = {isStatic} selected = {selected} isPositionFixed = {isPositionFixed} w={pull_data}/>}
                 <div className = "industry">
                     <Industry/>
                 </div>

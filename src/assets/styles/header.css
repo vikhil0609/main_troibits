@@ -1,5 +1,8 @@
 .menu-B {
   padding-top: 10px;
+  position: fixed;
+  z-index: 1;
+  padding-bottom: 10%;
 }
 .sidebar {
   height: 100%;
@@ -24,6 +27,7 @@
 
 .sidebarText:hover {
   color: #0077bf;
+  text-decoration: none;
 }
 
 .sidebar .closebtn {
@@ -49,7 +53,7 @@
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: #0077bf;
 }
 
 #main {
@@ -57,14 +61,20 @@
   padding: 16px;
 }
 
-#mySidebar div {
+#mySidebar .sidebarcompany {
   text-align: center;
   margin: 1% 0% 20% 0%;
   font-size: 2em;
 }
-.bar {
-  justify-content: center;
-  width: 40%;
+
+.closebtn:hover {
+  color: #0077bf;
+}
+
+.sidebarBar {
+  width: 80px;
   height: 5px;
   background-color: #0077bf;
+  margin-top: 30px;
+  margin-left: 35%;
 }

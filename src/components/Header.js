@@ -118,31 +118,31 @@ class HomeHeader extends React.Component {
             <div className="menu-B">
               <div id="mySidebar" className="sidebar">
                <a className="closebtn" onClick={() => closeNav()}>×</a>
-               <div>
+               <div className="sidebarcompany">
                <img src={logoImg} />
                <label>&nbsp;Troibits </label>
                </div>
-               <div className="bar">
+               <div className="sidebarBar">
 
                </div>
-               <NavLink className="sidebarText" to="/home" >
+               <div>
+               <NavLink className="sidebarText" to="/home" onClick={() => closeNav()} >
                   HOME
                </NavLink>
-               <NavLink className="sidebarText" to="/services" >
+               <NavLink className="sidebarText" to="/services" onClick={() => closeNav()}>
                   SERVICES
                </NavLink>
-               <NavLink className="sidebarText" to="/company" >
+               <NavLink className="sidebarText" to="/company" onClick={() => closeNav()}>
                   COMPANY
                </NavLink>
-               <NavLink className="sidebarText" to="/work" >
+               <NavLink className="sidebarText" to="/work" onClick={() => closeNav()}>
                   WORK
                </NavLink>
-               <NavLink className="sidebarText" to="/contact" >
+               <NavLink className="sidebarText" to="/contact" onClick={() => closeNav()}>
                   CONTACT
                </NavLink>
-               <div className="bar">
-
                </div>
+               <div className="sidebarBar"></div>
                </div>
                <div id="main">
                <a className="openbtn" onClick={() => openNav()}>☰</a>  
@@ -151,8 +151,8 @@ class HomeHeader extends React.Component {
          )
 
          function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("mySidebar").style.width = "300px";
+            document.getElementById("main").style.marginLeft = "300px";
           }
           
           function closeNav() {

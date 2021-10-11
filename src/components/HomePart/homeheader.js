@@ -50,7 +50,6 @@ class HomeHeader extends React.Component {
        if(event.srcElement.body.scrollTop > 100 || document.documentElement.scrollTop > 100  ){
           this.setState({isPositionFixed: true});
           this.setState({isGradient:false});
-          console.log(this.state.isGradient)
        }
        else{
           this.setState({isPositionFixed: false});
@@ -75,11 +74,11 @@ class HomeHeader extends React.Component {
                   <div className="left-logo">
                      <img className="logo-img" src={logoImg} />
                      <label className="logo-label">Troibits</label>
+                     {/* <div>
+                     <img className={`${this.state.isGradient ? "gradient-background": "gradient-none"}`}  src={Gradient} />
+                  </div> */}
                   </div>
 
-                  <div>
-                     <img className={`${this.state.isGradient ? "gradient-background": "gradient-none"}`}  src={Gradient} />
-                  </div>
                   <div className="menu menuA">
                      <NavLink id = "home" className= {`menuA-item ${this.state.active === "home" ? " blue text-primary" : ""}`} onClick = {this.addActiveClass} to="/home">
                            Home
@@ -103,8 +102,52 @@ class HomeHeader extends React.Component {
             </div>
         );
       else
-         return(<div className = 'd-none'></div>)
-   }
+      return(
+         <div className="menu-B">
+           <div id="mySidebar" className="sidebar">
+            <a className="closebtn" onClick={() => closeNav()}>×</a>
+            <div className="sidebarcompany">
+            <img src={logoImg} />
+            <label>&nbsp;Troibits </label>
+            </div>
+            <div className="sidebarBar">
+            </div>
+            <div>
+            <NavLink className="sidebarText" to="/home" onClick={() => closeNav()} >
+               HOME
+            </NavLink>
+            <NavLink className="sidebarText" to="/services" onClick={() => closeNav()} >
+               SERVICES
+            </NavLink>
+            <NavLink className="sidebarText" to="/company" onClick={() => closeNav()} >
+               COMPANY
+            </NavLink>
+            <NavLink className="sidebarText" to="/work" onClick={() => closeNav()}>
+               WORK
+            </NavLink>
+            <NavLink className="sidebarText" to="/contact" onClick={() => closeNav()}>
+               CONTACT
+            </NavLink>
+            </div>
+            <div className="sidebarBar"></div>
+            </div>
+            <div id="main">
+            <a className="openbtn" onClick={() => openNav()}>☰</a>  
+         </div>
+         
+         </div>
+      )
+
+      function openNav() {
+         document.getElementById("mySidebar").style.width = "300px";
+         document.getElementById("main").style.marginLeft = "300px";
+       }
+       
+       function closeNav() {
+          console.log("called");
+         document.getElementById("mySidebar").style.width = "0";
+         document.getElementById("main").style.marginLeft= "0";
+       }
 }
- 
+}
 export default HomeHeader;

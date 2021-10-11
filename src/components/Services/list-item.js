@@ -30,20 +30,13 @@ class ListItem extends React.Component {
     }
 
     handleScroll = (event) =>{ 
-        var element = (window.scrollY + document.querySelector('#last').getBoundingClientRect().top)
-        var topElement = document.querySelector('#last').getBoundingClientRect().top
-        element = element - topElement;
+        var element = (document.querySelector('#last').getBoundingClientRect().top)
         this.props.func(element);
     }
 
 
     render(){
     const {isPositionFixed, isCarousel, isStatic, estatico, isSticky} = this.props;
-    function doing(){
-        var element = document.getElementById("last")
-        // console.log(element.getBoundingClientRect())
-        this.props.func(element);
-    }
     return (
         <div className = {`list-name-container ${isSticky ? ' stick': estatico ? ' status': ''}`}>
             <div 
@@ -299,7 +292,7 @@ class ListItem extends React.Component {
                         <NavLink className = "nav-Link" to = "#"><span>Server Migration and Updates</span></NavLink>
                         <NavLink className = "nav-Link" to = "#"><span>Performance Improvements</span></NavLink>
                     </div>
-                    <div className = "know" id="last" onScroll={() => doing()}>
+                    <div className = "know" id="last">
                         <NavLink to={"#"}>Know more <i className="material-icons">keyboard_arrow_right</i></NavLink>
                     </div>
                 </div>

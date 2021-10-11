@@ -85,7 +85,7 @@ class  Navbar extends React.Component{
             this.setState({isSticky: false});
         }
 
-        if(winScroll >= 6536 - 601){
+        if(winScroll >=5200 ){
             this.setState({isStatic: true, isSticky : false});
             tab.classList.remove("fixe-tab");
             tab.classList.add("tab-static");
@@ -132,7 +132,8 @@ class  Navbar extends React.Component{
 
     render(){ 
         const pull_data = (data) => {
-            console.log(data)
+            this.setState({isdata : data})
+            console.log(this.state.isdata)
           }  
         const {selected, isSticky, isStatic} = this.state;
         const nav = 
