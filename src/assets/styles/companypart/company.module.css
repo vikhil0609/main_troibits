@@ -168,7 +168,6 @@ h6 {
 #Companylist {
   /* You need to turn on relative positioning so the line is placed relative to the item rather than absolutely on the page */
   position: relative;
-  transition: ;
   /* Use padding to space things out rather than margins as the line would get broken up otherwise */
   padding-top: 0;
   padding-bottom: 1em;

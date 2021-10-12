@@ -30,8 +30,8 @@ class ListItem extends React.Component {
     }
 
     handleScroll = (event) =>{ 
-        var element = (document.querySelector('#last').getBoundingClientRect().top)
-        this.props.func(element);
+        // var element = (document.querySelector('#last').getBoundingClientRect().top)
+        // this.props.func(element);
     }
 
 

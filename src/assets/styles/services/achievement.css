@@ -37,7 +37,7 @@
 }
 
 .item-main .mid img {
-  width: 45%;
+  max-width: 45%;
   margin-left: 5%;
 }
 .item-main .mid div .mid-title {
@@ -109,6 +109,7 @@ a {
 .project .box {
   border: 3px solid #0a5de9;
   margin: 0 auto;
+  margin-top: 10%;
   justify-content: center;
   box-shadow: 0 10px 20px rgba(38, 3, 165, 0.19),
     0 6px 6px rgba(38, 3, 165, 0.23);
@@ -252,10 +253,9 @@ a {
   margin-left: 12%;
 }
 
-@media only screen and (max-width: 1345px) {
-  .puppy img {
-    height: 500px;
-    width: 500px;
+@media only screen and (max-width: 1200px) {
+  .item-main .mid div .sub-text p {
+    font-size: 0.8em;
   }
 }
 
@@ -279,12 +279,6 @@ a {
   }
 }
 
-@media only screen and (max-width: 1040px) {
-  .puppy img {
-    margin: 0 auto;
-  }
-}
-
 @media only screen and (max-width: 1012px) {
   .achievement-titl h1 {
     font-size: 3em;
@@ -294,6 +288,16 @@ a {
 @media only screen and (max-width: 970px) {
   .project .box {
     margin-top: 0;
+  }
+  .item-main {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .item-main .mid div .mid-title {
+    font-size: 1em;
+  }
+  .item-main .mid div .mid-sub {
+    font-size: 0.9em;
   }
 }
 
@@ -381,6 +385,18 @@ a {
     width: 75%;
     margin-top: 0;
   }
+
+  .item-main .mid div .sub-text p {
+    font-size: 0.7em;
+  }
+
+  .item-main .mid img {
+    max-width: 50%;
+  }
+
+  .item-main .arrow img {
+    margin-top: 130%;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -390,7 +406,6 @@ a {
   }
   .project h2 {
     font-size: 1.8em;
-    margin-bottom: 10%;
   }
   .project h4 {
     font-size: 0.8em;
@@ -450,6 +465,27 @@ a {
   .footer-logo-ach {
     margin-top: -60px;
   }
+  .item-main .mid {
+    display: block;
+  }
+  .item-main .mid img {
+    max-width: 70%;
+    margin-left: 15%;
+  }
+
+  .item-main .arrow img {
+    max-width: 150%;
+  }
+
+  .item-main .mid div .mid-title {
+    font-size: 2em;
+  }
+  .item-main .mid div .sub-text .mid-sub {
+    font-size: 1em;
+  }
+  .item-main .mid div .sub-text p {
+    font-size: 0.8em;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -461,6 +497,13 @@ a {
   }
   .client-title h1 {
     font-size: 1.8em;
+  }
+  .item-main .mid div .mid-title {
+    font-size: 1em;
+  }
+  .item-main .mid div .sub-text .mid-sub {
+    font-size: 0.8em;
+    width: 100%;
   }
 }
 

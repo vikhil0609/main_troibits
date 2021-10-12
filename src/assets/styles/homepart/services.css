@@ -104,6 +104,20 @@
   bottom: 12%;
 }
 
+.services
+  .content-wrap
+  .services-content
+  .panels
+  .panel-row
+  .panel-title::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #0061d0;
+  background-color: #0061d0;
+  height: 40px;
+  top: 10px;
+  left: -18%;
+}
 .services .content-wrap .services-content .panels .panel-item:hover {
   background-color: #0061d0;
   transition: 1s;

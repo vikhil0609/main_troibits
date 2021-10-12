@@ -74,9 +74,9 @@ class HomeHeader extends React.Component {
                   <div className="left-logo">
                      <img className="logo-img" src={logoImg} />
                      <label className="logo-label">Troibits</label>
-                     {/* <div>
+                     <div>
                      <img className={`${this.state.isGradient ? "gradient-background": "gradient-none"}`}  src={Gradient} />
-                  </div> */}
+                  </div>
                   </div>
 
                   <div className="menu menuA">

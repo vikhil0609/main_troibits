@@ -320,7 +320,6 @@ class AchievementItems extends React.Component{
                         </div>
                     </div>
                 </div>
-
                 <div className="arrow" id = "right-arrow" onClick={() =>clickarrow("right")}>
                     <img src={Right} />
                 </div>
