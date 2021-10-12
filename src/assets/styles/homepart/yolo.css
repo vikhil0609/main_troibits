@@ -255,7 +255,7 @@
     margin-top: 20px;
   }
   .yolo .right-app {
-    margin-top: 110px;
+    margin-top: 100px;
   }
   .yolo .right-app .app-content {
     margin-top: 30px;
@@ -266,8 +266,7 @@
     display: none;
   }
   .yolo .right-app {
-    margin-left: 0%;
-    margin-top: 10px;
+    display: none;
   }
   .yolo .right-app .app-title {
     font-size: 20px;
@@ -287,7 +286,7 @@
   .arrow-part {
     z-index: 999;
     text-align: center;
-    margin-top: 140%;
+    margin-top: 120%;
     margin-left: 40%;
   }
 
