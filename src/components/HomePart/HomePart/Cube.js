@@ -32,22 +32,11 @@ class Cube extends Component {
     render() {
         return (
             <div className="home">
-                <div className="home-content subpart-content">
-                    <div className="left-string home-part">
-                        <div className="title">We Make Your App Idea A</div>
-                        <div className="success pro-thin">SUCCESS</div>
-                        <div className="int-line"></div>
-                        <div className="description pro-thin">
-                            From idea to development, we support and stay with you in good and hard times till we celebrate our success together
-                        </div>
-                        <div className="chat-btn">Lets Chat!</div>
-                    </div>
                     <div className="right-webgl home-part" id="rightWebGL">
                         <div id="colorShadow"><img src={shadowBackImg} /></div>
                         <div id="container"><img src={cubeBackImg} /></div>
                     </div>
                 </div>
-            </div>
         )
     }
 }

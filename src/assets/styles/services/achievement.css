@@ -250,7 +250,8 @@ a {
 .footer-logo-ach .image img {
   width: 70%;
   height: auto;
-  margin-left: 12%;
+  margin-left: 15%;
+  margin-top: 30px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -271,17 +272,23 @@ a {
     font-weight: lighter;
   }
   .profile-info h6 {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .body-client-box .client-word p {
-    font-size: 15px;
+    font-size: 13px;
+  }
+  .client-item-box {
+    height: 200px;
   }
 }
 
 @media only screen and (max-width: 1012px) {
   .achievement-titl h1 {
     font-size: 3em;
+  }
+  .client-item-box {
+    height: 200px;
   }
 }
 
@@ -312,10 +319,10 @@ a {
     font-size: 2.2em;
   }
   .profile-info h5 {
-    font-size: 12px;
+    font-size: 15px;
   }
   .profile-info h6 {
-    font-size: 9px;
+    font-size: 12px;
   }
   .client {
     width: 100%;
@@ -370,11 +377,11 @@ a {
   }
 
   .profile-info h5 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: lighter;
   }
   .profile-info h6 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .body-client-box .client-word p {
@@ -410,6 +417,19 @@ a {
   .project h4 {
     font-size: 0.8em;
   }
+  .inner-client {
+    width: 80%;
+  }
+  .footer-logo-ach .image img {
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+  .client-item-box {
+    margin-left: 1%;
+    width: 600px;
+    height: 200px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -429,6 +449,18 @@ a {
 
   .box a {
     font-size: 14px;
+  }
+  .inner-client {
+    width: 85%;
+    margin-bottom: 10%;
+  }
+  .client-item-box {
+    height: 200px;
+  }
+  .footer-logo-ach .image img {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 20%;
   }
 }
 
@@ -453,7 +485,7 @@ a {
     height: 55px;
   }
   .client-item-box {
-    height: 140px;
+    height: 200px;
   }
 
   .company-logo,

@@ -2,8 +2,7 @@
   width: 100%;
   padding-left: 5%;
   margin-top: 5%;
-  margin-bottom: 600px;
-  margin-right: 10%;
+  padding-right: 5%;
 }
 .home-part {
   float: left;
@@ -54,7 +53,9 @@
   min-height: 600px;
 } */
 #container {
-  position: absolute;
+  position: relative;
+  margin-top: -30%;
+  padding-right: 10%;
 }
 #container canvas {
   outline: none;
@@ -63,8 +64,7 @@
   position: relative;
   max-width: 220px;
   max-height: 130px;
-  margin-left: 49px;
-  margin-top: 25px;
+  margin-left: 55px;
   background: radial-gradient(closest-side, #0061d0, #0f4080, transparent);
 }
 #container img {
