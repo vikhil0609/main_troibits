@@ -75,7 +75,10 @@ const Effcient = () => {
                </div>
            </div>
         </div>
+        <div className="notice top-tri tri-part">
+         </div>
         <div className="info">
+
             <h1>Liked Our Designs?</h1>
             <a href="/contact"><button>Drop a message</button></a>
         </div>
