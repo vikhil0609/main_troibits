@@ -42,7 +42,9 @@
 .reason1-sub h6 {
   font-size: 1.1em;
   margin-top: 5%;
-  line-height: 25px;
+  color: #808080;
+  font-weight: bold;
+  line-height: 22px;
 }
 
 .reason-mid2 {
@@ -64,7 +66,9 @@
 .reason2-sub h6 {
   font-size: 1.1em;
   margin-top: 8%;
-  line-height: 25px;
+  color: #808080;
+  font-weight: bold;
+  line-height: 22px;
 }
 
 .bar2 {

@@ -138,6 +138,16 @@ span {
     top: 5450px;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .tab-static {
+    top: 5550px;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .tab-static {
+    top: 5610px;
+  }
+}
 @media only screen and (max-height: 1000px) {
   .fixe-tab {
     top: 150px;
