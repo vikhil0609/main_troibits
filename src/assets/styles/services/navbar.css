@@ -21,8 +21,8 @@
 }
 
 .tab-static {
-  position: sticky;
-  top: 4750px;
+  position: relative;
+  top: 4680px;
 }
 
 *,
@@ -127,6 +127,11 @@ span {
   margin: 30px auto;
 }
 
+@media only screen and (max-width: 1270px) {
+  .tab-static {
+    background-color: white;
+  }
+}
 @media only screen and (max-height: 1000px) {
   .fixe-tab {
     top: 150px;

@@ -30,10 +30,14 @@ class ListItem extends React.Component {
     }
 
     handleScroll = (event) =>{ 
-        // var element = (document.querySelector('#last').getBoundingClientRect().top)
-        // this.props.func(element);
+        var s = (document.querySelector('#last').getBoundingClientRect().top)
+        var element = document.body.scrollTop || document.documentElement.scrollTop
+        var element = element - s
+        if (element >= 0){
+            this.props.func(element);
+    
+        }
     }
-
 
     render(){
     const {isPositionFixed, isCarousel, isStatic, estatico, isSticky} = this.props;

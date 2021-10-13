@@ -7,6 +7,7 @@ import jQuery from 'jquery';
 
 class  Navbar extends React.Component{
 
+
     constructor(props){
         super(props);
         this.state = {
@@ -32,7 +33,6 @@ class  Navbar extends React.Component{
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
     }
-
     handleScroll = (event) =>{ 
         const winScroll =
         document.body.scrollTop || document.documentElement.scrollTop
@@ -85,10 +85,12 @@ class  Navbar extends React.Component{
             this.setState({isSticky: false});
         }
 
-        if(winScroll >=5200 ){
+        if(winScroll <= (this.state.isdata - (-600)) ){
+            if (selected == "nav-software-tab"){
             this.setState({isStatic: true, isSticky : false});
             tab.classList.remove("fixe-tab");
             tab.classList.add("tab-static");
+            }
         }else{
             tab.classList.remove("tab-static");
         }

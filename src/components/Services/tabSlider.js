@@ -24,9 +24,11 @@ class TabSlider extends React.Component{
     }
 
     render(){
+        const pull_data = (data) => {
+        }
         return(
             <div id = "slider-container" className = "slider-container">
-                <ListItem/>
+                <ListItem func={pull_data}/>
             </div>
         )
     }

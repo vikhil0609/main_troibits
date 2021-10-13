@@ -8,6 +8,7 @@
   float: left;
   width: 50%;
   position: relative;
+  margin-bottom: -20%;
 }
 
 .home-part.left-string .title {

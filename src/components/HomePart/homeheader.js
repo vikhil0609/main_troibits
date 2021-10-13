@@ -47,7 +47,7 @@ class HomeHeader extends React.Component {
       
       jQuery("#Scroll").css("background-color","#0b0b0b")
 
-       if(event.srcElement.body.scrollTop > 100 || document.documentElement.scrollTop > 100  ){
+       if(event.srcElement.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000  ){
           this.setState({isPositionFixed: true});
           this.setState({isGradient:false});
        }
