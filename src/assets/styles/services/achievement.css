@@ -355,8 +355,8 @@ a {
 
   .carousel-client .carousel-control-prev,
   .carousel-client .carousel-control-next {
-    width: 100%;
-    top: -150px;
+    width: 10%;
+    top: 50px;
   }
 
   .profile-client img {
