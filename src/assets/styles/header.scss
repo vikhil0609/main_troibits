@@ -17,9 +17,9 @@
 
       .logo-img {
         margin: auto 10px;
-        margin-top: 6px;
-        width: 35px;
-        height: 35px;
+        margin-top: -15px;
+        width: 70%;
+        height: auto;
       }
       .logo-label {
         margin-bottom: 20px;
@@ -33,7 +33,7 @@
       a {
         text-decoration: none;
         color: #eeeeee;
-        margin: auto 15px;
+        margin: auto 30px;
         margin-top: 6px;
       }
     }
@@ -45,7 +45,9 @@
   padding-top: 0;
   transition: 0.4s;
   .header {
-    width: 95%;
+    width: 80%;
+  }
+  .logo-img {
   }
 }
 

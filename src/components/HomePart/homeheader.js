@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import logoImg from '../../assets/images/logo.png';
 import  '../../assets/styles/header.scss';
@@ -13,6 +13,7 @@ class HomeHeader extends React.Component {
           isPositionFixed: false,
           isCarousel : false,
           isGradient: true,
+          isnav : 0,
       }
       this.addActiveClass = this.addActiveClass.bind(this);
       this.handleScroll = this.handleScroll.bind(this);
@@ -73,7 +74,7 @@ class HomeHeader extends React.Component {
                <div className="header">
                   <div className="left-logo">
                      <img className="logo-img" src={logoImg} />
-                     <label className="logo-label">Troibits</label>
+                     {/* <label className="logo-label">Troibits</label> */}
                      <div>
                      <img className={`${this.state.isGradient ? "gradient-background": "gradient-none"}`}  src={Gradient} />
                   </div>
@@ -139,12 +140,20 @@ class HomeHeader extends React.Component {
       )
 
       function openNav() {
+         if (this.state.isnav == 0) {
+         this.setState({isnav:1})
+         console.log(this.state.isnav)
          document.getElementById("mySidebar").style.width = "300px";
          document.getElementById("main").style.marginLeft = "300px";
+         }
+         else{
+            closeNav();
+         }
        }
        
        function closeNav() {
-          console.log("called");
+         this.setState({isnav:0})
+         console.log(this.state.isnav)
          document.getElementById("mySidebar").style.width = "0";
          document.getElementById("main").style.marginLeft= "0";
        }

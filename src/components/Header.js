@@ -12,7 +12,8 @@ class HomeHeader extends React.Component {
       this.state = {
           active :"home" ,
           isPositionFixed: false,
-          isCarousel : false
+          isCarousel : false,
+          isnav : 0
       }
       this.addActiveClass = this.addActiveClass.bind(this);
       this.handleScroll = this.handleScroll.bind(this);
@@ -80,14 +81,15 @@ class HomeHeader extends React.Component {
 
    render(){  
       const {isCarousel} = this.state;
+
       if(!isCarousel)
          
          return (
             <div id="Scroll" style={{backgroundColor:"transparent"}} className= {`header-wrap${this.state.isPositionFixed ? ' fixed' : ""}`} onScroll = {this.handleScroll}>
                <div className="header">
                   <div className="left-logo">
-                     <img className="logo-img" src={logoImg} />
-                     <label className="logo-label">Troibits</label>
+                     <a href="/"><img className="logo-img" src={logoImg} /></a>
+                     {/* <label className="logo-label">Troibits</label> */}
    
                   </div>
                   <div className="menu menuA">
@@ -156,7 +158,7 @@ class HomeHeader extends React.Component {
          function openNav() {
             document.getElementById("mySidebar").style.width = "300px";
             document.getElementById("main").style.marginLeft = "300px";
-          }
+             }
           
           function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
