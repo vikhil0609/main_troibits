@@ -78,7 +78,7 @@ body {
   transition: background-color 0.8s;
 }
 .header-wrap.cover {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
   /* opacity: 0.9; */
 }
 .header {

@@ -60,14 +60,17 @@ class HomeHeader extends React.Component {
   handleScroll(event) {
       let scrollTop = event.srcElement.body.scrollTop,
           itemTranslate = Math.min(0, scrollTop/3 - 60);
-      
-      jQuery("#Scroll").css("background-color","#0b0b0b")
 
-       if(event.srcElement.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+
+       if(event.srcElement.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+         jQuery("#Scroll").css({"background-color":"#0b0b0b",position:"fixed"})
           this.setState({isPositionFixed: true});
-       else  
+       }
+          else{  
+            jQuery("#Scroll").css({"background-color":"transparent",position:"absolute"})
           this.setState({isPositionFixed: false});
   }
+}
 
     addActiveClass(e){
       const clicked = e.target.id;

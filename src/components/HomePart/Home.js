@@ -42,8 +42,8 @@ class Home extends Component {
                         <div className="int-line"></div>
                         <div className="description pro-thin" style={{"color":"lightgrey"}}>
                         We are your extended team who keeps digitizing your business and moves the software development and marketing process quickly with latest innovations and smart app systems. 
-                        <a href="/contact" style={{textDecoration:"none"}}><div className="chat-btn">Lets Chat!</div></a>
                         </div>
+                        <div className="chat-btn" ><a href="/contact" style={{textDecoration:"none"}}>Lets chat</a></div>
                     </div>
                     <div className="right-webgl home-part" id="rightWebGL">
                         <div id="colorShadow"><img src={""} /></div>

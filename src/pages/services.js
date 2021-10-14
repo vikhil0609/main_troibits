@@ -85,7 +85,7 @@ class Services extends React.Component {
             console.log(data)
           } 
         return(
-            <div className = "page-wrapper">
+            <div className = "page-wrapper" style={{backgroundColor:"#0b0b0b"}}>
                 <HeaderServices/>
                 {isCarousel ? <TabSlider /> : <Navbar isStatic = {isStatic} selected = {selected} isPositionFixed = {isPositionFixed} w={pull_data}/>}
                 <div className = "industry">

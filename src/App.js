@@ -297,7 +297,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="main-wrap" style={{backgroundColor:"#0b0b0b"}}> 
+        <div className="main-wrap" style={{backgroundColor:"#1a1a1a"}}> 
           <Home />
           <Services />
           <Yolo />
