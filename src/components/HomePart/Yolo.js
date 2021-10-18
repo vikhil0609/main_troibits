@@ -61,9 +61,14 @@ const Yolo = () => {
             <div className="yolo" id="yolo">
             <div className="yolo-content subpart-content">
                 <div className="yolo-part left-taxi">
+                    <div>
                     <div className="notice-blue">Taxi booking</div>
                     <div className="yolo-title">YOLO</div>
                     <div className="description">The smartest way to get around</div>
+                    </div>
+                    <div className="hi">
+
+                    </div>
                 </div>
                 <div className="yolo-part center-img">
                     <img className="yolo-phone-img" src={yoloPhoneColorImg}></img>
@@ -81,10 +86,16 @@ const Yolo = () => {
     <div className="yolo" id="first-app">
     <div className="yolo-content subpart-content">
                 <div className="yolo-part left-taxi">
+                    <div>
                 <div className="notice-blue">Taxi booking</div>
                     <div className="yolo-title">Skylar</div>
                     <div className="description">North India’s Biggest Poultry Group</div>
+                    </div>
+                    <div className="hi">
+
+                    </div>
                 </div>
+
                 <div className="yolo-part center-img">
                     <img className="yolo-phone-img" src={yoloPhoneColorImg}></img>
                 </div>
@@ -101,9 +112,14 @@ const Yolo = () => {
     <div className ="yolo" id="third-app">
     <div className="yolo-content subpart-content">
                 <div className="yolo-part left-taxi">
+                    <div>
                     <div className="notice-blue">Cryptocurrency</div>
                     <div className="yolo-title">Bit7Pay</div>
                     <div className="description">Buy,Sell and Store multiple cryptocurrencies</div>
+                    </div>
+                    <div className="hi">
+
+                    </div>
                 </div>
                 <div className="yolo-part center-img">
                     <img className="yolo-phone-img" src={bit7pay}></img>

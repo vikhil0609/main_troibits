@@ -16,6 +16,8 @@
 .yolo-content .left-taxi {
   width: 25%;
   margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
 }
 .yolo-content .left-taxi .notice-blue {
   color: #0061d0;
@@ -40,7 +42,7 @@
 }
 .arrow-part {
   position: absolute;
-  margin-top: calc(32% + 50px);
+  margin-top: calc(25% + 50px);
   margin-left: calc(10% - 5px);
   z-index: 10;
 }
@@ -50,6 +52,13 @@
   cursor: pointer;
   position: relative;
 }
+
+.hi {
+  width: 1px;
+  background-color: white;
+  height: 350px;
+}
+
 .yolo-content .center-img {
   width: 45%;
   height: 100px;
@@ -256,9 +265,6 @@
   .yolo {
     padding-bottom: 30px;
   }
-  .yolo .yolo-content {
-    padding-top: 120px;
-  }
   .yolo .left-taxi {
     margin-top: 80px;
   }
@@ -274,8 +280,15 @@
   .yolo .right-app .app-content {
     margin-top: 30px;
   }
+  .main .arrow-part {
+    margin-top: 25%;
+    padding-left: 1%;
+  }
 }
 @media only screen and (max-width: 960px) {
+  .hi {
+    display: none;
+  }
   .yolo .left-taxi .description {
     display: none;
   }
@@ -286,16 +299,36 @@
     font-size: 10px;
   }
   .yolo-content .center-img .yolo-phone-img {
-    width: 70%;
+    width: 60%;
   }
   .yolo {
-    height: 700px;
+    padding-left: 10%;
+    height: 480px;
+  }
+  .yolo-content .left-taxi {
+    margin-top: 160px;
+  }
+  .main .arrow-part {
+    margin-top: 30%;
+    padding-left: 5%;
+  }
+  .main .arrow-part img {
+    width: 20px;
+  }
+  .yolo-content .left-taxi .notice-blue {
+    font-size: 15px;
+  }
+  .yolo-content .left-taxi .yolo-title {
+    font-size: 30px;
   }
 }
 
 @media only screen and (max-width: 700px) {
   .yolo .yolo-footer {
     width: 25%;
+  }
+  .yolo {
+    background-color: white;
   }
 }
 @media only screen and (max-width: 600px) {
