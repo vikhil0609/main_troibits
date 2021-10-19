@@ -35,6 +35,7 @@ class Home extends Component {
     render() {
         
         return (
+            <div>
             <div className="home">
                 <div className="home-content subpart-content">
                     <div className="left-string home-part">
@@ -50,6 +51,11 @@ class Home extends Component {
                         <div id="container"><img src={""} /></div>
                     </div>
                 </div>
+            </div>
+            <div className="notice top-tri tri-part">
+            <div className="label">Our Services</div>
+            <span></span>
+         </div>
             </div>
         )
     }

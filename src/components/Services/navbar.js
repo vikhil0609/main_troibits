@@ -50,11 +50,11 @@ class  Navbar extends React.Component{
         longA = a.offsetTop - (window.pageYOffset - 340),
         longB = b.offsetTop - (window.pageYOffset - 340),
         longC = c.offsetTop - (window.pageYOffset - 340),
-        longD = d.offsetTop - (window.pageYOffset - 340),
-        longE = e.offsetTop - (window.pageYOffset - 340),
-        longF = f.offsetTop - (window.pageYOffset - 320),
-        longG = g.offsetTop - (window.pageYOffset - 340),
-        longH = h.offsetTop - (window.pageYOffset - 340);
+        longD = d.offsetTop - (window.pageYOffset - 200),
+        longE = e.offsetTop - (window.pageYOffset - 200),
+        longF = f.offsetTop - (window.pageYOffset - 100),
+        longG = g.offsetTop - (window.pageYOffset - 20),
+        longH = h.offsetTop - (window.pageYOffset - 0);
         
         let selected = "";
         if(longA < 0 || longA > 0)
@@ -114,23 +114,23 @@ class  Navbar extends React.Component{
         if(event.target.id === "nav-startup-tab")
             posVal =  a.offsetTop + 360 ; 
         if(event.target.id === "nav-product-tab")
-            posVal =  b.offsetTop + 360;
+            posVal =  b.offsetTop + 390;
         if(event.target.id === "nav-mobile-tab")
             posVal =  c.offsetTop + 360;
         if(event.target.id === "nav-web-tab"){
-            posVal =  d.offsetTop + 360;
+            posVal =  d.offsetTop + 280;
             console.log( `pos: ${d.offsetTop} && pa: ${posVal} && ${event.target.id}`)
         }
         if(event.target.id === "nav-enterprise-tab")
-            posVal =  e.offsetTop + 360;
+            posVal =  e.offsetTop + 200;
         if(event.target.id === "nav-iot-tab"){  
-            posVal =  f.offsetTop + 400;
+            posVal =  f.offsetTop + 180;
             console.log( `pos: ${f.offsetTop} && pa: ${posVal} && ${event.target.id}`)
         }
         if(event.target.id === "nav-growth-tab")
-            posVal =  g.offsetTop + 360;
+            posVal =  g.offsetTop + 100;
         if(event.target.id === "nav-software-tab")
-            posVal =  h.offsetTop + 360;
+            posVal =  h.offsetTop + 10;
             this.change = posVal +"px"
         document.documentElement.scrollTop = posVal;
     }

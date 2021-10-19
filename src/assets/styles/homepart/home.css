@@ -1,9 +1,9 @@
 .home {
   position: relative;
   width: 100%;
-  min-height: 517px;
   padding-left: 5%;
   padding-top: 15%;
+  height: 93vh;
 }
 .home-part {
   float: left;
@@ -11,8 +11,6 @@
   position: relative;
 }
 
-.home-part.left-string {
-}
 .home-part.left-string .title {
   font-size: 1.97em;
   margin-left: 5%;
@@ -140,9 +138,53 @@ a {
   padding-top: 10px;
 }
 
-@media only screen and (max-width: 1280px) {
+.notice {
+  width: 350px;
+  padding-bottom: -10px;
+  background-color: #0b0b0b;
+  display: block;
+  height: 10%;
+  position: sticky;
+}
+.notice::after {
+  left: 100%;
+  bottom: 0;
+  height: 100px;
+  border-bottom-color: #0b0b0b;
+}
+.notice .label {
+  padding-top: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 30%;
+}
+.notice span {
+  z-index: 999;
+  margin-right: 30%;
+  margin-top: 3px;
+}
+.notice span::after {
+  content: "\2193";
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 1300px) {
   .home-part.left-string {
-    margin-top: calc(50vh - 270px);
+    margin-top: calc(40vh - 270px);
+  }
+  /* .home {
+    padding-top: 10%;
+    height: calc(864px - 350px);
+  } */
+  #container canvas {
+    outline: none;
+    margin-top: 0%;
+    padding-right: 10%;
+  }
+  #colorShadow {
+    margin-top: 5%;
+    margin-left: 0%;
   }
   .home-part.left-string .title {
     font-size: 30px;

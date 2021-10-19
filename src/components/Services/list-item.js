@@ -212,7 +212,7 @@ class ListItem extends React.Component {
                     <div className = 'col title  margin '><h1>Next Gen Technology</h1>
                     <div className = "bara"> &nbsp; </div>
                     </div>
-                    <div className = "col icon"><img src = {NextGen}/></div>
+                    <div className = "col icon" id="nextgen"><img src = {NextGen}/></div>
     
                 </div>
                 <div className = "body-list">
