@@ -59,8 +59,6 @@ html {
 }
 
 .header-list .icon img {
-  max-width: 120%;
-  height: 120%;
 }
 .body-list {
   width: 100%;
@@ -110,7 +108,7 @@ html {
   }
 }
 .footer .know a {
-  font-size: 1.2em;
+  font-size: 1em;
   text-decoration: none;
   color: #0a5de9;
 }
@@ -123,7 +121,8 @@ html {
 }
 
 .footer .know a:hover {
-  color: #fff;
+  transition: 1s;
+  font-size: 1.1em;
 }
 
 @media only screen and (max-width: 1030px) {

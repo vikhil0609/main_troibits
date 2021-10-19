@@ -90,9 +90,11 @@ class  Navbar extends React.Component{
             this.setState({isStatic: true, isSticky : false});
             tab.classList.remove("fixe-tab");
             tab.classList.add("tab-static");
-            // jQuery(".tab-static").css("top",this.state.isdata+"px")
+            // jQuery(".tab-static").css("top",(this.state.isdata - 100)+"px")
             }
         }else{
+            this.setState({isStatic: false  , isSticky : true});
+            tab.classList.add("fixe-tab");
             tab.classList.remove("tab-static");
         }
 
