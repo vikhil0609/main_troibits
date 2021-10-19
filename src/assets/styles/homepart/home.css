@@ -1,7 +1,7 @@
 .home {
   position: relative;
   width: 100%;
-  padding-left: 5%;
+  padding-left: 0%;
   padding-top: 15%;
   height: 93vh;
 }
@@ -183,8 +183,8 @@ a {
     padding-right: 10%;
   }
   #colorShadow {
-    margin-top: 5%;
     margin-left: 0%;
+    margin-top: 10px;
   }
   .home-part.left-string .title {
     font-size: 30px;

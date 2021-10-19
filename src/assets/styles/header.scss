@@ -33,7 +33,7 @@
       a {
         text-decoration: none;
         color: #eeeeee;
-        margin: auto 30px;
+        margin: auto 20px;
         margin-top: 6px;
       }
     }
@@ -65,4 +65,10 @@
 
 .gradient-none {
   display: none;
+}
+
+@media only screen and (max-width: 1070px) {
+  .menuA a {
+    margin: auto 0px;
+  }
 }
