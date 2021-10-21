@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -45,7 +45,7 @@
   background: #0a5de9;
   width: 12px;
   height: 12px;
-  left: -8.3px;
+  right: 7px;
   border: 0;
   z-index: 99;
 }
@@ -57,7 +57,7 @@
 
 .nav-tab .nav-item-bar .circle {
   position: relative;
-  left: -7.3px;
+  right: 6px;
   top: 60px;
   background: #000000;
   border: 0.5px solid #eeeeee;

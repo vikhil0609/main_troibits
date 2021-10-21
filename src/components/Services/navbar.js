@@ -49,12 +49,12 @@ class  Navbar extends React.Component{
         const sticky = container.offsetTop,
         longA = a.offsetTop - (window.pageYOffset - 340),
         longB = b.offsetTop - (window.pageYOffset - 340),
-        longC = c.offsetTop - (window.pageYOffset - 340),
-        longD = d.offsetTop - (window.pageYOffset - 200),
-        longE = e.offsetTop - (window.pageYOffset - 200),
-        longF = f.offsetTop - (window.pageYOffset - 100),
+        longC = c.offsetTop - (window.pageYOffset - 300),
+        longD = d.offsetTop - (window.pageYOffset - 230),
+        longE = e.offsetTop - (window.pageYOffset - 180),
+        longF = f.offsetTop - (window.pageYOffset - 160),
         longG = g.offsetTop - (window.pageYOffset - 20),
-        longH = h.offsetTop - (window.pageYOffset - 0);
+        longH = h.offsetTop - (window.pageYOffset - (-20));
         
         let selected = "";
         if(longA < 0 || longA > 0)
@@ -116,21 +116,21 @@ class  Navbar extends React.Component{
         if(event.target.id === "nav-product-tab")
             posVal =  b.offsetTop + 390;
         if(event.target.id === "nav-mobile-tab")
-            posVal =  c.offsetTop + 360;
+            posVal =  c.offsetTop + 320;
         if(event.target.id === "nav-web-tab"){
-            posVal =  d.offsetTop + 280;
+            posVal =  d.offsetTop + 250;
             console.log( `pos: ${d.offsetTop} && pa: ${posVal} && ${event.target.id}`)
         }
         if(event.target.id === "nav-enterprise-tab")
-            posVal =  e.offsetTop + 200;
+            posVal =  e.offsetTop + 180;
         if(event.target.id === "nav-iot-tab"){  
-            posVal =  f.offsetTop + 180;
+            posVal =  f.offsetTop + 160;
             console.log( `pos: ${f.offsetTop} && pa: ${posVal} && ${event.target.id}`)
         }
         if(event.target.id === "nav-growth-tab")
-            posVal =  g.offsetTop + 100;
+            posVal =  g.offsetTop + 50;
         if(event.target.id === "nav-software-tab")
-            posVal =  h.offsetTop + 10;
+            posVal =  h.offsetTop + (-20);
             this.change = posVal +"px"
         document.documentElement.scrollTop = posVal;
     }
