@@ -52,10 +52,15 @@ html {
 }
 
 .header-list .icon {
+  max-width: 50%;
   display: flex;
-  margin-left: 10%;
   justify-content: center;
   padding-bottom: 40px;
+}
+
+#nextgen {
+  padding-top: 40px;
+  padding-bottom: 0px;
 }
 
 .header-list .icon img {

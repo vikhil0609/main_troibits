@@ -84,12 +84,7 @@
   color: #0a5de9;
 }
 .nav-tab .nav-item-bar {
-  text-align: inherit;
-  margin-top: 0;
-  padding: 0;
-  border: 0;
   border-left: 2.5px solid #666565;
-  background: none;
 }
 
 .tab .nav-tab .nav-item-bar {
@@ -116,6 +111,7 @@ span {
   top: 6vh;
   height: 100%;
   font-size: 18px;
+  padding-bottom: 10%;
 }
 
 .nav-tab .first span {
