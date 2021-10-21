@@ -113,7 +113,7 @@ span {
   margin-left: 10px;
   display: inline-block;
   position: relative;
-  top: 40px;
+  top: 6vh;
   height: 100%;
   font-size: 18px;
 }
@@ -130,6 +130,13 @@ span {
 @media only screen and (max-width: 1300px) {
   .tab-static {
     top: 5250px;
+  }
+
+  .nav-tab .nav-item-bar span {
+    top: -2vh;
+  }
+  .nav-tab .nav-item-bar .circle {
+    top: 0px;
   }
 }
 

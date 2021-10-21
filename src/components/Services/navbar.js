@@ -122,15 +122,15 @@ class  Navbar extends React.Component{
             console.log( `pos: ${d.offsetTop} && pa: ${posVal} && ${event.target.id}`)
         }
         if(event.target.id === "nav-enterprise-tab")
-            posVal =  e.offsetTop + 180;
+            posVal =  e.offsetTop + 190;
         if(event.target.id === "nav-iot-tab"){  
             posVal =  f.offsetTop + 160;
             console.log( `pos: ${f.offsetTop} && pa: ${posVal} && ${event.target.id}`)
         }
         if(event.target.id === "nav-growth-tab")
-            posVal =  g.offsetTop + 50;
+            posVal =  g.offsetTop + 60;
         if(event.target.id === "nav-software-tab")
-            posVal =  h.offsetTop + (-20);
+            posVal =  h.offsetTop + (-15);
             this.change = posVal +"px"
         document.documentElement.scrollTop = posVal;
     }
