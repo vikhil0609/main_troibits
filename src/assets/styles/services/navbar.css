@@ -127,13 +127,16 @@ span {
   .tab-static {
     top: 5250px;
   }
+  #nav-tab {
+    margin-top: -5%;
+  }
 
-  .nav-tab .nav-item-bar span {
+  /* .nav-tab .nav-item-bar span {
     top: -2vh;
   }
   .nav-tab .nav-item-bar .circle {
     top: 0px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1270px) {

@@ -114,23 +114,23 @@ class  Navbar extends React.Component{
         if(event.target.id === "nav-startup-tab")
             posVal =  a.offsetTop + 360 ; 
         if(event.target.id === "nav-product-tab")
-            posVal =  b.offsetTop + 390;
+            posVal =  b.offsetTop + 520;
         if(event.target.id === "nav-mobile-tab")
-            posVal =  c.offsetTop + 320;
+            posVal =  c.offsetTop + 520;
         if(event.target.id === "nav-web-tab"){
-            posVal =  d.offsetTop + 250;
+            posVal =  d.offsetTop + 520;
             console.log( `pos: ${d.offsetTop} && pa: ${posVal} && ${event.target.id}`)
         }
         if(event.target.id === "nav-enterprise-tab")
-            posVal =  e.offsetTop + 190;
+            posVal =  e.offsetTop + 520;
         if(event.target.id === "nav-iot-tab"){  
-            posVal =  f.offsetTop + 160;
+            posVal =  f.offsetTop + 560;
             console.log( `pos: ${f.offsetTop} && pa: ${posVal} && ${event.target.id}`)
         }
         if(event.target.id === "nav-growth-tab")
-            posVal =  g.offsetTop + 60;
+            posVal =  g.offsetTop + 520;
         if(event.target.id === "nav-software-tab")
-            posVal =  h.offsetTop + (-15);
+            posVal =  h.offsetTop + 500;
             this.change = posVal +"px"
         document.documentElement.scrollTop = posVal;
     }
