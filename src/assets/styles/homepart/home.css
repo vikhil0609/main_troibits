@@ -1,10 +1,49 @@
 .home {
-  position: relative;
-  width: 100%;
-  padding-left: 0%;
+  width: 80%;
   padding-top: 15%;
   height: 93vh;
+  padding-left: 11%;
+  display: flex;
+  justify-content: space-between;
 }
+
+.home .home-left {
+  width: 50%;
+}
+
+.home .home-left .home-heading {
+  font-size: 36px;
+}
+
+.home .home-line {
+  width: 17%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  height: 3px;
+  background-color: #0072ff;
+}
+
+.home .home-subtext {
+  font-size: 1em;
+  color: #989898;
+  line-height: 28px;
+}
+
+.home .home-chat-btn {
+  margin-top: 5%;
+  border: 2px solid white;
+  padding: 10px 20px;
+  width: 23%;
+  color: white;
+}
+
+.home .home-chat-btn:hover {
+  cursor: pointer;
+  transition: 1s;
+  color: black;
+  background-color: white;
+}
+
 .home-part {
   float: left;
   width: 50%;
@@ -72,14 +111,14 @@ a {
 #container canvas {
   outline: none;
   margin-top: -10%;
-  padding-right: 5%;
+  margin-left: 10%;
 }
 #colorShadow {
   position: relative;
 
   max-width: 220px;
   max-height: 130px;
-  margin-left: 49px;
+  margin-left: 35%;
   margin-top: -12%;
   padding-right: 5%;
   background: radial-gradient(closest-side, #0072ff, #0f4080, transparent);
@@ -170,21 +209,21 @@ a {
 }
 
 @media only screen and (max-width: 1300px) {
-  .home-part.left-string {
-    margin-top: calc(40vh - 270px);
+  .home {
+    width: 90%;
+    padding-left: 4%;
+    padding-top: 18%;
   }
-  /* .home {
-    padding-top: 10%;
-    height: calc(864px - 350px);
-  } */
   #container canvas {
+    width: 10%;
     outline: none;
     margin-top: 0%;
-    padding-right: 10%;
+    margin-left: 1%;
+    margin-top: -8%;
   }
   #colorShadow {
-    margin-left: 0%;
-    margin-top: 10px;
+    margin-left: 10%;
+    margin-top: -10%;
   }
   .home-part.left-string .title {
     font-size: 30px;
@@ -194,12 +233,6 @@ a {
   }
   .home-part.left-string .description {
     font-size: 16px;
-  }
-  .home-part.left-string .chat-btn {
-    font-size: 20px;
-    width: 200px;
-    height: 35px;
-    padding-top: 13px;
   }
 }
 

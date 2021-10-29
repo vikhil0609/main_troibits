@@ -1,14 +1,15 @@
 import React from 'react';
 import '../assets/styles/footer.css';
  
-import logoImg from '../assets/images/logo.png';
+
+import logoImg from "../assets/images/homeimages/logo.png" ;
  
 const Footer = () => {
     return (
       <div className="footer-wrap">
          <div className="footer">
             <img className="logo-img" src={logoImg} />
-            <label className="logo-label">TROBITS</label>
+            <label className="logo-label">TRIOBITS</label>
             <div className="footer-content">
                <div className="footer-item infoTech">
                      2019 Trobits infotech private limited

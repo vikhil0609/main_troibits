@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-wrap">
          <div className="footer">
             <img className="logo-img" src={logoImg} />
-            <label className="logo-label">TROBITS</label>
+            <label className="logo-label">TR0IBITS</label>
             <div className="footer-content">
                <div className="footer-item infoTech">
                      2019 Trobits infotech private limited

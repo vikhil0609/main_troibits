@@ -33,8 +33,8 @@ class Cube extends Component {
         return (
             <div className="home">
                     <div className="right-webgl home-part" id="rightWebGL">
-                        <div id="colorShadow"><img src={shadowBackImg} /></div>
-                        <div id="container"><img src={cubeBackImg} /></div>
+                        {/* <div id="colorShadow"><img src={shadowBackImg} /></div>
+                        <div id="container"><img src={cubeBackImg} /></div> */}
                     </div>
                 </div>
         )

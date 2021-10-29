@@ -108,7 +108,7 @@ class HomeHeader extends React.Component {
            <div id="mySidebar" className="sidebar">
             <a className="closebtn" onClick={() => closeNav()}>×</a>
             <div className="sidebarcompany">
-            <img src={logoImg} />
+            {/* <img src={logoImg} /> */}
             <label>&nbsp;Troibits </label>
             </div>
             <div className="sidebarBar">
@@ -140,20 +140,11 @@ class HomeHeader extends React.Component {
       )
 
       function openNav() {
-         if (this.state.isnav == 0) {
-         this.setState({isnav:1})
-         console.log(this.state.isnav)
          document.getElementById("mySidebar").style.width = "300px";
          document.getElementById("main").style.marginLeft = "300px";
-         }
-         else{
-            closeNav();
-         }
        }
        
        function closeNav() {
-         this.setState({isnav:0})
-         console.log(this.state.isnav)
          document.getElementById("mySidebar").style.width = "0";
          document.getElementById("main").style.marginLeft= "0";
        }

@@ -24,12 +24,17 @@ class Company extends React.Component{
     }
 
     render(){
-        function display_sub_text(Class){
+        function display_sub_text(Class,number){
             jQuery(Class).css("display","block");
+            jQuery(".hello").css("color","black")
             for (var i=1; i<9 ;i++){
+                if (i == number){
+                    jQuery("#"+number).css({"color":"#0072ff"})
+                }
                 var item = "#subText"+i
                 if (item!= Class){
                     jQuery(item).css("display","none")
+                    jQuery("#"+i).css({"color":"white"})
                 }
             }
         }
@@ -138,21 +143,21 @@ class Company extends React.Component{
                          are determined to provide IT support through complete life cycle of
                           your business.</h6>
                     <ul className={styles.Companyulist}>
-                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText1")}>IP Protection
-                            <div className={styles.subText} id="subText1" style={{display:"none"}}>This is subtext</div></li>
-                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText2")}>Consultant And Research
+                        <li className={styles.Companylist} id="1"  onClick={() => display_sub_text("#subText1","1")}>IP Protection
+                            <div className={styles.subText}  id="subText1" style={{display:"none"}}>This is subtext</div></li>
+                        <li className={styles.Companylist} id="2"  onClick={() => display_sub_text("#subText2","2")}>Consultant And Research
                         <div className={styles.subText} id="subText2" style={{display:"none"}}>This is subtext</div></li>
-                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText3")}>Ideation And Strategic Planning
+                        <li className={styles.Companylist} id="3" onClick={() => display_sub_text("#subText3","3")}>Ideation And Strategic Planning
                         <div className={styles.subText} id="subText3" style={{display:"none"}}>This is subtext</div></li>
-                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText4")}>Product Design
+                        <li className={styles.Companylist} id="4" onClick={() => display_sub_text("#subText4","4")}>Product Design
                         <div className={styles.subText} id="subText4" style={{display:"none"}}>This is subtext</div></li>
-                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText5")}>Agile Deveploment
+                        <li className={styles.Companylist} id="5" onClick={() => display_sub_text("#subText5","5")}>Agile Deveploment
                         <div className={styles.subText} id="subText5" style={{display:"none"}}>This is subtext</div></li>
-                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText6")}>Testing and Quality Assurance
+                        <li className={styles.Companylist} id="6" onClick={() => display_sub_text("#subText6","6")}>Testing and Quality Assurance
                         <div className={styles.subText} id="subText6" style={{display:"none"}}>This is subtext</div></li>
-                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText7")}>Product Launch
+                        <li className={styles.Companylist} id="7" onClick={() => display_sub_text("#subText7","7")}>Product Launch
                         <div className={styles.subText} id="subText7" style={{display:"none"}}>This is subtext</div></li>
-                        <li id={styles.Companylist} onClick={() => display_sub_text("#subText8")}>Growth and Maintenance
+                        <li className={styles.Companylist} id="8" onClick={() => display_sub_text("#subText8","8")}>Growth and Maintenance
                         <div className={styles.subText} id="subText8" style={{display:"none"}}>This is subtext</div></li>
                     </ul>
                 </div>

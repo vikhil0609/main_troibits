@@ -2,13 +2,15 @@ import React from 'react';
 import '../../assets/styles/homepart/yolo.css';
 import '../../assets/styles/homepart/common.css';
 import jQuery from 'jquery';
-
-import yoloCubeImg        from '../../assets/images/homeimages/yolo-cube.png';
-import yoloPhoneImg       from '../../assets/images/homeimages/yolo-phone.png'; //  phone-frame
 import yoloPhoneColorImg  from '../../assets/images/homeimages/yolo-phone-color.png'; //  phone-frame
 import arrowLeftImg       from '../../assets/images/homeimages/arrow-left.png';
 import arrowRightImg      from '../../assets/images/homeimages/arrow-right.png';
 import bit7pay from '../../assets/images/homeimages/bit7pay.png';
+import skylark from "../../assets/images/homeimages/skylark.png"
+import google_play from "../../assets/images/homeimages/google_play.png";
+import apple from "../../assets/images/homeimages/apple.png";
+import '../../../node_modules/font-awesome/css/font-awesome.min.css'; 
+
 
 const Yolo = () => {
     var selAppItem = "yolo";
@@ -56,6 +58,7 @@ const Yolo = () => {
         <div className="main">
             <div className="arrow-part">
                         <img src={arrowLeftImg} onClick={() => clickArrow('left')}></img>
+                        <div className="vr"></div>
                         <img src={arrowRightImg} onClick={() => clickArrow('right')}></img>
         </div>
             <div className="yolo" id="yolo">
@@ -65,9 +68,10 @@ const Yolo = () => {
                     <div className="notice-blue">Taxi booking</div>
                     <div className="yolo-title">YOLO</div>
                     <div className="description">The smartest way to get around</div>
+                    <div className="play_image">
+                        <img src={google_play}  />
+                        <img src={apple} />
                     </div>
-                    <div className="hi">
-
                     </div>
                 </div>
                 <div className="yolo-part center-img">
@@ -90,14 +94,14 @@ const Yolo = () => {
                 <div className="notice-blue">Taxi booking</div>
                     <div className="yolo-title">Skylar</div>
                     <div className="description">North India’s Biggest Poultry Group</div>
-                    </div>
-                    <div className="hi">
-
-                    </div>
+                    <div className="play_image">
+                        <img src={google_play}  />
+                        <img src={apple} />
+                    </div>    
                 </div>
-
+                </div>
                 <div className="yolo-part center-img">
-                    <img className="yolo-phone-img" src={yoloPhoneColorImg}></img>
+                    <img className="yolo-phone-img" src={skylark}></img>
                 </div>
                 <div className="yolo-part right-app">
                     <div className="app-title">App Showcase</div>
@@ -116,9 +120,10 @@ const Yolo = () => {
                     <div className="notice-blue">Cryptocurrency</div>
                     <div className="yolo-title">Bit7Pay</div>
                     <div className="description">Buy,Sell and Store multiple cryptocurrencies</div>
+                    <div className="play_image">
+                        <img src={google_play}  />
+                        <img src={apple} />
                     </div>
-                    <div className="hi">
-
                     </div>
                 </div>
                 <div className="yolo-part center-img">

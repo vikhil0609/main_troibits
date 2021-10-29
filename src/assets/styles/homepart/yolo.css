@@ -12,6 +12,7 @@
 
 .yolo-content .yolo-part {
   float: left;
+  height: 93vh;
 }
 .yolo-content .left-taxi {
   width: 25%;
@@ -43,22 +44,23 @@
 .arrow-part {
   position: absolute;
   margin-top: calc(25% + 50px);
-  margin-left: calc(10% - 5px);
+  margin-left: 8%;
   z-index: 10;
+  display: flex;
 }
 .arrow-part img {
-  width: 25px;
-  margin-right: 40px;
+  width: 60px;
   cursor: pointer;
   position: relative;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.hi {
-  width: 1.5px;
+.arrow-part .vr {
+  width: 2px;
+  height: auto;
   background-color: white;
-  height: 350px;
 }
-
 .yolo-content .center-img {
   width: 45%;
   height: 100px;
@@ -98,11 +100,11 @@
   font-family: "ProximaNovaRegular";
   cursor: pointer;
 }
-.yolo-vrline {
-  width: 1px;
-  height: 500px;
-  background: white;
+.play_image img {
+  margin-top: 10%;
   margin-right: 10%;
+  width: 8%;
+  filter: brightness(0) invert(1);
 }
 .yolo-content .right-app .app-content-item.active {
   border-left: 2px solid #0061d0;
@@ -286,9 +288,6 @@
   }
 }
 @media only screen and (max-width: 960px) {
-  .hi {
-    display: none;
-  }
   .yolo .left-taxi .description {
     display: none;
   }

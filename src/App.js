@@ -44,8 +44,8 @@ class App extends Component {
 
   startLoading() {
     this.loading.length = Math.min(this.wWidth * 0.8, this.wHeight * 0.8, 210);
-    this.loading.time = 40;
-    this.loading.delta = this.loading.length/this.loading.time;
+    this.loading.time = 1;
+    this.loading.delta = 0;
     jQuery(".loading").css({
        "width":this.loading.length+"px",
        "top" : Math.round((this.wHeight-this.loading.length) /2) + "px",
@@ -212,16 +212,16 @@ class App extends Component {
         else this.colVal = 0;
         if (this.colTime === 300 * speedVal) this.colTime = 0;
 
-        // var lightIntVal = 2 + this.colVal * 6;
-        // this.lightArr.forEach(light => { light.intensity = lightIntVal; });
+        var lightIntVal = 2 + this.colVal * 6;
+        this.lightArr.forEach(light => { light.intensity = lightIntVal; });
 
         if (this.colVal < 0.8) this.colVal = 0.8;
 
         jQuery("#colorShadow").css("opacity", this.colVal);
  
- self.lineMat.color.setRGB(0 * self.colVal, 0.38 * self.colVal, 0.81 * self.colVal);
+        self.lineMat.color.setRGB(0 * self.colVal, 0.38 * self.colVal, 0.81 * self.colVal);
 
-      //  self.lineMat.color.setRGB(0 * self.colVal, 0.38 * self.colVal, 0.81 * self.colVal);
+      self.lineMat.color.setRGB(0 * self.colVal, 0.38 * self.colVal, 0.81 * self.colVal);
     }
   }
   loadCube() {
@@ -270,7 +270,7 @@ class App extends Component {
     var self = this;
     setTimeout(() => {
       self.setCanvasSize();
-      self.setMenuClass("Home");
+      // self.setMenuClass("Home");
       if (self.device == "web") {
         self.init();
         self.animate();

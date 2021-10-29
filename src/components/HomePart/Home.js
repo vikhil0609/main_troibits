@@ -33,31 +33,37 @@ class Home extends Component {
     
 
     render() {
-        
         return (
             <div>
             <div className="home">
-                <div className="home-content subpart-content">
-                    <div className="left-string home-part">
-                        <div className="title">Mobile App Development <br /> & Digital Transformation</div>              
-                        <div className="int-line"></div>
-                        <div className="description pro-thin" style={{"color":"lightgrey"}}>
-                        We are your extended team who keeps digitizing your business and moves the software development and marketing process quickly with latest innovations and smart app systems. 
-                        </div>
-                        <div className="chat-btn" ><a href="/contact" style={{textDecoration:"none"}}>Lets chat</a></div>
+                <div className="home-left">
+                    <div className="home-heading">
+                        Mobile App Development
+                        <br />
+                        & Digital Tranformation
                     </div>
-                    <div className="right-webgl home-part" id="rightWebGL">
+                    <div className="home-line"></div>
+                    <div className="home-subtext">
+                        We are your extended team who keeps digitizing your business and 
+                        moves the software development and marketing process quickly
+                        with latest innovations and smart app systems.
+                    </div>
+                    <a href="/contact" style={{textDecoration:"none"}}>
+                    <div className="home-chat-btn">
+                        Let's chat
+                    </div></a>
+                </div>
+                <div className="right-webgl home-part" id="rightWebGL">
                         <div id="colorShadow"><img src={""} /></div>
                         <div id="container"><img src={""} /></div>
                     </div>
-                </div>
             </div>
             <div className="notice top-tri tri-part">
             <div className="label">Our Services</div>
             <span></span>
          </div>
             </div>
-        )
+        );
     }
 }
   

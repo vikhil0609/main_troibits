@@ -36,7 +36,7 @@ ReactDOM.render(
               </Route>
               <Route exact path="/services" >
                 <div>
-                  <Header />
+                  {/* <Header /> */}
                 <Services />
                 </div>
               </Route>

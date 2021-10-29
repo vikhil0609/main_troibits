@@ -149,7 +149,7 @@ body {
   background-color: #0072ff;
   width: 6px;
   height: 6px;
-  border-radius: 6px;
+  border-radius: 50%;
 }
 
 .menu.menuB {
