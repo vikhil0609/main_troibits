@@ -8,7 +8,7 @@ import Achievement from '../components/Services/achievement';
 import Reason from '../components/Services/reason';
 import DropMessage from '../components/Services/drop-message';
 import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Footer from "../components/HomePart/Footer"
 import TabSlider from '../components/Services/tabSlider';
 
 class Services extends React.Component {

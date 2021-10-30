@@ -2,7 +2,6 @@ import React from 'react';
 import contactstyles from '../../assets/styles/contact/contact.module.css';
 import Email from '../../assets/images/media_library/emaillabel.png';
 import Phone from '../../assets/images/media_library/phonelabel.png';
-import Footer from "../Footer";
 
 
 

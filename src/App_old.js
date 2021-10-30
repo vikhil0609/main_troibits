@@ -15,7 +15,7 @@ import Efficient from './components/Efficient';
 import Intro     from './components/Intro';
 import Contact   from './components/Contact';
 import Map       from './components/Map';
-import Footer    from './components/Footer';
+// import Footer    from './components/Footer';
 
 import homeBackImg from './assets/images/home-back.png';
 import loadingImg from './assets/images/loading-logo.png';

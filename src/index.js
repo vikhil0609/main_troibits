@@ -4,7 +4,6 @@ import ReactDOM from "react-dom";
 import registerServiceWorker from './registerServiceWorker';
 import App from './App';
 import '../node_modules/font-awesome/css/font-awesome.min.css'; 
-import HomePage from "./pages/home";
 import Services from './pages/services'
 import Header from './components/Header'
 import Contact from "./components/ContactPart/contact";
@@ -14,7 +13,6 @@ import './index.css'
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Footer from "./components/HomePart/Footer";
 import HomeHeader from "./components/HomePart/homeheader";
-import ScrollToTop from "./components/ScrollToTop.js"
 import "./App.css"
 
 ReactDOM.render(
