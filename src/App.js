@@ -9,14 +9,12 @@ import './App.css';
 import Home      from './components/HomePart/Home';
 import Services    from './components/HomePart/Services';
 import Yolo      from './components/HomePart/Yolo';
-import Efficient from './components/HomePart/Efficient';
+import Effcient from './components/HomePart/Efficient';
 import Intro     from './components/HomePart/Intro';
 import Contact   from './components/HomePart/Contact';
 import Map       from './components/HomePart/Map';
 import Footer    from './components/HomePart/Footer';
 
-import homeBackImg from './assets/images/home-back.png';
-import loadingImg from './assets/images/loading-logo.png';
 import envBKImg from './assets/images/back_BK2.jpg';
 import envDNImg from './assets/images/back_DN2.jpg';
 import envFRImg from './assets/images/back_FR2.jpg';
@@ -86,22 +84,28 @@ class App extends Component {
     this.device = ( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )?"mobile":"web"; //|iPad
     this.wWidth = jQuery(window).width();
     this.wHeight = jQuery(window).height();
+    
 
     var hWidth = (this.wWidth > 1280)?1280: this.wWidth;
-    if (this.device == "mobile") {
-      // jQuery(".subpart-content").addClass("port");
-      jQuery("#homeBack").addClass("port");
-      jQuery(".header-wrap").addClass("port");
-      jQuery(".home").addClass("port");
-      jQuery(".services").addClass("port");
-      jQuery(".yolo").addClass("port");
-      jQuery(".efficient").addClass("port");
-      jQuery(".intro").addClass("port");
-      jQuery(".contact").addClass("port");
-      jQuery(".map").addClass("port");
-      jQuery(".footer").addClass("port");
+    // if (this.device == "mobile") {
+    //   // jQuery(".subpart-content").addClass("port");
+    //   jQuery("#homeBack").addClass("port");
+    //   jQuery(".header-wrap").addClass("port");
+    //   jQuery(".home").addClass("port");
+    //   jQuery(".services").addClass("port");
+    //   jQuery(".yolo").addClass("port");
+    //   jQuery(".efficient").addClass("port");
+    //   jQuery(".intro").addClass("port");
+    //   jQuery(".contact").addClass("port");
+    //   jQuery(".map").addClass("port");
+    //   jQuery(".footer").addClass("port");
+    // }
+    if (this.wWidth < 1110){
+      hWidth = (hWidth / 2) + 50;
     }
-    else hWidth = hWidth / 2;
+    else{
+    hWidth = hWidth / 2;
+    }
     this.cWidth = hWidth * 1.68;
 
     this.cHeight = this.cWidth ;
@@ -116,12 +120,12 @@ class App extends Component {
     // sTop = this.wHeight/2 + this.cHeight * 0.02;
     sTop = cTop + this.cHeight * 0.7;
     leftTop = (this.wWidth > 1280)?this.wHeight/2- 350:this.wHeight/2- 270;
-
-    if (this.wHeight < 500) {
-      cTop += (500 - this.wHeight);
-      sTop += (500 - this.wHeight);
-      leftTop += (500 - this.wHeight);
-    }
+    // console.log(this.wHeight)
+    // if (this.wHeight < 500) {
+    //   cTop += (500 - this.wHeight);
+    //   sTop += (500 - this.wHeight);
+    //   leftTop += (500 - this.wHeight);
+    // }
 
     jQuery("#container").css({"width":this.cWidth+"px", "height":this.cHeight+"px", "left":cLeft+"px", "top":cTop+"px"});
     jQuery("#colorShadow").css({"width":sWidth+"px", "height":sHeight+"px", "left":sLeft+"px", "top":sTop+"px"});
@@ -212,7 +216,7 @@ class App extends Component {
         else this.colVal = 0;
         if (this.colTime === 300 * speedVal) this.colTime = 0;
 
-        var lightIntVal = 2 + this.colVal * 6;
+        var lightIntVal = 2 + this.colVal;
         this.lightArr.forEach(light => { light.intensity = lightIntVal; });
 
         if (this.colVal < 0.8) this.colVal = 0.8;
@@ -301,7 +305,7 @@ class App extends Component {
           <Home />
           <Services />
           <Yolo />
-          <Efficient />
+          <Effcient />
           <Map />
           <div className="Main-footer">
               <Footer />

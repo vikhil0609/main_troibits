@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/efficient.css';
+import '../assets/styles/homepart/efficient.css';
 import '../assets/styles/common.css';
 
 import backKeyBoardImg    from '../assets/images/back-keyboard.jpg';
