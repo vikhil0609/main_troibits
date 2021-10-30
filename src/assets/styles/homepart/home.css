@@ -236,6 +236,29 @@ a {
   }
 }
 
+@media only screen and (max-width: 1218px) {
+  .home .home-chat-btn {
+    width: 12vw;
+  }
+  .home .home-left .home-heading {
+    margin-top: 5%;
+    font-size: 1.9em;
+  }
+  .home .home-subtext {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 988px) {
+  .home .home-chat-btn {
+    width: 13vw;
+  }
+  .home .home-left .home-heading {
+    margin-top: 15%;
+    font-size: 1.8em;
+  }
+}
+
 @media only screen and (max-width: 780px) {
   .home-part.left-string {
     margin-top: calc(50vh - 270px);

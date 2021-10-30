@@ -29,6 +29,7 @@ class Home extends Component {
     //         this.props.callSetBase({length:this.state.length, thick:this.state.thick, height:this.state.height, vase:this.state.vase});
     //     }, 0);
 
+    
     // }
     
 
