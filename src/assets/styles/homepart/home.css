@@ -259,44 +259,69 @@ a {
   }
 }
 
-@media only screen and (max-width: 780px) {
-  .home-part.left-string {
-    margin-top: calc(50vh - 270px);
+@media only screen and (max-width: 770px) {
+  .home {
+    display: block;
+    padding-top: 10%;
+    width: 90%;
   }
-  .home-part.left-string .title {
-    font-size: 22px;
+  #container {
+    display: none;
   }
-  .home-part.left-string .success {
-    font-size: 66px;
+  #colorShadow {
+    display: none;
   }
-  .home-part.left-string .description {
-    font-size: 14px;
+  .home .home-left {
+    width: 100%;
   }
-  .home-part.left-string .chat-btn {
-    font-size: 18px;
+  .home .home-left .home-heading {
+    width: 80%;
+  }
+  .home .home-chat-btn {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .home .home-chat-btn {
+    padding: 2%;
+    width: 20%;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .home .home-chat-btn {
+    padding: 2% 4%;
+    min-width: 25%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .home .home-chat-btn {
+    padding: 2% 3%;
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 511px) {
   .home {
-    height: auto;
+    margin-left: 2%;
+    width: 90%;
+    margin-right: 2%;
   }
-  .home-part {
-    position: absolute;
-    width: 100%;
+  .home .home-left .home-heading {
+    margin-top: 20%;
+    font-size: 1.5em;
   }
-  .home-part.right-webgl {
-    top: 100px;
+  .home .home-chat-btn {
+    width: 30%;
+    padding: 2% 5%;
   }
-  .home-part.left-string {
-    top: 0px;
-    width: 72%;
-    left: 14%;
-  }
-  .home-part.left-string .title {
-    font-size: 20px;
-  }
-  .home-part.left-string .success {
-    font-size: 60px;
+}
+
+@media only screen and (max-width: calc(466px + 18px)) {
+  .home .home-chat-btn {
+    width: 23%;
+    padding: 2% 4%;
+    font-size: 0.6em;
   }
 }

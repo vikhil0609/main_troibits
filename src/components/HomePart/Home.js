@@ -39,9 +39,10 @@ class Home extends Component {
             <div className="home">
                 <div className="home-left">
                     <div className="home-heading">
-                        Mobile App Development
-                        <br />
-                        & Digital Tranformation
+                        Mobile App Development 
+                        <div>
+                         & Digital Tranformation
+                        </div>
                     </div>
                     <div className="home-line"></div>
                     <div className="home-subtext">
