@@ -124,7 +124,7 @@ class HomeHeader extends React.Component {
               <div id="mySidebar" className="sidebar">
                <a className="closebtn" onClick={() => closeNav()}>×</a>
                <div className="sidebarcompany">
-               <img src={logoImg} />
+               {/* <img src={logoImg} /> */}
                <label>&nbsp;Troibits </label>
                </div>
                <div className="sidebarBar">

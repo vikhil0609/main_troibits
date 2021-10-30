@@ -104,7 +104,7 @@ class App extends Component {
     else hWidth = hWidth / 2;
     this.cWidth = hWidth * 1.68;
 
-    this.cHeight = this.cWidth;
+    this.cHeight = this.cWidth ;
     var cLeft, cTop, sWidth, sHeight, sLeft, sTop, leftTop;
 
     cLeft = hWidth * -0.34;

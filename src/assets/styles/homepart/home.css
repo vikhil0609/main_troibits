@@ -30,16 +30,16 @@
 }
 
 .home .home-chat-btn {
-  margin-top: 5%;
+  margin-top: 5vh;
   border: 2px solid white;
   padding: 10px 20px;
   width: 23%;
   color: white;
+  transition: 1s;
 }
 
 .home .home-chat-btn:hover {
   cursor: pointer;
-  transition: 1s;
   color: black;
   background-color: white;
 }
@@ -304,7 +304,7 @@ a {
 
 @media only screen and (max-width: 511px) {
   .home {
-    margin-left: 2%;
+    margin-left: 4%;
     width: 90%;
     margin-right: 2%;
   }
@@ -323,5 +323,12 @@ a {
     width: 23%;
     padding: 2% 4%;
     font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: calc(339px + 18px)) {
+  .home .home-chat-btn {
+    width: 30%;
+    padding: 2% 6%;
   }
 }
