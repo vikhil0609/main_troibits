@@ -75,7 +75,7 @@
   bottom: 12%;
 }
 
-.services
+/* .services
   .content-wrap
   .services-content
   .panels
@@ -88,7 +88,7 @@
   height: 40px;
   top: 10px;
   left: -18%;
-}
+} */
 .services .content-wrap .services-content .panels .panel-item:hover {
   background-color: #0061d0;
   transition: 1s;

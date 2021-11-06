@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{Component} from 'react';
 import '../../assets/styles/homepart/efficient.css';
 import '../../assets/styles/homepart/common.css';
 
@@ -8,9 +8,21 @@ import partnerHpImg       from '../../assets/images/homeimages/partner-hp.png';
 import partnerIntelImg    from '../../assets/images/homeimages/partner-intel.png';
 import partnerNikeImg     from '../../assets/images/homeimages/partner-nike.png';
 
-const Effcient = () => {
+class  Effcient extends Component {
+    constructor(props) {
+        super(props);
+      }
+
+      componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+      }
+    
+      handleScroll(event) {
+       
+      }
+    render(){
     return (
-        <div>
+        <div id="efficient_main" onScroll={() => this.handleScroll.bind(this)}>
         <div className="efficient">
            <div className="efficient-left">
                 <div className="left-head" id="efficient-head">
@@ -56,8 +68,9 @@ const Effcient = () => {
            </div>
            <div className="efficient-end">
                <div>
-               <div className="end-head">
+               <div className="end-head" onClick={() => animateValue("end-head", 100, 25, 5000)}>
                    <strong>353</strong>
+                   
                </div> 
                <div className="end-subText">
                    <p> Lorem ipsum dolor sit amet, <br />
@@ -84,6 +97,25 @@ const Effcient = () => {
         </div>
         </div>
     );
+    function animateValue(id, start, end, duration) {
+        if (start === end) return;
+        var range = end - start;
+        var current = start;
+        var increment = end > start? 1 : -1;
+        var stepTime = Math.abs(Math.floor(duration / range));
+        var obj = document.getElementsByClassName(id);
+        console.log(obj)
+        var timer = setInterval(function() {
+            current += increment;
+            console.log(current)
+            obj.innerHTML = current;
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+
+}
 }
  
 export default Effcient;

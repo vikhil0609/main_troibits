@@ -3,7 +3,7 @@
   background-color: #0b0b0b;
   position: relative;
   padding-left: 3%;
-  height: 800px;
+  height: 93vh;
 }
 
 .yolo-content {
@@ -48,6 +48,7 @@
   display: flex;
 }
 .arrow-part img {
+  transition: 1s;
   width: 60px;
   cursor: pointer;
   position: relative;
@@ -55,10 +56,15 @@
   padding-right: 15%;
 }
 
+.arrow-part img:hover {
+  transition: 1s;
+  width: 70px;
+}
+
 .arrow-part .vr {
   width: 2px;
-  height: auto;
-  background-color: white;
+  height: 35px;
+  background-color: #666666;
 }
 .yolo-content .center-img {
   width: 45%;
@@ -82,7 +88,7 @@
   opacity: 1;
 }
 .yolo-content .right-app {
-  margin-top: 12%;
+  margin-top: 16%;
   margin-left: 10%;
 }
 .yolo-content .right-app .app-title {
@@ -96,7 +102,7 @@
   margin-top: 15px;
   font-size: 20px;
   color: #666666;
-  font-family: "ProximaNovaRegular";
+  font-weight: bold;
   cursor: pointer;
 }
 .play_image img {

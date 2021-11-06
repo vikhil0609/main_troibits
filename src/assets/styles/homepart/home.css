@@ -259,6 +259,28 @@ a {
   }
 }
 
+@media only screen and (max-width: 925px) {
+  .home .home-chat-btn {
+    width: 14vw;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .home .home-chat-btn {
+    width: 15vw;
+  }
+  .home .home-left .home-heading {
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .home .home-chat-btn {
+    width: 16vw;
+    font-size: 1em;
+  }
+}
+
 @media only screen and (max-width: 770px) {
   .home {
     display: block;

@@ -9,8 +9,11 @@ import partnerIntelImg    from '../assets/images/partner-intel.png';
 import partnerNikeImg     from '../assets/images/partner-nike.png';
 
 const Effcient = () => {
+    function animatenumber(){
+        console.log("hello");
+    }
     return (
-        <div className="efficient" style = {{ backgroundImage:`url(${backKeyBoardImg})` }}>
+        <div onScroll={() => animatenumber()} className="efficient" style = {{ backgroundImage:`url(${backKeyBoardImg})` }}>
             <div className="efficient-content subpart-content">
 
                 <div className="efficient-part left-partners">

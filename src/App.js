@@ -41,7 +41,7 @@ class App extends Component {
   }
 
   startLoading() {
-    this.loading.length = Math.min(this.wWidth * 0.8, this.wHeight * 0.8, 210);
+    this.loading.length = 0;
     this.loading.time = 1;
     this.loading.delta = 0;
     jQuery(".loading").css({
