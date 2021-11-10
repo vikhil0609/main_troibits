@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 .list-name-container {
   display: flex;
   flex-direction: column;
@@ -113,6 +109,10 @@ html {
     border-bottom-color: #0a5de9;
   }
 }
+.footer .know {
+  margin-top: 3.5%;
+}
+
 .footer .know a {
   font-size: 1em;
   text-decoration: none;

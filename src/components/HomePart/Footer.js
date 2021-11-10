@@ -13,14 +13,20 @@ const Footer = () => {
                <div className="footer-item infoTech">
                      2019 Trobits infotech private limited
                </div>
-               <div className="footer-item siteMap">
-                     Sitemap
+               <div className="footer-item">
+                  Home
                </div>
-               <div className="footer-item terms">
-                     Terms of use
+               <div className="footer-item">
+                  Services
                </div>
-               <div className="footer-item privacy">
-                     Privacy policy
+               <div className="footer-item">
+                  Company
+               </div>
+               <div className="footer-item">
+                  Work
+               </div>
+               <div className="footer-item">
+                  Contact
                </div>
             </div>
          </div>

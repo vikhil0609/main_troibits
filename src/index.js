@@ -34,7 +34,7 @@ ReactDOM.render(
               </Route>
               <Route exact path="/services" >
                 <div>
-                  {/* <Header /> */}
+                  <Header />
                 <Services />
                 </div>
               </Route>
@@ -42,20 +42,26 @@ ReactDOM.render(
               <div>
                 <Header />
                 <Work />
-                <Footer />
+              <div className="Main-footer">
+              <Footer />
+              </div>
                 </div>
               </Route>
               <Route exact path="/contact">
               <div>
                   <Header />
                   <Contact />
-                  <Footer />
+                <div className="Main-footer">
+                <Footer />
+                </div>
               </div>
               </Route>
               <Route  exact path="/company">
               <div><Header />
               <Company />
+              <div className="Main-footer">
               <Footer />
+              </div>
               </div>
               </Route>
             </Switch>

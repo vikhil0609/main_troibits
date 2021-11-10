@@ -17,10 +17,6 @@ const Services = () => {
     return (
 
       <div className="services">
-         {/* <div className="notice top-tri tri-part">
-            <div className="label">Our Services</div>
-            <span></span>
-         </div> */}
          <div className="content-wrap">
             <div className="services-content subpart-content">
                <div className="main-title">What we do?</div>

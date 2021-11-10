@@ -13,6 +13,8 @@ import glaucus from "../../assets/images/media_library/11_Laptop_Mockup-min-min.
 import Left from "../../assets/images/arrow-left.png"
 import Right from "../../assets/images/arrow-right.png"
 import jQuery from 'jquery';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 const Achievement = () =>{
@@ -20,21 +22,22 @@ const Achievement = () =>{
 
     function card(item){
         if (item == "client1"){
-            jQuery("#client1").fadeIn()
-            jQuery("#client2").css("display","none")
-            jQuery("#client3").css("display","none")
+            jQuery("#client1").toggle(700,"swing");
+            jQuery("#client2").hide()
+            jQuery("#client3").hide()
         }
         
         else if (item == "client2"){
-            jQuery("#client2").fadeIn()
-            jQuery("#client1").css("display","none")
-            jQuery("#client3").css("display","none")
+            jQuery("#client2").toggle(700,"swing");
+            jQuery("#client1").hide()
+            jQuery("#client3").hide()
         }
         
         else if (item == "client3"){
-            jQuery("#client3").fadeIn()
-            jQuery("#client2").css("display","none")
-            jQuery("#client1").css("display","none")
+            
+            jQuery("#client3").toggle(700,"swing");
+            jQuery("#client1").hide()
+            jQuery("#client2").hide()
         }
     }
 
@@ -79,14 +82,19 @@ const Achievement = () =>{
             </div>
 
             <div className = "project">
-                <div className = "row d-flex text-center">
-                <div className = "col"><h2>Advancing beyond your expectations</h2></div >
-                <div className = "col" ><h4>Smart UI and intuitive design is our forte. We customise it for you after proper ideation, research, planning and create something on a blank,
-                canvas which stands out, is minimal and uniquely crafted for your business.</h4></div >
-                </div>
-                <div className = "box d-flex">
+                <h2>Advancing beyond your Experience</h2>
+                <h4>
+                Smart UI and intuitive design is our forte. We customise it for you after proper ideation, research, planning and create something on a blank,
+                canvas which stands out, is minimal and uniquely crafted for your business.</h4>
+                <div className = "explore_more">
                     <NavLink to = "/work" className = "variant">Explore More Project</NavLink>
                 </div>
+                {/* <div className = "col"><h2>Advancing beyond your expectations</h2></div >
+                <div className = "col" ><h4>Smart UI and intuitive design is our forte. We customise it for you after proper ideation, research, planning and create something on a blank,
+                canvas which stands out, is minimal and uniquely crafted for your business.</h4></div > */}
+                {/* <div className = "box d-flex">
+                    <NavLink to = "/work" className = "variant">Explore More Project</NavLink>
+                </div> */}
             </div>
             <div className = "client">
                 <div className = "client-title text-center">

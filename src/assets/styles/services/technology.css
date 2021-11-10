@@ -43,11 +43,13 @@
 
 .tech-list .active span {
   color: #0a5de9;
+  text-align: center;
 }
 
 .tech-list li {
   list-style-type: none;
   cursor: pointer;
+  text-align: center;
 }
 
 .tech-list li:hover {

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component ,useEffect, useState } from 'react';
 import '../../assets/styles/homepart/home.css';
 
 import shadowBackImg from '../../assets/images/homeimages/shadow-back.png';
@@ -12,7 +12,9 @@ class Home extends Component {
     }
     
     componentDidMount() {
+        window.addEventListener('scroll', console.log("helo"));
     }
+
     componentWillReceiveProps(nextProps) {
         // if (this.selItem != nextProps.selItem) {
         //     this.selItem = nextProps.selItem;
@@ -34,8 +36,15 @@ class Home extends Component {
     
 
     render() {
+        const onScroll = (e) => {
+            console.log("hello")
+          };
+        function scroll_to_next_component(){
+            var h = (window.innerHeight) - 40;
+            window.scrollTo(0,h);
+        }
         return (
-            <div>
+            <div onScroll={onScroll}>
             <div className="home">
                 <div className="home-left">
                     <div className="home-heading">
@@ -62,7 +71,7 @@ class Home extends Component {
             </div>
             <div className="notice top-tri tri-part">
             <div className="label">Our Services</div>
-            <span></span>
+            <span onClick={() => scroll_to_next_component()}></span>
          </div>
             </div>
         );

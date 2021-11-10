@@ -93,14 +93,14 @@ class Company extends React.Component{
                 <div className={styles.Image}>
                     <img src={Consultant} id={styles.image} />
                     <h3>Right It Consultant</h3>
-                    <h6>We focus on a broad range of activities, like competitive analysis,
+                    <h6 id={styles.image_description}>We focus on a broad range of activities, like competitive analysis,
                          corporate strategy, operations management,
                          our core value is to tell you what is right for your business.</h6>
                 </div>
                 <div className={styles.Image} >
                     <img src={Growth} id={styles.image} />
                     <h3>Growth Together</h3>
-                    <h6>
+                    <h6 id={styles.image_description}>
                     We partner with like-minded businesses to help improve and 
                     drive efficiency in business processes,
                      operations and believe in growing together.
@@ -110,7 +110,7 @@ class Company extends React.Component{
                 <div className={styles.Image} style={{paddingBottom:"10%"}} >
                     <img src={Notch} id={styles.image} />
                     <h3>Top-Notch Apps</h3>
-                    <h6>
+                    <h6 id={styles.image_description}>
                     Our best in class mobile and web apps can transform your 
                     customer experience and service,
                      apart from increasing your product sales and business visibility.
@@ -139,31 +139,39 @@ class Company extends React.Component{
                 </div>
                 <div className={styles.Process}>
                     <h1>Our Process</h1>
-                    <h6>From idea to product launch, growth and software maintenance. We
+                    <h6 id={styles.image_description}>From idea to product launch, growth and software maintenance. We
                          are determined to provide IT support through complete life cycle of
                           your business.</h6>
                     <ul className={styles.Companyulist}>
-                        <li className={styles.Companylist} id="1"  onClick={() => display_sub_text("#subText1","1")}>IP Protection
+                        <li className={styles.Companylist} id="1" onMouseEnter={() => changing_hover("1")} onMouseLeave ={() => remove_hover("1")}  onClick={() => display_sub_text("#subText1","1")}>IP Protection
                             <div className={styles.subText}  id="subText1" style={{display:"none"}}>This is subtext</div></li>
-                        <li className={styles.Companylist} id="2"  onClick={() => display_sub_text("#subText2","2")}>Consultant And Research
+                        <li className={styles.Companylist} id="2" onMouseEnter={() => changing_hover("2")} onMouseLeave ={() => remove_hover("2")}  onClick={() => display_sub_text("#subText2","2")}>Consultant And Research
                         <div className={styles.subText} id="subText2" style={{display:"none"}}>This is subtext</div></li>
-                        <li className={styles.Companylist} id="3" onClick={() => display_sub_text("#subText3","3")}>Ideation And Strategic Planning
+                        <li className={styles.Companylist} id="3" onMouseEnter={() => changing_hover("3")} onMouseLeave ={() => remove_hover("3")} onClick={() => display_sub_text("#subText3","3")}>Ideation And Strategic Planning
                         <div className={styles.subText} id="subText3" style={{display:"none"}}>This is subtext</div></li>
-                        <li className={styles.Companylist} id="4" onClick={() => display_sub_text("#subText4","4")}>Product Design
+                        <li className={styles.Companylist} id="4" onMouseEnter={() => changing_hover("4")} onMouseLeave ={() => remove_hover("4")} onClick={() => display_sub_text("#subText4","4")}>Product Design
                         <div className={styles.subText} id="subText4" style={{display:"none"}}>This is subtext</div></li>
-                        <li className={styles.Companylist} id="5" onClick={() => display_sub_text("#subText5","5")}>Agile Deveploment
+                        <li className={styles.Companylist} id="5" onMouseEnter={() => changing_hover("5")} onMouseLeave ={() => remove_hover("5")} onClick={() => display_sub_text("#subText5","5")}>Agile Deveploment
                         <div className={styles.subText} id="subText5" style={{display:"none"}}>This is subtext</div></li>
-                        <li className={styles.Companylist} id="6" onClick={() => display_sub_text("#subText6","6")}>Testing and Quality Assurance
+                        <li className={styles.Companylist} id="6" onMouseEnter={() => changing_hover("6")} onMouseLeave ={() => remove_hover("6")} onClick={() => display_sub_text("#subText6","6")}>Testing and Quality Assurance
                         <div className={styles.subText} id="subText6" style={{display:"none"}}>This is subtext</div></li>
-                        <li className={styles.Companylist} id="7" onClick={() => display_sub_text("#subText7","7")}>Product Launch
+                        <li className={styles.Companylist} id="7" onMouseEnter={() => changing_hover("7")} onMouseLeave ={() => remove_hover("7")} onClick={() => display_sub_text("#subText7","7")}>Product Launch
                         <div className={styles.subText} id="subText7" style={{display:"none"}}>This is subtext</div></li>
-                        <li className={styles.Companylist} id="8" onClick={() => display_sub_text("#subText8","8")}>Growth and Maintenance
+                        <li className={styles.Companylist} id="8" onMouseEnter={() => changing_hover("8")} onMouseLeave ={() => remove_hover("8")} onClick={() => display_sub_text("#subText8","8")}>Growth and Maintenance
                         <div className={styles.subText} id="subText8" style={{display:"none"}}>This is subtext</div></li>
                     </ul>
                 </div>
             </div>
         </div>
     );
+    function changing_hover(Id){
+        var d = document.getElementById(Id);
+        jQuery(d).css("color","blue")
+    }
+    function remove_hover(Id){
+        var d = document.getElementById(Id);
+        jQuery(d).css({"color":"White",transition:'1s'})
+    }
 }
 }
 

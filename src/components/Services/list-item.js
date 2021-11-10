@@ -12,7 +12,6 @@ import maintainance from "../../assets/images/serivces/maintainance.PNG"
 import NextGen from "../../assets/images/serivces/nextgen.PNG"
 import jQuery from "jquery";
 
-
 class ListItem extends React.Component {
     constructor(props){
         super(props);
@@ -127,8 +126,8 @@ class ListItem extends React.Component {
                           developed and designed mobile app increases productivity 
                           and sales in your business. Smart Apps developed by 
                           Troibits and digitization of your business provides value
-                           to your customers, builds your brand,
- shares exclusive content and strengthens customer loyalty.  </p>
+                          to your customers, builds your brand,
+                          shares exclusive content and strengthens customer loyalty.  </p>
                 </div>
                 <div className = "footer d-flex">
                     <div className ="d-flex nav">

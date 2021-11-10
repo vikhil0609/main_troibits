@@ -195,19 +195,31 @@ a {
   padding-top: 15px;
   width: 100%;
   text-align: center;
-  font-size: 16px;
+  font-size: 1;
   margin-left: 30%;
 }
 .notice span {
   z-index: 999;
   margin-right: 30%;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 .notice span::after {
   content: "\2193";
-  font-size: 30px;
+  font-size: 1.7em;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000,
+      0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+  }
+  to {
+    text-shadow: #808080;
+  }
+}
 @media only screen and (max-width: 1300px) {
   .home {
     width: 90%;
