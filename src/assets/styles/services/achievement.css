@@ -10,7 +10,7 @@
 .item-main {
   margin-top: 5%;
   margin-left: 10%;
-  margin-right: 10%;
+  padding-right: 10%;
   display: flex;
   justify-content: space-between;
 }
@@ -37,7 +37,7 @@
 }
 
 .item-main .mid img {
-  max-width: 45%;
+  max-width: 40%;
   margin-left: 5%;
 }
 .item-main .mid div .mid-title {
@@ -258,6 +258,20 @@ a {
   height: auto;
   margin-left: 15%;
   margin-top: 30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+}
+
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -543,7 +557,16 @@ a {
     font-size: 11px;
   }
 }
+.slick-dots {
+  background-color: transparent;
+}
 
+.slick-dots li.slick-active button:before {
+  color: white;
+}
+.slick-dots li button:before {
+  color: grey;
+}
 @media only screen and (max-width: 400px) {
   .achievement-titl h1 {
     font-size: 2em;

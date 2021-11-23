@@ -11,7 +11,7 @@ const Footer = () => {
             <label className="logo-label">TROIBITS</label>
             <div className="footer-content">
                <div className="footer-item infoTech">
-                     2019 Trobits infotech private limited
+                     2021 Trobits infotech private limited
                </div>
                <div className="footer-item">
                   Home
