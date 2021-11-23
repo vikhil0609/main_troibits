@@ -80,7 +80,7 @@ const Yolo = () => {
                 <div className="yolo-part right-app">
                     <div className="app-title">App Showcase</div>
                     <div className="app-content">
-                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>Skylar</div>
+                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>Skylark</div>
                         <div className="app-content-item app-content-yolo" onClick={() => clickApp('yolo')}>Yolo</div>
                         <div className="app-content-item app-content-third" onClick={() => clickApp('third')}>Bit7Pay</div>
                     </div>
@@ -106,7 +106,7 @@ const Yolo = () => {
                 <div className="yolo-part right-app">
                     <div className="app-title">App Showcase</div>
                     <div className="app-content">
-                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>skylar</div>
+                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>skylark</div>
                         <div className="app-content-item app-content-yolo" onClick={() => clickApp('yolo')}>Yolo</div>
                         <div className="app-content-item app-content-third" onClick={() => clickApp('third')}>Bit7Pay</div>
                     </div>
@@ -132,7 +132,7 @@ const Yolo = () => {
                 <div className="yolo-part right-app">
                     <div className="app-title">App Showcase</div>
                     <div className="app-content">
-                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>skylar</div>
+                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>skylark</div>
                         <div className="app-content-item app-content-yolo" onClick={() => clickApp('yolo')}>Yolo</div>
                         <div className="app-content-item app-content-third" onClick={() => clickApp('third')}>Bit7Pay</div>
                     </div>

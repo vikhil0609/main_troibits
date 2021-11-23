@@ -1,6 +1,5 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
-import Carousel from 'react-material-ui-carousel';
 import Mockup    from '../../assets/images/Mockup.svg';
 import partnerIntelImg    from '../../assets/images/partner-intel.png';
 import Leo   from '../../assets/images/lio.jpg';
