@@ -1,6 +1,7 @@
 import React ,{Component} from 'react';
 import '../../assets/styles/homepart/efficient.css';
 import '../../assets/styles/homepart/common.css';
+import AnimatedNumber from "animated-number-react";
 
 import backKeyBoardImg    from '../../assets/images/homeimages/back-keyboard.jpg';
 import partnerSkypeImg    from '../../assets/images/homeimages/partner-skype.png';
@@ -11,15 +12,31 @@ import partnerNikeImg     from '../../assets/images/homeimages/partner-nike.png'
 class  Effcient extends Component {
     constructor(props) {
         super(props);
-      }
+        this.state = {
+            value: 0,
+            long:10
+        };
+        this.handleScroll = this.handleScroll.bind(this);
+        this.formatValue = this.formatValue.bind(this);
+    }
 
       componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
       }
     
       handleScroll(event) {
-       
+        const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop
+        var b = document.getElementById("efficient_main")
+        var longA = (b.offsetTop - (window.pageYOffset )) - 450
+        this.setState({long: longA});
       }
+
+      formatValue(value){
+        return value.toFixed(0)
+
+        
+    }
     render(){
     return (
         <div id="efficient_main" onScroll={() => this.handleScroll.bind(this)}>
@@ -68,9 +85,25 @@ class  Effcient extends Component {
            </div>
            <div className="efficient-end">
                <div>
-               <div className="end-head" onClick={() => animateValue("end-head", 100, 25, 5000)}>
-                   <strong>353</strong>
-                   
+               <div className="end-head">
+                   {this.state.long <=0 &&
+                                       <strong>
+                                       <AnimatedNumber
+                                        value={353}
+                                        formatValue={this.formatValue}
+                                        duration={3000}
+                                        />
+                                    </strong>
+                   }
+                   {this.state.long >0 &&
+                                       <strong>
+                                       <AnimatedNumber
+                                        value={0}
+                                        formatValue={this.formatValue}
+                                        duration={3000}
+                                        />
+                                    </strong>
+                   }
                </div> 
                <div className="end-subText">
                    <p> Lorem ipsum dolor sit amet, <br />
@@ -79,7 +112,24 @@ class  Effcient extends Component {
                </div>
                <div>
                 <div className="end-head">
-                    <strong>29</strong>
+                {this.state.long <=0 &&
+                                       <strong>
+                                       <AnimatedNumber
+                                        value={29}
+                                        formatValue={this.formatValue}
+                                        duration={3000}
+                                        />
+                                    </strong>
+                   }
+                   {this.state.long >0 &&
+                                       <strong>
+                                       <AnimatedNumber
+                                        value={0}
+                                        formatValue={this.formatValue}
+                                        duration={3000}
+                                        />
+                                    </strong>
+                   }
                 </div>
                 <div className="end-subText">
                     Lorem ipsum dolor sit amet, <br />

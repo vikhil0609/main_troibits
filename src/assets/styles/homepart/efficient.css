@@ -70,7 +70,7 @@
   line-height: 35px;
 }
 
-.end-head strong {
+.end-head strong span {
   color: #007bff;
   font-size: 3em;
 }

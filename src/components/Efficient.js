@@ -1,7 +1,6 @@
 import React from 'react';
 import '../assets/styles/homepart/efficient.css';
 import '../assets/styles/common.css';
-
 import backKeyBoardImg    from '../assets/images/back-keyboard.jpg';
 import partnerSkypeImg    from '../assets/images/partner-skype.png';
 import partnerHpImg       from '../assets/images/partner-hp.png';
@@ -13,7 +12,7 @@ const Effcient = () => {
         console.log("hello");
     }
     return (
-        <div onScroll={() => animatenumber()} className="efficient" style = {{ backgroundImage:`url(${backKeyBoardImg})` }}>
+        <div className="efficient" style = {{ backgroundImage:`url(${backKeyBoardImg})` }}>
             <div className="efficient-content subpart-content">
 
                 <div className="efficient-part left-partners">
@@ -52,7 +51,8 @@ const Effcient = () => {
 
                 <div className="efficient-part right-number">
                     <div className="number-item">
-                        <div className="number">353</div>
+                        <div className="number">
+                            </div>
                         <div className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
                     </div>
                     <div className="number-item">
