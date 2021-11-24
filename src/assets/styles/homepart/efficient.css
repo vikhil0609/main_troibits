@@ -73,6 +73,7 @@
 .end-head strong span {
   color: #007bff;
   font-size: 3em;
+  transition: 1 ease-in-out;
 }
 
 .info {
