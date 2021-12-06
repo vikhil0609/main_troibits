@@ -5,6 +5,7 @@ import  '../../assets/styles/header.scss';
 import Gradient from "../../assets/images/gradient.png";
 import jQuery from 'jquery';
 
+
 class HomeHeader extends React.Component {
    constructor(props){
       super(props);

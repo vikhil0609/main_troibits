@@ -1,15 +1,16 @@
 import React from 'react';
 import '../../assets/styles/homepart/footer.css';
  
-import logoImg from '../../assets/images/homeimages/logo.png';
+import logoImg from '../../assets/images/logo.png';
  
 const Footer = () => {
     return (
       <div className="footer-wrap">
          <div className="footer">
+            <div>
             <img className="logo-img" src={logoImg} />
-            <label className="logo-label">TROIBITS</label>
-            <div className="footer-content">
+            </div>
+             <div className="footer-content">
                <div className="footer-item infoTech">
                      2021 Trobits infotech private limited
                </div>

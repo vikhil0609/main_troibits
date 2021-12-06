@@ -5,6 +5,7 @@ import registerServiceWorker from './registerServiceWorker';
 import App from './App';
 import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 import Services from './pages/services'
+import HomePage from './pages/home'
 import Header from './components/Header'
 import Contact from "./components/ContactPart/contact";
 import Work from "./components/workpart/work";
@@ -12,7 +13,6 @@ import Company from "./components/company/company";
 import './index.css'
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Footer from "./components/HomePart/Footer";
-import HomeHeader from "./components/HomePart/homeheader";
 import "./App.css"
 
 ReactDOM.render(
@@ -22,14 +22,12 @@ ReactDOM.render(
             <Switch>
               <Route exact path="/" >
                 <div>
-                <HomeHeader />
-                <App/>
+                <HomePage />
                 </div>
               </Route>
               <Route exact path="/home">
-                <div>
-                <HomeHeader />
-                <App />
+                <div> 
+                <HomePage />
                 </div>
               </Route>
               <Route exact path="/services" >

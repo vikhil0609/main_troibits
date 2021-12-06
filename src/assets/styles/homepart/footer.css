@@ -13,15 +13,16 @@
 }
 
 .footer .logo-img {
-  max-width: 20%;
-  margin-top: 5px;
+  width: 9%;
+  height: auto;
+  margin-left: 5%;
 }
 
 .footer-content {
   position: relative;
   float: right;
   height: 100%;
-  width: 900px;
+  width: 1000px;
   background-color: #121212;
   display: flex;
 }
@@ -39,7 +40,7 @@
 .footer-content .footer-item {
   padding-top: 2.5%;
   position: relative;
-  padding-left: 3%;
+  padding-left: 5%;
   font-size: 1em;
   color: #666666;
 }
