@@ -3,6 +3,7 @@ import '../../assets/styles/homepart/footer.css';
  
 import logoImg from '../../assets/images/logo.png';
  
+
 const Footer = () => {
     return (
       <div className="footer-wrap">

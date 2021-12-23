@@ -6,6 +6,7 @@
   height: 93vh;
 }
 
+
 .yolo-content {
   position: relative;
 }
@@ -32,6 +33,7 @@
   color: #666666;
   margin-top: 50px;
   width: 100%;
+  height: 50px;
 }
 
 .yolo-line {
@@ -40,28 +42,18 @@
   margin-top: 10%;
   float: right;
 }
-.arrow-part {
-  position: absolute;
-  margin-top: calc(25% + 50px);
-  margin-left: 8%;
-  z-index: 10;
-  display: flex;
+.arrow-part{
+  margin-top: 10%;
 }
-.arrow-part img {
-  transition: 1s;
-  width: 60px;
+
+.arrow-part img{
+  max-width: 40px;
+}
+.arrow-part:hover{
   cursor: pointer;
-  position: relative;
-  padding-left: 15%;
-  padding-right: 15%;
 }
-
-.arrow-part img:hover {
-  transition: 1s;
-  width: 70px;
-}
-
 .arrow-part .vr {
+  display: none;
   width: 2px;
   height: 35px;
   background-color: #666666;
@@ -278,19 +270,14 @@
   .yolo .left-taxi .description {
     margin-top: 20px;
   }
-  .yolo .left-taxi .arrow-part {
-    margin-top: 20px;
-  }
+
   .yolo .right-app {
     margin-top: 100px;
   }
   .yolo .right-app .app-content {
     margin-top: 30px;
   }
-  .main .arrow-part {
-    margin-top: 25%;
-    padding-left: 1%;
-  }
+
 }
 @media only screen and (max-width: 960px) {
   .yolo .left-taxi .description {
@@ -312,13 +299,6 @@
   .yolo-content .left-taxi {
     margin-top: 160px;
   }
-  .main .arrow-part {
-    margin-top: 30%;
-    padding-left: 5%;
-  }
-  .main .arrow-part img {
-    width: 20px;
-  }
   .yolo-content .left-taxi .notice-blue {
     font-size: 15px;
   }
@@ -337,13 +317,6 @@
     padding-top: 30px;
   }
 
-  .arrow-part {
-    z-index: 999;
-    text-align: center;
-    margin-top: 120%;
-    margin-left: 42%;
-  }
-
   .yolo .right-app {
     display: none;
   }
@@ -357,10 +330,7 @@
   .yolo .left-taxi .yolo-title {
     text-align: center;
   }
-  .yolo .left-taxi .arrow-part {
-    text-align: center;
-    margin-left: 40px;
-  }
+
   .yolo-content .center-img .yolo-phone-img {
     padding-right: 10%;
     width: 50%;
@@ -370,16 +340,9 @@
   .yolo {
     height: 750px;
   }
-  .arrow-part {
-    margin-top: 145%;
-  }
 }
 @media only screen and (max-width: 400px) {
   .yolo {
     height: 650px;
-  }
-  .arrow-part {
-    margin-top: 160%;
-    margin-left: 36%;
   }
 }

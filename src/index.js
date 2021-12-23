@@ -15,6 +15,7 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Footer from "./components/HomePart/Footer";
 import "./App.css"
 
+
 ReactDOM.render(
   <div>
     <BrowserRouter>

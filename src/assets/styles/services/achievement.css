@@ -125,7 +125,7 @@ a {
   transition: 0.5s;
 }
 
-.project .explore_more .variant:hover {
+.project .explore_more:hover .variant {
   color: white;
   text-decoration: none;
 }
@@ -278,6 +278,28 @@ a {
   .item-main .mid div .sub-text p {
     font-size: 0.8em;
   }
+
+  .project .explore_more {
+    border: 3px solid #0a5de9;
+    width: 30%;
+    padding: 20px 10px;
+    margin-top: 5%;
+    margin-left: 35%;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(38, 3, 165, 0.19),
+      0 6px 6px rgba(38, 3, 165, 0.23);
+  }
+  
+  .project .explore_more:hover {
+    background-color: #0a5de9;
+    transition: 0.5s;
+  }
+  
+  .project .explore_more:hover .variant {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -329,6 +351,27 @@ a {
 }
 
 @media only screen and (max-width: 880px) {
+  .project .explore_more {
+  border: 3px solid #0a5de9;
+  width: 200px;
+  padding: 20px 10px;
+  margin-top: 5%;
+  margin-left: 32%;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(38, 3, 165, 0.19),
+    0 6px 6px rgba(38, 3, 165, 0.23);
+}
+
+.project .explore_more:hover {
+  background-color: #0a5de9;
+  transition: 0.5s;
+}
+
+.project .explore_more:hover .variant {
+  color: white;
+  text-decoration: none;
+}
   .achievement-titl h1 {
     font-size: 2.8em;
     margin-bottom: 40px;
@@ -356,6 +399,9 @@ a {
   .inner-client {
     max-height: 150px;
   }
+  .client-item-box {
+    height: 150px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -370,7 +416,7 @@ a {
   .client-item-box,
   .carousel-client,
   .inner-client {
-    height: 200px;
+    height: 140px;
   }
 
   .carousel-client .carousel-control-prev,
@@ -427,6 +473,27 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
+  .project .explore_more {
+    border: 3px solid #0a5de9;
+    width: 200px;
+    padding: 20px 10px;
+    margin-top: 5%;
+    margin-left: 16%;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(38, 3, 165, 0.19),
+      0 6px 6px rgba(38, 3, 165, 0.23);
+  }
+  
+  .project .explore_more:hover {
+    background-color: #0a5de9;
+    transition: 0.5s;
+  }
+  
+  .project .explore_more:hover .variant {
+    color: white;
+    text-decoration: none;
+  }
   .achievement-titl h1 {
     font-size: 2.5em;
     margin-bottom: 40px;
@@ -448,7 +515,7 @@ a {
   .client-item-box {
     margin-left: 1%;
     width: 600px;
-    height: 200px;
+    height: 140px;
   }
 }
 
@@ -475,7 +542,7 @@ a {
     margin-bottom: 10%;
   }
   .client-item-box {
-    height: 200px;
+    height: 135px;
   }
   .footer-logo-ach .image img {
     width: 100%;
@@ -505,7 +572,7 @@ a {
     height: 55px;
   }
   .client-item-box {
-    height: 200px;
+    height: 135px;
   }
 
   .company-logo,
@@ -548,7 +615,7 @@ a {
 
 @media only screen and (max-width: 500px) {
   .client-item-box {
-    height: 180px;
+    height: 130px;
   }
   .body-client-box .client-word p {
     font-size: 11px;
@@ -584,6 +651,15 @@ a {
 }
 
 @media only screen and (max-width: 320px) {
+  .project .explore_more {
+    border: 3px solid #0a5de9;
+    width: 200px;
+    padding: 20px 10px;
+    margin-top: 5%;
+    margin-left: 7%;
+
+  }
+
   .achievement-titl h1 {
     font-size: 1.8em;
   }

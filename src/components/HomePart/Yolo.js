@@ -10,7 +10,7 @@ import skylark from "../../assets/images/homeimages/skylark.png"
 import google_play from "../../assets/images/homeimages/google_play.png";
 import apple from "../../assets/images/homeimages/apple.png";
 import '../../../node_modules/font-awesome/css/font-awesome.min.css'; 
-
+import {Animated} from "react-animated-css";    
 
 const Yolo = () => {
     var selAppItem = "yolo";
@@ -24,21 +24,21 @@ const Yolo = () => {
         jQuery(".app-content-item").removeClass("active");
         jQuery(".app-content-"+str).addClass("active");
         if (selAppItem == "yolo"){
-            jQuery("#yolo").css("display","block");
-            jQuery("#first-app").css("display","none");
-            jQuery("#third-app").css("display","none");
+            jQuery("#first-app").hide()
+            jQuery("#third-app").hide()
+            jQuery("#yolo").show()
         } 
 
         else if (selAppItem == "first"){
-            jQuery("#yolo").css("display","none");
-            jQuery("#third-app").css("display","none");
-            jQuery("#first-app").css("display","block");
+            jQuery("#yolo").hide()
+            jQuery("#third-app").hide();
+            jQuery("#first-app").show();
         }
 
         else if (selAppItem == "third"){
-            jQuery("#third-app").css("display","block");
-            jQuery("#first-app").css("display","none");
-            jQuery("#yolo").css("display","none");
+            jQuery("#third-app").show();
+            jQuery("#first-app").hide()
+            jQuery("#yolo").hide();
         }
 
     }
@@ -54,13 +54,17 @@ const Yolo = () => {
             else clickApp('first');
         }
     }
+    function Arrows(){
+        return(
+            <div className="arrow-part">
+                <img src={arrowLeftImg} onClick={() => clickArrow('left')}></img>
+                <div className="vr"></div>
+                <img src={arrowRightImg} onClick={() => clickArrow('right')}></img>
+            </div>
+        );
+    }
     return (
         <div className="main">
-            <div className="arrow-part">
-                        <img src={arrowLeftImg} onClick={() => clickArrow('left')}></img>
-                        <div className="vr"></div>
-                        <img src={arrowRightImg} onClick={() => clickArrow('right')}></img>
-        </div>
             <div className="yolo" id="yolo">
             <div className="yolo-content subpart-content">
                 <div className="yolo-part left-taxi">
@@ -72,6 +76,7 @@ const Yolo = () => {
                         <img src={google_play}  />
                         <img src={apple} />
                     </div>
+                    <Arrows />
                     </div>
                 </div>
                 <div className="yolo-part center-img">
@@ -97,7 +102,9 @@ const Yolo = () => {
                     <div className="play_image">
                         <img src={google_play}  />
                         <img src={apple} />
-                    </div>    
+                    </div>
+                    <Arrows />    
+                    <arrows />
                 </div>
                 </div>
                 <div className="yolo-part center-img">
@@ -106,7 +113,7 @@ const Yolo = () => {
                 <div className="yolo-part right-app">
                     <div className="app-title">App Showcase</div>
                     <div className="app-content">
-                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>skylark</div>
+                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>Skylark</div>
                         <div className="app-content-item app-content-yolo" onClick={() => clickApp('yolo')}>Yolo</div>
                         <div className="app-content-item app-content-third" onClick={() => clickApp('third')}>Bit7Pay</div>
                     </div>
@@ -124,6 +131,7 @@ const Yolo = () => {
                         <img src={google_play}  />
                         <img src={apple} />
                     </div>
+                    <Arrows />
                     </div>
                 </div>
                 <div className="yolo-part center-img">
@@ -132,7 +140,7 @@ const Yolo = () => {
                 <div className="yolo-part right-app">
                     <div className="app-title">App Showcase</div>
                     <div className="app-content">
-                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>skylark</div>
+                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>Skylark</div>
                         <div className="app-content-item app-content-yolo" onClick={() => clickApp('yolo')}>Yolo</div>
                         <div className="app-content-item app-content-third" onClick={() => clickApp('third')}>Bit7Pay</div>
                     </div>

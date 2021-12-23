@@ -9,7 +9,7 @@ import enterprise from '../../assets/images/AssetsTroibits/enterprise.PNG';
 import website from '../../assets/images/AssetsTroibits/website.PNG';
 import mobile from '../../assets/images/AssetsTroibits/mobile.PNG';
 import maintainance from '../../assets/images/AssetsTroibits/maintainance.PNG';
-import nextgen from '../../assets/images/AssetsTroibits/NextGen.png';
+import nextgen from '../../assets/images/AssetsTroibits/NextGen.PNG';
 import productdesign from '../../assets/images/AssetsTroibits/productDesign.PNG';
 
 

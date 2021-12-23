@@ -63,7 +63,7 @@ class ClientItems extends React.Component{
           <div>
             <Slider {...settings}>
             <div id="carouselExampleControls"  className="carousel  carousel-client slide" data-ride="carousel">
-                <div className=" inner-client" id="client1" >
+                <div className=" inner-client main-div" id="client1" >
                     <div className="d-flex client-item-box active">
                         <div className = "header-client-box d-flex">
                             <div className = "profile-client d-flex">
