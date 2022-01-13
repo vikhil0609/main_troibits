@@ -3,7 +3,6 @@ import '../../assets/styles/homepart/footer.css';
  
 import logoImg from '../../assets/images/logo.png';
  
-
 const Footer = () => {
     return (
       <div className="footer-wrap">
@@ -16,7 +15,7 @@ const Footer = () => {
                      2021 Trobits infotech private limited
                </div>
                <div className="footer-item">
-                  Home
+               Home
                </div>
                <div className="footer-item">
                   Services

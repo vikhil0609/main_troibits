@@ -1,10 +1,7 @@
-html,body{
-    height: 100%;
-}
 .home {
     width: 80%;
     padding-top: 15%;
-    height: 95vh;
+    height: 93vh;
     padding-left: 11%;
     display: flex;
     justify-content: space-between;

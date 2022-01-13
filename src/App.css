@@ -78,8 +78,9 @@ body {
 }
 .logo-img {
   position: absolute;
-  /* top: 0px; */
-  bottom: -10px;
+  top: 3px;
+  width: 45px;
+  height: 42px;
 }
 .logo-label {
   position: absolute;

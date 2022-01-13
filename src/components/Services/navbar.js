@@ -102,36 +102,39 @@ class  Navbar extends React.Component{
     }
 
     handleClick = (event) =>{
-        const a = document.getElementById("startup-accelerator"),
-        b = document.getElementById("b"),
-        c = document.getElementById("c"),
-        d = document.getElementById("d"),
-        e = document.getElementById("e"),
-        f = document.getElementById("f"),
-        g = document.getElementById("g"),
-        h = document.getElementById("h");
+        console.log("I AM CALLED HEY")
+        const a = jQuery("#startup-accelerator").position(),
+        b = jQuery("#b").position().top,
+        c = jQuery("#c").position().top,
+        d = jQuery("#d").position().top,
+        e = jQuery("#e").position().top,
+        f = jQuery("#f").position().top,
+        g = jQuery("#g").position().top,
+        h = jQuery("#h").position().top;
+        console.log(a,b,c,d,e,f,g,h)
         let posVal = 1;
         if(event.target.id === "nav-startup-tab")
-            posVal =  a.offsetTop + 360 ; 
+            posVal =  a
         if(event.target.id === "nav-product-tab")
-            posVal =  b.offsetTop + 520;
+            posVal =  b + 450;
         if(event.target.id === "nav-mobile-tab")
-            posVal =  c.offsetTop + 520;
+            posVal =  c + 450;
         if(event.target.id === "nav-web-tab"){
-            posVal =  d.offsetTop + 520;
-            console.log( `pos: ${d.offsetTop} && pa: ${posVal} && ${event.target.id}`)
+            posVal =  d + 450;
         }
         if(event.target.id === "nav-enterprise-tab")
-            posVal =  e.offsetTop + 520;
+            posVal =  e + 450;
         if(event.target.id === "nav-iot-tab"){  
-            posVal =  f.offsetTop + 560;
-            console.log( `pos: ${f.offsetTop} && pa: ${posVal} && ${event.target.id}`)
+            posVal =  f + 450;
         }
         if(event.target.id === "nav-growth-tab")
-            posVal =  g.offsetTop + 520;
+            posVal =  g + 450;
         if(event.target.id === "nav-software-tab")
-            posVal =  h.offsetTop + 500;
-            this.change = posVal +"px"
+            posVal =  h + 450;
+        
+            this.change = (posVal * 32 /16) + "rem"
+        console.log("position",posVal)
+        console.log(jQuery(window).width())
         document.documentElement.scrollTop = posVal;
     }
 

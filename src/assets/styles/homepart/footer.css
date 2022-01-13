@@ -127,3 +127,12 @@
     color: #666666;
   }
 }
+
+
+@media screen and (max-width: 400px) {
+  .footer .logo-img {
+    margin-top:30px;
+    height:40px;
+    width:45px;
+  }
+}
