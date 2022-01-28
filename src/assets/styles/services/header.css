@@ -17,6 +17,7 @@
   color: grey;
   font-weight: bold;
   margin: 0;
+  line-height: 140%;
 }
 
 @media only screen and (max-width: 1160px) {
@@ -80,6 +81,7 @@
   }
   .head .col1 h3 {
     font-size: 0.8em;
+    padding: 0% 5%;
   }
 
   .head .col1 h1 span {

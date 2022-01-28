@@ -94,7 +94,7 @@ class  Effcient extends Component {
                                        <AnimatedNumber
                                         value={353}
                                         formatValue={this.formatValue}
-                                        duration={3000}
+                                        duration={1000}
                                         />
                                     </strong>
                    }
@@ -103,7 +103,7 @@ class  Effcient extends Component {
                                        <AnimatedNumber
                                         value={0}
                                         formatValue={this.formatValue}
-                                        duration={3000}
+                                        duration={100}
                                         />
                                     </strong>
                    }
@@ -120,7 +120,7 @@ class  Effcient extends Component {
                                        <AnimatedNumber
                                         value={29}
                                         formatValue={this.formatValue}
-                                        duration={3000}
+                                        duration={1000}
                                         />
                                     </strong>
                    }
@@ -129,7 +129,7 @@ class  Effcient extends Component {
                                        <AnimatedNumber
                                         value={0}
                                         formatValue={this.formatValue}
-                                        duration={3000}
+                                        duration={1000}
                                         />
                                     </strong>
                    }
