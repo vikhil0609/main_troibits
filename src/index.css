@@ -9,10 +9,10 @@ body {
   flex-direction: column;
 }
 
-.Main-footer {
+/* .Main-footer {
   margin-top: 10%;
   margin-bottom: 0%;
-}
+} */
 
 @media screen and (max-width: 450px) {
   .Main-footer {
