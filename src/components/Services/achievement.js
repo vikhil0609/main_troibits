@@ -156,7 +156,7 @@ class AchievementItems extends React.Component {
         speed: 700,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 1500,
       };
       return (
