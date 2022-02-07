@@ -1,9 +1,17 @@
+.main{
+  margin-bottom: 20px;
+}
+
+.slick-slide img{
+  display: inline;
+}
 .yolo {
   width: 100%;
   background-color: #0b0b0b;
   position: relative;
   padding-left: 3%;
   height: 93vh;
+  min-height: 100px;
 }
 
 
@@ -47,17 +55,17 @@
 }
 
 .arrow-part img{
+  display: initial;
   max-width: 30px;
 }
 .arrow-part:hover{
   cursor: pointer;
 }
-.arrow-part .vr {
+
+.mobile-arrow-part{
   display: none;
-  width: 2px;
-  height: 35px;
-  background-color: #666666;
 }
+
 .yolo-content .center-img {
   width: 45%;
   height: 100px;
@@ -260,6 +268,11 @@
   width: 30vw;
 }
 
+
+.slick-slide img{
+  display:initial;
+}
+
 @media only screen and (max-width: 1280px) {
   .yolo {
     padding-bottom: 30px;
@@ -279,40 +292,54 @@
   }
 
 }
-@media only screen and (max-width: 960px) {
-  .yolo .left-taxi .description {
-    display: none;
+@media only screen and (max-width: 768px) {
+  .yolo-content .right-app{
+    margin-left: 0%;
   }
-  .yolo .right-app {
-    display: none;
+  .yolo-content .center-img .yolo-phone-img{
+    width: 70%;
+    left: 35px;
+
   }
-  .yolo .right-app .app-title {
-    font-size: 10px;
+  .yolo-content .left-taxi .description{
+    height: 50px;
+    font-size: .8em;
   }
-  .yolo-content .center-img .yolo-phone-img {
-    width: 60%;
+  .arrow-part img{
+    max-width: 25px;
   }
-  .yolo {
-    padding-left: 10%;
-    height: 480px;
-  }
-  .yolo-content .left-taxi {
-    margin-top: 160px;
-  }
-  .yolo-content .left-taxi .notice-blue {
-    font-size: 15px;
-  }
-  .yolo-content .left-taxi .yolo-title {
-    font-size: 30px;
+  .arrow-part{
+    padding-right: 10px;
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .yolo .yolo-footer {
-    width: 25%;
+@media only screen and (max-width:425px){
+  .yolo-content .left-taxi .description{
+    display: none;
+  }
+  .yolo-content .right-app{
+    display: none;
+  }
+  .play_image{
+    display: none;
+  }
+  .yolo .left-taxi{
+    text-align: left;
+    width: 100%;
+    padding-left:25%;
+  }
+  .yolo-content .left-taxi .yolo-title{
+    margin-top: 0px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .yolo-content .center-img .yolo-phone-img{
+    left: 50%;
+    width: 120%;
   }
 }
-@media only screen and (max-width: 600px) {
+
+/* @media only screen and (max-width: 600px) {
   .yolo .yolo-content {
     padding-top: 30px;
   }
@@ -345,4 +372,4 @@
   .yolo {
     height: 650px;
   }
-}
+} */
